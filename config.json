@@ -1,0 +1,35 @@
+// https://github.com/sumneko/lua-language-server/wiki/Plugins
+{
+    // if not set, the folder name will be used
+    "name": "Lmaobox",
+    // list of matched words (pattern maching accepted)
+    "words": [],
+    // list or matched file names. `.lua`, `.dll` and `.so` only
+    "files": [],
+    // list of settings to be changed
+    "settings": {
+        "Lua.runtime.version": "Lua 5.4",
+        "Lua.diagnostics.globals": [
+            "callbacks",
+            "client",
+            "clientstate",
+            "draw",
+            "engine",
+            "entities",
+            "filesystem",
+            "gamecoordinator",
+            "gamerules",
+            "globals",
+            "gui",
+            "input",
+            "inventory",
+            "itemschema",
+            "materials",
+            "party",
+            "playerlist",
+            "steam",
+            "vector",
+            "wrap"
+        ]
+    }
+}
