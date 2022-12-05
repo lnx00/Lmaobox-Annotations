@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class EulerAngles
----@class EulerAngles
 ---@field x number
 ---@field y number
 ---@field z number
