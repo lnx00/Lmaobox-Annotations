@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class callbacks
----[Official Documentation](https://lmaobox.net/lua/Lua_Callbacks)
 callbacks = {}
 
 ---@alias Callback
@@ -19,11 +18,13 @@ callbacks = {}
 ---@param id Callback
 ---@param callback fun(callbackObject: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil)
 ---@overload fun(id: Callback, unique: string, callback: fun(callbackObject: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil))
+---@return boolean success, string|nil error
 function callbacks.Register(id, callback) end
 
 ---Unregister callback.
 ---@param id Callback
 ---@param unique string
+---@return boolean success, string|nil error
 function callbacks.Unregister(id, unique) end
 
 return callbacks

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class client
----[Official Documentation](https://lmaobox.net/lua/Lua_Libraries/client)
 client = {}
 
 ---Returns the number of extra inventory slots the user has.

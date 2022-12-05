@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class UserMessage
----[Official Documentation](https://lmaobox.net/lua/Lua_Classes/UserMessage)
 UserMessage = {}
 
 ---Get the id of the message.

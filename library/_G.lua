@@ -1,3 +1,4 @@
+---@meta
 ---@diagnostic disable:missing-return
 
 ---@param r integer

@@ -9,6 +9,7 @@ StringCmd = {}
 function StringCmd:Get() end
 
 ---Set the command string.
+---
 ---@param command string
 function StringCmd:Set(command) end
 

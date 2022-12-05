@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class draw
----[Official Documentation](https://lmaobox.net/lua/Lua_Libraries/draw)
 draw = {}
 
 ---Set color for drawing shapes and texts.
@@ -34,7 +33,7 @@ function draw.OutlinedRect(x1, y1, x2, y2) end
 
 ---Get text size with current font.
 ---@param text string
----@return integer wide, integer tall
+---@return integer textwidth, integer textheight
 function draw.GetTextSize(text) end
 
 ---Draw text at x, y.
@@ -59,10 +58,9 @@ function draw.GetScreenSize() end
 ---@param name string
 ---@param height integer
 ---@param weight integer
----@param flags? integer # (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
+---@param ... FontFlags|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
 ---@return Font
----[Font Flags](https://lmaobox.net/lua/Lua_Constants)
-function draw.CreateFont(name, height, weight, flags) end
+function draw.CreateFont(name, height, weight, ...) end
 
 ---Add .ttf file data to available fonts.
 ---
@@ -95,7 +93,7 @@ function draw.CreateTextureRGBA(rgba, width, height) end
 
 ---Returns size of the texture as integers
 ---@param id Texture|integer
----@return integer width, integer height
+---@return integer imgwidth, integer imgheight
 function draw.GetTextureSize(id) end
 
 ---Draw textured rectangle.

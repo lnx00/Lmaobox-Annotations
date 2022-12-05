@@ -33,7 +33,7 @@ function input.IsButtonPressed(key) end
 function input.IsButtonReleased(key) end
 
 ---Checks if mouse input is enabled.
----@return boolean
+---@return boolean mouselock
 ---@nodiscard
 function input.IsMouseInputEnabled() end
 
@@ -43,6 +43,7 @@ function input.IsMouseInputEnabled() end
 function input.SetMouseInputEnabled(enabled) end
 
 ---Returns the tick when buttons have last been polled.
+---@return number
 ---@nodiscard
 function input.GetPollTick() end
 

@@ -1,7 +1,6 @@
 ---@meta
 
 ---@class DrawModelContext
----[Official Documentation](https://lmaobox.net/lua/Lua_Classes/DrawModelContext)
 DrawModelContext = {}
 
 ---Returns the name of the model.
