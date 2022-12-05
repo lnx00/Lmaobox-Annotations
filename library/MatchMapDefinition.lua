@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents a map that is playable in a matchmaking match.
 ---@class MatchMapDefinition
 MatchMapDefinition = {}
 

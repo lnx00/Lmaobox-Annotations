@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents a string command.
 ---@class StringCmd
 StringCmd = {}
 

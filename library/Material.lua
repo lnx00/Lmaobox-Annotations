@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents a material in source engine. For more information about materials see the [Material](https://developer.valvesoftware.com/wiki/Material) page.
 ---@class Material
 Material = {}
 

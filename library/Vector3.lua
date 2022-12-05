@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents a point in 3D space. X and Y are the horizontal coordinates, Z is the vertical coordinate.
 ---@class Vector3
 ---@field x number
 ---@field y number
