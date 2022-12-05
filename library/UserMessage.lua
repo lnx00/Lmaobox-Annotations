@@ -1,5 +1,6 @@
 ---@meta
 
+---Received as the only argument in DispatchUserMessage callback.
 ---@class UserMessage
 UserMessage = {}
 
