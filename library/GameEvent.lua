@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents a game event that was sent from the server. For a list of game events for Source games and TF2 see the [GameEvent List](https://wiki.alliedmods.net/Team_Fortress_2_Events).
 ---@class GameEvent
 local GameEvent = {}
 

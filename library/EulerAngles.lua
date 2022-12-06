@@ -1,5 +1,6 @@
 ---@meta
 
+---A class that represents a set of Euler angles.
 ---@class EulerAngles
 ---@field x number
 ---@field y number

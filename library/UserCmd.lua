@@ -19,6 +19,8 @@
 ---@field headangles EulerAngles
 ---@field headoffset Vector3
 ---@field sendpacket boolean
+--- Represents a user (movement) command about to be sent to the server.
+---
 --- Fields are modifiable directly.
 ---
 --- [UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)

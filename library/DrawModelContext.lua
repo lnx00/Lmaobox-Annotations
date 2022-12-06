@@ -1,5 +1,6 @@
 ---@meta
 
+---Represents the context in which a model is being drawn in the DrawModel callback.
 ---@class DrawModelContext
 local DrawModelContext = {}
 
