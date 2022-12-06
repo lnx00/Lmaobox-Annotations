@@ -18,6 +18,4 @@
 ---@field physicsbone integer
 ---@field entity Entity
 ---@field hitbox integer
-Trace = {}
-
-return Trace
+local Trace = {}

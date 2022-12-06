@@ -14,7 +14,7 @@
 ---@operator div: EulerAngles
 ---@operator idiv: EulerAngles
 ---@operator pow: EulerAngles
-EulerAngles = {}
+local EulerAngles = {}
 
 ---Reset the angles to 0.
 function EulerAngles:Clear() end
@@ -46,6 +46,5 @@ function EulerAngles:Clamp() end
 ---@param roll number
 ---@return EulerAngles
 ---@nodiscard
-function EulerAngles(pitch, yaw, roll) end
+function _G.EulerAngles(pitch, yaw, roll) end
 
-return EulerAngles

@@ -1,6 +1,11 @@
----@meta
 ---@diagnostic disable:missing-return
+---@meta
 
+---Prints message to console. Each argument is printed on a new line.
+---@param ... string
+function _G.print(...) end
+
+---Prints a colored message to console. Each argument is printed on a new line.
 ---@param r integer
 ---@param g integer
 ---@param b integer
@@ -8,14 +13,22 @@
 ---@param ... string
 function _G.printc(r, g, b, a, ...) end
 
----@param path string
+---Loads a Lua script from given file.
+---@param scriptPath string
 ---@return boolean success, string? error
-function _G.LoadScript(path) end
+function _G.LoadScript(scriptPath) end
 
----@param path string
+---Unloads a Lua script from given file.
+---@param scriptPath string
 ---@return boolean success, string? error
-function _G.UnloadScript(path) end
+function _G.UnloadScript(scriptPath) end
 
----@return string path
+---Returns current script's file name.
+---@return string scriptPath
 ---@nodiscard
 function _G.GetScriptName() end
+
+---Prints Lua Table to console. ``key: tostring(value)``
+---
+---@param t table
+function _G.printLuaTable(t) end

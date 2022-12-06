@@ -48,6 +48,9 @@ function engine.GetPointContents(point, mask) end
 ---@nodiscard
 function engine.GetMapName() end
 
+---Returns server ip
+---
+---Returns ``loopback`` if local server.
 ---@return string
 ---@nodiscard
 function engine.GetServerIP() end
@@ -61,22 +64,22 @@ function engine.GetViewAngles() end
 function engine.SetViewAngles(angles) end
 
 ---Plays a sound at the given path, relative to the game's root folder
----@param path string
-function engine.PlaySound(path) end
+---@param audioPath string
+function engine.PlaySound(audioPath) end
 
----Returns game install directory (./Team Fortress 2/tf)
+---Returns game install directory ``Team Fortress 2/tf``
 ---@return string
 ---@nodiscard
 function engine.GetGameDir() end
 
 ---Sends key values to server
----@param s string
----@return boolean sent
-function engine.SendKeyValues(s) end
+---@param keyvalue string
+---@return boolean
+function engine.SendKeyValues(keyvalue) end
 
 ---Creates a System message in the TF2 client.
 ---@param title string
----@param longtext string
+---@param longtext? string # during test, this param does absolutely nothing
 function engine.Notification(title, longtext) end
 
 ---Sets the seed for the game's uniform random number generator.
@@ -85,14 +88,14 @@ function engine.RandomSeed(seed) end
 
 ---Returns a random number between min and max (inclusive), using the game's uniform random number generator.
 ---@param min number
----@param max? number # optional maximum number (default = ``1``)
+---@param max? number # optional maximum number (default = ``1`` or ``min``)
 ---@return number
 ---@nodiscard
 function engine.RandomFloat(min, max) end
 
 ---Returns a random integer between min and max (inclusive), using the game's uniform random number generator.
 ---@param min integer
----@param max? integer # optional maximum number (default = ``0x7FFF``)
+---@param max? integer # optional maximum number (default = ``0x7FFF`` or ``min``)
 ---@return integer
 ---@nodiscard
 function engine.RandomInt(min, max) end

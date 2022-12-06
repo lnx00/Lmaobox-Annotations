@@ -1,10 +1,10 @@
 ---@meta
 
 ---@class DrawModelContext
-DrawModelContext = {}
+local DrawModelContext = {}
 
 ---Returns the name of the model.
----@return string model
+---@return string modelName
 ---@nodiscard
 function DrawModelContext:GetModelName() end
 
@@ -21,10 +21,10 @@ function DrawModelContext:ForcedMaterialOverride(mat) end
 function DrawModelContext:DrawExtraPass() end
 
 ---Sets the color modulation of the model via StudioRender.
----@param r integer [0, 255]
----@param g integer [0, 255]
----@param b integer [0, 255]
----@param a integer [0, 255]
+---@param r integer
+---@param g integer
+---@param b integer
+---@param a integer
 function DrawModelContext:StudioSetColorModulation(r, g, b, a) end
 
 --Sets the alpha modulation of the model via StudioRender.
@@ -43,5 +43,3 @@ function DrawModelContext:DepthRange(min, max) end
 ---Suppresses the engine lighting when drawing the model.
 ---@param suppress boolean
 function DrawModelContext:SuppressEngineLighting( suppress ) end
-
-return DrawModelContext

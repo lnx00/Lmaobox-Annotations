@@ -1,6 +1,4 @@
 ---@meta
 
 ---@class Texture
-Texture = {}
-
-return Texture
+local Texture = {}

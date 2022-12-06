@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class StringCmd
-StringCmd = {}
+local StringCmd = {}
 
 ---Get string from the command.
 ---@return string
@@ -13,4 +13,3 @@ function StringCmd:Get() end
 ---@param command string
 function StringCmd:Set(command) end
 
-return StringCmd

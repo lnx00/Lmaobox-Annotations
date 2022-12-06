@@ -64,7 +64,7 @@ function client.GetPlayerNameByUserID(userid) end
 ---@field SteamID integer STEAM_0:?:?
 ---@field IsBot boolean
 ---@field IsGOTV boolean
-PlayerInfo = {}
+local PlayerInfo = {}
 
 ---Returns info about the player.
 ---@param index integer
@@ -74,7 +74,6 @@ function client.GetPlayerInfo(index) end
 
 ---Print text on chat
 ---
----[Color codes](https://lmaobox.net/lua/Lua_Libraries/client/#chatprintf-msgstring)
 ---@param msg string
 function client.ChatPrintf(msg) end
 
@@ -105,7 +104,7 @@ function client.RemoveConVarProtection(name) end
 ---
 ---The localizable strings usually start with a ``#`` character, but there are exceptions.
 ---@param key string
----@return string|nil expanded
+---@return string|nil
 ---@nodiscard
 function client.Localize( key ) end
 

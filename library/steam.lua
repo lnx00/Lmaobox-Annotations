@@ -4,13 +4,13 @@
 steam = {}
 
 ---Returns SteamID of the user as string.
----@return string
+---@return string SteamID3
 ---@nodiscard
 function steam.GetSteamID() end
 
 ---Returns the player name of the player having the given SteamID.
 ---@param SteamID3 string
----@return string profilename
+---@return string profileName
 ---@nodiscard
 function steam.GetPlayerName(SteamID3) end
 

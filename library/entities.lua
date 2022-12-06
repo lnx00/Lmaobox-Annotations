@@ -4,13 +4,15 @@
 entities = {}
 
 ---Find all entities with given class name.
+---
+---Use ``pairs`` to iterate all entities
 ---@param className string
----@return Entity[]
+---@return table<integer, Entity>
 ---@nodiscard
 function entities.FindByClass(className) end
 
 ---Returns local player entity.
----@return Entity
+---@return Entity me
 ---@nodiscard
 function entities.GetLocalPlayer() end
 
@@ -27,7 +29,7 @@ function entities.GetByIndex(index) end
 function entities.GetByUserID(userID) end
 
 ---Returns the player resources entity.
----return Entity
+---@return Entity
 ---@nodiscard
 function entities.GetPlayerResources() end
 

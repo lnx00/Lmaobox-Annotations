@@ -44,7 +44,7 @@ function gamecoordinator.AcceptMatchInvites() end
 ---The callback function receives the MatchMapDefinition and the health of the map represented as a number from 0 to 1. 
 ---
 ---You must receive the GameCoordinator's map health update at least once to use this function (i.e. by queueing up).
----@param callback fun(matchmapdefinition: MatchMapDefinition, health: number)
+---@param callback fun(matchMapDefinition: MatchMapDefinition, health: number)
 function gamecoordinator.EnumerateQueueMapsHealth(callback) end
 
 return gamecoordinator

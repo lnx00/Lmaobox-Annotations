@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class UserMessage
-UserMessage = {}
+local UserMessage = {}
 
 ---Get the id of the message.
 ---
@@ -103,5 +103,3 @@ function UserMessage:WriteInt(int, n) end
 ---
 --- When writing, make sure that your current bit position is correct and that you do not overflow the message.
 function UserMessage:WriteString(s) end
-
-return UserMessage

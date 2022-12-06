@@ -23,7 +23,7 @@
 ---
 --- [UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
 ---
-UserCmd = {}
+local UserCmd = {}
 
 ---Returns the viewangles.
 ---@return EulerAngles
@@ -82,5 +82,3 @@ function UserCmd:GetUpMove() end
 ---@return boolean
 ---@nodiscard
 function UserCmd:GetSendPacket() end
-
-return UserCmd

@@ -1,10 +1,10 @@
 ---@meta
 
 ---@class Material
-Material = {}
+local Material = {}
 
 ---Returns material path.
----@return string
+---@return string 
 ---@nodiscard
 function Material:GetName() end
 
@@ -32,5 +32,3 @@ function Material:SetMaterialVarFlag(flag, set) end
 ---@param name string
 ---@param value any
 function Material:SetShaderParam(name, value) end
-
-return Material

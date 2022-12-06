@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class GameEvent
-GameEvent = {}
+local GameEvent = {}
 
 ---Get the name of the game event.
 ---@return string
@@ -46,4 +46,3 @@ function GameEvent:SetFloat(field, value) end
 ---@param value boolean
 function GameEvent:SetBool(field, value) end
 
-return GameEvent

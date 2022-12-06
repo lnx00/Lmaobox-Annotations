@@ -34,6 +34,7 @@ function draw.OutlinedRect(x1, y1, x2, y2) end
 ---Get text size with current font.
 ---@param text string
 ---@return integer textwidth, integer textheight
+---@nodiscard
 function draw.GetTextSize(text) end
 
 ---Draw text at x, y.
@@ -50,6 +51,7 @@ function draw.TextShadow(x, y, text) end
 
 ---Get the size of the current screen.
 ---@return integer gamewidth, integer gameheight
+---@nodiscard
 function draw.GetScreenSize() end
 
 ---Create font by name.
@@ -60,6 +62,7 @@ function draw.GetScreenSize() end
 ---@param weight integer
 ---@param ... FontFlags|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
 ---@return Font
+---@nodiscard
 function draw.CreateFont(name, height, weight, ...) end
 
 ---Add .ttf file data to available fonts.
@@ -74,14 +77,15 @@ function draw.SetFont(font) end
 
 ---Create new texture from image on the given path.
 ---
----Path is relative to ``localappdata`` folder, However it's recommended to use absolute path instead
+---Default path is relative to ``localappdata`` folder, However it's recommended to use absolute path instead
 ---
 ---Supported image extensions: PNG, JPG, BMP, TGA, VTF
 ---
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
----@param path string
+---@param texturePath string
 ---@return Texture
-function draw.CreateTexture(path) end
+---@nodiscard
+function draw.CreateTexture(texturePath) end
 
 ---Create new texture.
 ---
@@ -89,11 +93,13 @@ function draw.CreateTexture(path) end
 ---@param rgba string
 ---@param width integer
 ---@return Texture
+---@nodiscard
 function draw.CreateTextureRGBA(rgba, width, height) end
 
 ---Returns size of the texture as integers
 ---@param id Texture|integer
----@return integer imgwidth, integer imgheight
+---@return integer picwidth, integer picheight
+---@nodiscard
 function draw.GetTextureSize(id) end
 
 ---Draw textured rectangle.

@@ -11,7 +11,7 @@ function input.GetMousePos() end
 ---Checks if a button is down.
 ---
 ---[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
----@param key integer
+---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonDown(key) end
@@ -19,7 +19,7 @@ function input.IsButtonDown(key) end
 ---Checks if a button is pressed.
 ---
 ---[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
----@param key integer
+---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonPressed(key) end
@@ -27,13 +27,13 @@ function input.IsButtonPressed(key) end
 ---Checks if a button is released.
 ---
 ---[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
----@param key integer
+---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonReleased(key) end
 
 ---Checks if mouse input is enabled.
----@return boolean mouselock
+---@return boolean
 ---@nodiscard
 function input.IsMouseInputEnabled() end
 

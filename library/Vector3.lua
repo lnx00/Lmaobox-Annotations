@@ -11,7 +11,7 @@
 ---@operator div: Vector3
 ---@operator idiv: Vector3
 ---@operator pow: Vector3
-Vector3 = {}
+local Vector3 = {}
 
 ---Returns the X, Y, and Z coordinates as a separate variables.
 ---@return number, number, number
@@ -77,6 +77,5 @@ function Vector3:Angles() end
 ---@param z number
 ---@return Vector3
 ---@nodiscard
-function Vector3(x, y, z) end
+function _G.Vector3(x, y, z) end
 
-return Vector3

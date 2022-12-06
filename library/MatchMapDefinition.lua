@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class MatchMapDefinition
-MatchMapDefinition = {}
+local MatchMapDefinition = {}
 
 ---Returns the name of the map.
 ---@return string
@@ -17,5 +17,3 @@ function MatchMapDefinition:GetID() end
 ---@return string
 ---@nodiscard
 function MatchMapDefinition:GetNameLocKey() end
-
-return MatchMapDefinition

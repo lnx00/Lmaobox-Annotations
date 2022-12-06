@@ -4,6 +4,5 @@
 ---@field name string
 ---@field flags number
 ---@field surfaceProps number
-Surface = {}
+local Surface = {}
 
-return Surface

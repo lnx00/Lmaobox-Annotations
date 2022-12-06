@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class Entity
-Entity = {}
+local Entity = {}
 
 ---Get the name of the entity.
 ---@return string
@@ -192,5 +192,4 @@ function Entity:GetWeaponSpread() end
 ---@nodiscard
 function Entity:GetWeaponInaccuracy() end
 
-return Entity
 
