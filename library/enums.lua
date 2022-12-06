@@ -37,3 +37,301 @@ local MATCHABANDON_PENALTY = 2
 ---| `MATCHABANDON_SAFE` # 0
 ---| `MATCHABANDON_NOPENALTY` # 1
 ---| `MATCHABANDON_PENALTY` # 2
+
+local FILE_ATTRIBUTE_READONLY = 0x1
+local FILE_ATTRIBUTE_HIDDEN = 0x2
+local FILE_ATTRIBUTE_SYSTEM = 0x4
+local FILE_ATTRIBUTE_DIRECTORY = 0x10
+local FILE_ATTRIBUTE_ARCHIVE = 0x20
+local FILE_ATTRIBUTE_DEVICE = 0x40
+local FILE_ATTRIBUTE_NORMAL = 0x80
+local FILE_ATTRIBUTE_TEMPORARY = 0x100
+local FILE_ATTRIBUTE_SPARSE_FILE = 0x200
+local FILE_ATTRIBUTE_REPARSE_POINT = 0x400
+local FILE_ATTRIBUTE_COMPRESSED = 0x800
+local FILE_ATTRIBUTE_OFFLINE = 0x1000
+local FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 0x2000
+local FILE_ATTRIBUTE_ENCRYPTED = 0x4000
+local FILE_ATTRIBUTE_INTEGRITY_STREAM = 0x8000
+local FILE_ATTRIBUTE_VIRTUAL = 0x10000
+local FILE_ATTRIBUTE_NO_SCRUB_DATA = 0x20000
+local FILE_ATTRIBUTE_RECALL_ON_OPEN = 0x40000
+local FILE_ATTRIBUTE_PINNED = 0x80000
+local FILE_ATTRIBUTE_UNPINNED = 0x100000
+local FILE_ATTRIBUTE_RECALL_ON_DATA_ACCESS = 0x400000
+local INVALID_FILE_ATTRIBUTES = 0xFFFFFFFF
+
+---@alias FileAttributeConstants
+---| `FILE_ATTRIBUTE_READONLY` # 1 (0x1)
+---| `FILE_ATTRIBUTE_HIDDEN` # 2 (0x2)
+---| `FILE_ATTRIBUTE_SYSTEM` # 4 (0x4)
+---| `FILE_ATTRIBUTE_DIRECTORY` # 16 (0x10)
+---| `FILE_ATTRIBUTE_ARCHIVE` # 32 (0x20)
+---| `FILE_ATTRIBUTE_DEVICE` # 64 (0x10)
+---| `FILE_ATTRIBUTE_NORMAL` # 128 (0x80)
+---| `FILE_ATTRIBUTE_TEMPORARY` # 256 (0x100)
+---| `FILE_ATTRIBUTE_SPARSE_FILE` # 512 (0x200)
+---| `FILE_ATTRIBUTE_REPARSE_POINT` # 1024 (0x400)
+---| `FILE_ATTRIBUTE_COMPRESSED` # 2048 (0x800)
+---| `FILE_ATTRIBUTE_OFFLINE` # 4096 (0x1000)
+---| `FILE_ATTRIBUTE_NOT_CONTENT_INDEXED` # 8192 (0x2000)
+---| `FILE_ATTRIBUTE_ENCRYPTED` # 16384 (0x4000)
+---| `FILE_ATTRIBUTE_INTEGRITY_STREAM` # 32768 (0x8000)
+---| `FILE_ATTRIBUTE_VIRTUAL` # 65536 (0x10000)
+---| `FILE_ATTRIBUTE_NO_SCRUB_DATA` # 131072 (0x20000)
+---| `FILE_ATTRIBUTE_RECALL_ON_OPEN` # 262144 (0x40000)
+---| `FILE_ATTRIBUTE_PINNED` # 524288 (0x80000)
+---| `FILE_ATTRIBUTE_UNPINNED` # 1048576 (0x100000)
+---| `FILE_ATTRIBUTE_RECALL_ON_DATA_ACCESS` # 4194304 (0x400000)
+---| `INVALID_FILE_ATTRIBUTES` # 4294967295 (0xFFFFFFFF)
+
+local SIGNONSTATE_NONE = 0
+local SIGNONSTATE_CHALLENGE = 1
+local SIGNONSTATE_CONNECTED = 2
+local SIGNONSTATE_NEW = 3
+local SIGNONSTATE_PRESPAWN = 4
+local SIGNONSTATE_SPAWN = 5
+local SIGNONSTATE_FULL = 6
+local SIGNONSTATE_CHANGELEVEL = 7
+
+---@alias SignonState
+---| `SIGNONSTATE_NONE` # 0
+---| `SIGNONSTATE_CHALLENGE` # 1
+---| `SIGNONSTATE_CONNECTED` # 2
+---| `SIGNONSTATE_NEW` # 3
+---| `SIGNONSTATE_PRESPAWN` # 4
+---| `SIGNONSTATE_SPAWN` # 5
+---| `SIGNONSTATE_FULL` # 6
+---| `SIGNONSTATE_CHANGELEVEL` # 7
+
+
+
+
+local KEY_0 = 1
+local KEY_1 = 2
+local KEY_2 = 3
+local KEY_3 = 4
+local KEY_4 = 5
+local KEY_5 = 6
+local KEY_6 = 7
+local KEY_7 = 8
+local KEY_8 = 9
+local KEY_9 = 10
+local KEY_A = 11
+local KEY_B = 12
+local KEY_C = 13
+local KEY_D = 14
+local KEY_E = 15
+local KEY_F = 16
+local KEY_G = 17
+local KEY_H = 18
+local KEY_I = 19
+local KEY_J = 20
+local KEY_K = 21
+local KEY_L = 22
+local KEY_M = 23
+local KEY_N = 24
+local KEY_O = 25
+local KEY_P = 26
+local KEY_Q = 27
+local KEY_R = 28
+local KEY_S = 29
+local KEY_T = 30
+local KEY_U = 31
+local KEY_V = 32
+local KEY_W = 33
+local KEY_X = 34
+local KEY_Y = 35
+local KEY_Z = 36
+local KEY_PAD_0 = 37
+local KEY_PAD_1 = 38
+local KEY_PAD_2 = 39
+local KEY_PAD_3 = 40
+local KEY_PAD_4 = 41
+local KEY_PAD_5 = 42
+local KEY_PAD_6 = 43
+local KEY_PAD_7 = 44
+local KEY_PAD_8 = 45
+local KEY_PAD_9 = 46
+local KEY_PAD_DIVIDE = 47
+local KEY_PAD_MULTIPLY = 48
+local KEY_PAD_MINUS = 49
+local KEY_PAD_PLUS = 50
+local KEY_PAD_ENTER = 51
+local KEY_PAD_DECIMAL = 52
+local KEY_LBRACKET = 53
+local KEY_RBRACKET = 54
+local KEY_SEMICOLON = 55
+local KEY_APOSTROPHE = 56
+local KEY_BACKQUOTE = 57
+local KEY_COMMA = 58
+local KEY_PERIOD = 59
+local KEY_SLASH = 60
+local KEY_BACKSLASH = 61
+local KEY_MINUS = 62
+local KEY_EQUAL = 63
+local KEY_ENTER = 64
+local KEY_SPACE = 65
+local KEY_BACKSPACE = 66
+local KEY_TAB = 67
+local KEY_CAPSLOCK = 68
+local KEY_NUMLOCK = 69
+local KEY_ESCAPE = 70
+local KEY_SCROLLLOCK = 71
+local KEY_INSERT = 72
+local KEY_DELETE = 73
+local KEY_HOME = 74
+local KEY_END = 75
+local KEY_PAGEUP = 76
+local KEY_PAGEDOWN = 77
+local KEY_BREAK = 78
+local KEY_LSHIFT = 79
+local KEY_RSHIFT = 80
+local KEY_LALT = 81
+local KEY_RALT = 82
+local KEY_LCONTROL = 83
+local KEY_RCONTROL = 84
+local KEY_LWIN = 85
+local KEY_RWIN = 86
+local KEY_APP = 87
+local KEY_UP = 88
+local KEY_LEFT = 89
+local KEY_DOWN = 90
+local KEY_RIGHT = 91
+local KEY_F1 = 92
+local KEY_F2 = 93
+local KEY_F3 = 94
+local KEY_F4 = 95
+local KEY_F5 = 96
+local KEY_F6 = 97
+local KEY_F7 = 98
+local KEY_F8 = 99
+local KEY_F9 = 100
+local KEY_F10 = 101
+local KEY_F11 = 102
+local KEY_F12 = 103
+local KEY_CAPSLOCKTOGGLE = 104
+local KEY_NUMLOCKTOGGLE = 105
+local KEY_SCROLLLOCKTOGGLE = 106
+local MOUSE_LEFT = 107
+local MOUSE_RIGHT = 108
+local MOUSE_MIDDLE = 109
+local MOUSE_4 = 110
+local MOUSE_5 = 111
+local MOUSE_WHEEL_UP = 112
+local MOUSE_WHEEL_DOWN = 113
+
+---@alias ButtonCode
+---|`KEY_0` # 1
+---|`KEY_1` # 2
+---|`KEY_2` # 3
+---|`KEY_3` # 4
+---|`KEY_4` # 5
+---|`KEY_5` # 6
+---|`KEY_6` # 7
+---|`KEY_7` # 8
+---|`KEY_8` # 9
+---|`KEY_9` # 10
+---|`KEY_A` # 11
+---|`KEY_B` # 12
+---|`KEY_C` # 13
+---|`KEY_D` # 14
+---|`KEY_E` # 15
+---|`KEY_F` # 16
+---|`KEY_G` # 17
+---|`KEY_H` # 18
+---|`KEY_I` # 19
+---|`KEY_J` # 20
+---|`KEY_K` # 21
+---|`KEY_L` # 22
+---|`KEY_M` # 23
+---|`KEY_N` # 24
+---|`KEY_O` # 25
+---|`KEY_P` # 26
+---|`KEY_Q` # 27
+---|`KEY_R` # 28
+---|`KEY_S` # 29
+---|`KEY_T` # 30
+---|`KEY_U` # 31
+---|`KEY_V` # 32
+---|`KEY_W` # 33
+---|`KEY_X` # 34
+---|`KEY_Y` # 35
+---|`KEY_Z` # 36
+---|`KEY_PAD_0` # 37
+---|`KEY_PAD_1` # 38
+---|`KEY_PAD_2` # 39
+---|`KEY_PAD_3` # 40
+---|`KEY_PAD_4` # 41
+---|`KEY_PAD_5` # 42
+---|`KEY_PAD_6` # 43
+---|`KEY_PAD_7` # 44
+---|`KEY_PAD_8` # 45
+---|`KEY_PAD_9` # 46
+---|`KEY_PAD_DIVIDE` # 47
+---|`KEY_PAD_MULTIPLY` # 48
+---|`KEY_PAD_MINUS` # 49
+---|`KEY_PAD_PLUS` # 50
+---|`KEY_PAD_ENTER` # 51
+---|`KEY_PAD_DECIMAL` # 52
+---|`KEY_LBRACKET` # 53
+---|`KEY_RBRACKET` # 54
+---|`KEY_SEMICOLON` # 55
+---|`KEY_APOSTROPHE` # 56
+---|`KEY_BACKQUOTE` # 57
+---|`KEY_COMMA` # 58
+---|`KEY_PERIOD` # 59
+---|`KEY_SLASH` # 60
+---|`KEY_BACKSLASH` # 61
+---|`KEY_MINUS` # 62
+---|`KEY_EQUAL` # 63
+---|`KEY_ENTER` # 64
+---|`KEY_SPACE` # 65
+---|`KEY_BACKSPACE` # 66
+---|`KEY_TAB` # 67
+---|`KEY_CAPSLOCK` # 68
+---|`KEY_NUMLOCK` # 69
+---|`KEY_ESCAPE` # 70
+---|`KEY_SCROLLLOCK` # 71
+---|`KEY_INSERT` # 72
+---|`KEY_DELETE` # 73
+---|`KEY_HOME` # 74
+---|`KEY_END` # 75
+---|`KEY_PAGEUP` # 76
+---|`KEY_PAGEDOWN` # 77
+---|`KEY_BREAK` # 78
+---|`KEY_LSHIFT` # 79
+---|`KEY_RSHIFT` # 80
+---|`KEY_LALT` # 81
+---|`KEY_RALT` # 82
+---|`KEY_LCONTROL` # 83
+---|`KEY_RCONTROL` # 84
+---|`KEY_LWIN` # 85
+---|`KEY_RWIN` # 86
+---|`KEY_APP` # 87
+---|`KEY_UP` # 88
+---|`KEY_LEFT` # 89
+---|`KEY_DOWN` # 90
+---|`KEY_RIGHT` # 91
+---|`KEY_F1` # 92
+---|`KEY_F2` # 93
+---|`KEY_F3` # 94
+---|`KEY_F4` # 95
+---|`KEY_F5` # 96
+---|`KEY_F6` # 97
+---|`KEY_F7` # 98
+---|`KEY_F8` # 99
+---|`KEY_F9` #100
+---|`KEY_F10` #101
+---|`KEY_F11` #102
+---|`KEY_F12` #103
+---|`KEY_CAPSLOCKTOGGLE` #104
+---|`KEY_NUMLOCKTOGGLE` #105
+---|`KEY_SCROLLLOCKTOGGLE` #106
+---|`MOUSE_LEFT` #107
+---|`MOUSE_RIGHT` #108
+---|`MOUSE_MIDDLE` #109
+---|`MOUSE_4` #110
+---|`MOUSE_5` #111
+---|`MOUSE_WHEEL_UP` #112
+---|`MOUSE_WHEEL_DOWN` #113
