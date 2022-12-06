@@ -31,5 +31,5 @@ function Material:SetMaterialVarFlag(flag, set) end
 
 ---Change material shader param.
 ---@param name string
----@param value any
+---@param value integer|number|Vector3|string
 function Material:SetShaderParam(name, value) end
