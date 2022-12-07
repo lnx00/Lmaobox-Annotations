@@ -1,4 +1,5 @@
 ---@diagnostic disable:missing-return
+---@diagnostic disable:duplicate-set-field
 ---@meta
 
 ---Prints message to console. Each argument is printed on a new line.
