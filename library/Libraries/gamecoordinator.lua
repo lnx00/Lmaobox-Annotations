@@ -1,5 +1,6 @@
 ---@meta
 
+---The gamecoordinator library provides information about the state of the matchmaking system and current match made game.
 ---@class gamecoordinator
 gamecoordinator = {}
 
@@ -18,15 +19,19 @@ function gamecoordinator.InEndOfMatch() end
 ---@nodiscard
 function gamecoordinator.HasLiveMatch() end
 
----Returns true if the player is connected to the assigned match server.
+---Returns Wether if the player is connected to the assigned match server.
 ---@return boolean
 ---@nodiscard
 function gamecoordinator.IsConnectedToMatchServer() end
 
 ---Abandons the current match and forcefully disconnects the player from the match server.
+---
+---[See Example](../Examples/auto-queue.lua)
 function gamecoordinator.AbandonMatch() end
 
 ---Returns the status of the match relative to the player connection.
+---
+---[See Example](../Examples/auto-queue.lua)
 ---@return MatchAbandonStatus
 ---@nodiscard
 function gamecoordinator.GetMatchAbandonStatus() end
@@ -35,6 +40,11 @@ function gamecoordinator.GetMatchAbandonStatus() end
 ---@return table<string, number>
 ---@nodiscard
 function gamecoordinator.GetDataCenterPingData() end
+
+---Returns the number of match invites the player has.
+---@return integer
+---@nodiscard
+function gamecoordinator.GetNumMatchInvites() end
 
 ---Accepts all match invites the player has. Usually it's just one, and they are automatically accepted after some time anyway.
 function gamecoordinator.AcceptMatchInvites() end

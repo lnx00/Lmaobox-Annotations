@@ -40,7 +40,7 @@ function party.Leave() end
 
 ---Returns true if the player can queue for the given match group. If the player can not queue for the match groups, returns a table of reasons why the player can not queue.
 ---@param matchGroup MatchGroup
----@return boolean|table<string>
+---@return table<integer, string>
 ---@nodiscard
 function party.CanQueueForMatchGroup(matchGroup) end
 

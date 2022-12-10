@@ -15,6 +15,7 @@ function filesystem.CreateDirectory(filePath) end
 ---You are not allowed to call function outside of the game's root directory.
 ---@param filePath string
 ---@param callback fun(filename: string, attributes: integer)
+---[See Example](../Examples/working-with-filesystem.lua)
 function filesystem.EnumerateDirectory(filePath, callback) end
 
 ---Returns the attributes of the file at the specified path.

@@ -2,7 +2,7 @@
 
 ---The AttributeDefinition object contains information about an attribute in TF2.
 ---@class AttributeDefinition
-AttributeDefinition = {}
+local AttributeDefinition = {}
 
 ---Returns the name of the attribute.
 ---@return string attribute
@@ -18,5 +18,3 @@ function AttributeDefinition:GetID() end
 ---@return boolean
 ---@nodiscard
 function AttributeDefinition:IsStoredAsInteger() end
-
-return AttributeDefinition

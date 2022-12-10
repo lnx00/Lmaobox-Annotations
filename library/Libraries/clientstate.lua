@@ -7,11 +7,11 @@ clientstate = {}
 function clientstate.ForceFullUpdate() end
 
 ---Returns the current client signon state. This is useful for determining if the client is fully connected to the server.
----@return SignonState
+---@return SignOnState
 ---@nodiscard
 function clientstate.GetClientSignonState() end
 
----Returns the tick number of the last received tick.
+---Returns last valid received snapshot (server) tick
 ---@return integer
 ---@nodiscard
 function clientstate.GetDeltaTick() end

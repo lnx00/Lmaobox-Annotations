@@ -6,7 +6,7 @@
 name = "Lmaobox"
 
 -- A list of lua patterns to look for in Lua files. If a match is
--- found, this environment will be recommended 
+-- found, this environment will be recommended
 words = {}
 
 -- A list of filenames to look for in the workspace. If a
@@ -41,13 +41,5 @@ local GLOBALS = {
     "wrap",
 }
 for _, name in ipairs(GLOBALS) do
-    table.insert(settings['Lua.diagnostics.globals'], name)
     table.insert(words, name .. "%.%w+")
-end
-
-local CONSTANTS = {
-
-}
-for _, name in ipairs(CONSTANTS) do
-    table.insert(settings['Lua.diagnostics.globals'], name)
 end

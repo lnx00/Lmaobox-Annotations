@@ -46,15 +46,16 @@ function gamerules.IsUsingGrapplingHook() end
 function gamerules.IsUsingSpells() end
 
 ---Returns the current next map voting state.
----@return idfk
+---@return integer
 function gamerules.GetCurrentNextMapVotingState() end
 
 ---Returns the vote state of the player with the given index.
 ---@param entityindex integer
 function gamerules.GetPlayerVoteState ( entityindex ) end
 
----Returns the current state of the round as integer.
----@return integer
+---Returns last recieved state of a round as integer.
+---
+---@return RoundState
 function gamerules.GetRoundState() end
 
 return gamerules

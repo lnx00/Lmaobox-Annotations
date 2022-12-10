@@ -18,4 +18,4 @@
 ---@field projectileSpeed number
 ---@field smackDelay number
 ---@field useRapidFireCrits boolean
-WeaponData = {}
+local WeaponData = {}

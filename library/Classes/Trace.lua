@@ -17,5 +17,6 @@
 ---@field hitgroup integer
 ---@field physicsbone integer
 ---@field entity Entity
----@field hitbox integer
+---@field hitbox TF2_HITBOX
+
 local Trace = {}
