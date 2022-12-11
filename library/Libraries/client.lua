@@ -25,7 +25,7 @@ function client.IsInCoachesList() end
 
 ---Translate world position into screen position (x, y).
 ---@param position Vector3
----@return number x, number y
+---@return { [1]: integer, [2]: integer }|nil
 ---@nodiscard
 function client.WorldToScreen(position) end
 
@@ -106,6 +106,6 @@ function client.RemoveConVarProtection(name) end
 ---@param key string
 ---@return string|nil
 ---@nodiscard
-function client.Localize( key ) end
+function client.Localize(key) end
 
 return client

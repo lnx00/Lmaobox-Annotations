@@ -1,4 +1,3 @@
----@diagnostic disable:missing-return
 ---@diagnostic disable:duplicate-set-field
 ---@meta
 

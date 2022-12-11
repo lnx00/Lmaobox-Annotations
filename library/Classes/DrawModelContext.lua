@@ -10,7 +10,7 @@ local DrawModelContext = {}
 function DrawModelContext:GetModelName() end
 
 ---Returns the entity linked to the drawn model, can be nil.
----@return Entity|nil
+---@return Entity
 ---@nodiscard
 function DrawModelContext:GetEntity() end
 

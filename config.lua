@@ -3,17 +3,17 @@
 -- config.lua
 -- The name to use when suggesting this emulation. If omitted,
 -- the name of the folder will be used
-name = "Lmaobox"
+local name = "Lmaobox"
 
 -- A list of lua patterns to look for in Lua files. If a match is
 -- found, this environment will be recommended
-words = {}
+local words = {}
 
 -- A list of filenames to look for in the workspace. If a
 -- match is found, this environment will be recommended
-files = {}
+local files = {}
 
-settings = {
+local settings = {
     ["Lua.runtime.version"] = "Lua 5.4",
     ["Lua.diagnostics.globals"] = {}
 }
