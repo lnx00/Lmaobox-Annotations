@@ -4,7 +4,7 @@
 input = {}
 
 ---Get the current mouse position.
----@return number, number
+---@return table<number, number>
 ---@nodiscard
 function input.GetMousePos() end
 
