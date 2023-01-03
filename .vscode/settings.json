@@ -1,5 +1,7 @@
 {
     "[lua]": {
+        "todo-tree.regex.regex": "(--|//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+
         // Controls wether a preview of the selected suggestion or snippet is shown at the cursor position.
         // "editor.suggest.preview": true,
 
@@ -26,7 +28,7 @@
         "editor.suggest.showEnums": false,
         
         // When enabled Intellisense shows `field`-suggestions.
-        "editor.suggest.showFields": false,
+        // "editor.suggest.showFields": false,
 
         // Enable parameter hints
         "editor.parameterHints.enabled": true,

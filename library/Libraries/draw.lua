@@ -55,18 +55,18 @@ function draw.TextShadow(x, y, text) end
 function draw.GetScreenSize() end
 
 ---Create font by name.
----
----Enter ``vgui_spew_fonts`` to in-game console to get list of available fonts.
+--
+---[Cool Fonts](./Examples/3rd/CoolFonts.lua)
 ---@param name string
 ---@param height integer
----@param weight integer
+---@param weight FontWeight|integer
 ---@param flags? FontFlags|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
 ---@return Font
 ---@nodiscard
 function draw.CreateFont(name, height, weight, flags) end
 
 ---Add .ttf file data to available fonts.
----
+--
 ---Path must be relative to Team Fortress 2 folder
 ---@param ttf string
 function draw.AddFontResource(ttf) end
@@ -76,11 +76,11 @@ function draw.AddFontResource(ttf) end
 function draw.SetFont(font) end
 
 ---Create new texture from image on the given path.
----
+--
 ---Default path is relative to ``localappdata`` folder, However it's recommended to use absolute path instead
----
+--
 ---Supported image extensions: PNG, JPG, BMP, TGA, VTF
----
+--
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
 ---@param texturePath string
 ---@return Texture
@@ -88,8 +88,10 @@ function draw.SetFont(font) end
 function draw.CreateTexture(texturePath) end
 
 ---Create new texture.
----
+--
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
+--
+---[https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations]
 ---@param rgba string
 ---@param width integer
 ---@return Texture

@@ -16,8 +16,8 @@ callbacks = {}
 
 ---Register new callback.
 ---@param id Callback
----@param callback fun(callbackObject: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil)
----@overload fun(id: Callback, unique: string, callback: fun(callbackObject: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil))
+---@param callback fun(userdata: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil)
+---@overload fun(id: Callback, unique: string, callback: fun(userdata: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil))
 ---@return boolean success, string|nil error
 function callbacks.Register(id, callback) end
 

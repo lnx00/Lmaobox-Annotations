@@ -19,7 +19,7 @@ function ItemDefinition:GetID() end
 function ItemDefinition:GetClass() end
 
 ---Returns the loadout slot that the item should be placed in.
----@return integer
+---@return LoadoutSlot
 ---@nodiscard
 function ItemDefinition:GetLoadoutSlot() end
 

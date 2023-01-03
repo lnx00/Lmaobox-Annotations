@@ -405,6 +405,18 @@
 ---|`TF2_Sniper`
 ---|`TF2_Spy`
 
+---@alias FontWeight
+---| `FW_DONTCARE`
+---| `FW_THIN`
+---| `FW_EXTRALIGHT`
+---| `FW_LIGHT`
+---| `FW_NORMAL`
+---| `FW_MEDIUM`
+---| `FW_SEMIBOLD`
+---| `FW_BOLD`
+---| `FW_EXTRABOLD`
+---| `FW_HEAVY`
+
 ---@alias FontFlags
 ---| `FONTFLAG_NONE`
 ---| `FONTFLAG_ITALIC`

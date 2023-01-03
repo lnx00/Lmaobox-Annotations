@@ -29,7 +29,7 @@ function globals.CurTime() end
 function globals.FrameCount() end
 
 ---Returns delta time between frames.
----
+--
 ---FrameTime() might return tick interval in some callbacks. You can use AbsoluteFrameTime() instead.`
 ---@return number
 ---@nodiscard

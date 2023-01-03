@@ -16,6 +16,7 @@ function Item:GetName() end
 
 ---Returns the item's definition index. Can be used to get the item's definition.
 ---@return integer
+---TODO MAYBE?
 ---@nodiscard
 function Item:GetDefIndex() end
 

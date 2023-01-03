@@ -33,9 +33,9 @@ function DrawModelContext:StudioSetColorModulation(r, g, b, a) end
 function DrawModelContext:StudioSetAlphaModulation(alpha) end
 
 ---Sets the depth range of the scene.
----
+--
 ---Useful for drawing models in the background or other various effects.
----
+--
 ---Should be reset to the default (0,1) when done.
 ---@param min number [0, 1]
 ---@param max number [0, 1]

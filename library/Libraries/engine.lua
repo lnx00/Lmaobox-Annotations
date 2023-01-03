@@ -49,7 +49,7 @@ function engine.GetPointContents(point, mask) end
 function engine.GetMapName() end
 
 ---Returns server ip
----
+--
 ---Returns ``loopback`` if local server.
 ---@return string
 ---@nodiscard

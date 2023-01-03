@@ -20,11 +20,10 @@
 ---@field headoffset Vector3
 ---@field sendpacket boolean
 --- Represents a user (movement) command about to be sent to the server.
----
+--
 --- Fields are modifiable directly.
----
+--
 --- [UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
----
 local UserCmd = {}
 
 ---Returns the viewangles.
@@ -41,10 +40,8 @@ function UserCmd:SetViewAngles(angles) end
 function UserCmd:SetSendPacket(value) end
 
 ---Set the buttons.
----
+--
 ---When setting a button make sure to GetButtons() first and add any additional button using the bitwise operator OR.
----
----[Button List](https://github.com/ValveSoftware/source-sdk-2013/blob/master/mp/src/game/shared/in_buttons.h)
 ---@param buttons integer
 function UserCmd:SetButtons(buttons) end
 

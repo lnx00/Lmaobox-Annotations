@@ -4,8 +4,9 @@
 http = {}
 
 ---Get data from a URL.
----
+--
 ---To make this call non-blocking specify a callback function as second argument.
+---@deprecated
 ---@param url string
 ---@return string
 ---@nodiscard

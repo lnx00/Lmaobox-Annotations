@@ -14,7 +14,7 @@ function materials.Find(name) end
 function materials.Enumerate(callback) end
 
 ---Create custom material.
----
+--
 ---To create custom materials follow the [Valve Material Type](https://developer.valvesoftware.com/wiki/Material) syntax.
 ---@param name string
 ---@param vmt string

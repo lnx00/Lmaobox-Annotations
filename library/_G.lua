@@ -29,8 +29,7 @@ function _G.UnloadScript(scriptPath) end
 function _G.GetScriptName() end
 
 ---Prints Lua Table to console. ``key: tostring(value)``
----
----@param t table
+---@param t table|nil
 function _G.printLuaTable(t) end
 
 -- UserCmd buttons
@@ -750,6 +749,18 @@ FL_ATCONTROLS = (1 << 6)
 FL_CLIENT = (1 << 7)
 FL_FAKECLIENT = (1 << 8)
 FL_INWATER = (1 << 9)
+
+-- Font Size
+FW_DONTCARE = 0
+FW_THIN = 100
+FW_EXTRALIGHT = 200
+FW_LIGHT = 300
+FW_NORMAL = 400
+FW_MEDIUM = 500
+FW_SEMIBOLD = 600
+FW_BOLD = 700
+FW_EXTRABOLD = 800
+FW_HEAVY = 900
 
 -- Font flags
 FONTFLAG_NONE = 0

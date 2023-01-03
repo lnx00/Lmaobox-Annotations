@@ -61,7 +61,7 @@ function client.GetPlayerNameByUserID(userid) end
 ---@class PlayerInfo
 ---@field Name string
 ---@field UserID integer
----@field SteamID integer STEAM_0:?:?
+---@field SteamID integer # SteamID3: ``STEAM_0:?:?``
 ---@field IsBot boolean
 ---@field IsGOTV boolean
 local PlayerInfo = {}
@@ -72,8 +72,9 @@ local PlayerInfo = {}
 ---@nodiscard
 function client.GetPlayerInfo(index) end
 
----Print text on chat
----
+---Print text on chat.
+--
+---[See Example](./Examples/client.md)
 ---@param msg string
 function client.ChatPrintf(msg) end
 
@@ -84,7 +85,7 @@ function client.GetLocalPlayerIndex() end
 
 ---Get game convar.
 ---@param name string
----@return integer|nil value, number|nil value, string|nil value
+---@return integer, number, string|nil
 ---@nodiscard
 function client.GetConVar(name) end
 
@@ -94,14 +95,14 @@ function client.GetConVar(name) end
 ---@param unrestrict boolean
 function client.SetConVar(name, value, unrestrict) end
 
----Remove convar protection.
----
+---Remove convar protection.                                                    
+--
 ---This is needed for convars that are not allowed to be changed by the server.
 ---@param name string
 function client.RemoveConVarProtection(name) end
 
----Returns a localized string.
----
+---Returns a localized string.                                                             
+--
 ---The localizable strings usually start with a ``#`` character, but there are exceptions.
 ---@param key string
 ---@return string|nil

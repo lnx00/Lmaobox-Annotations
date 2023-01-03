@@ -2,7 +2,7 @@
 
 Based on 22 Nov 2022 Update
 
-> ***~~Lua~~ Lmaobox development just got a whole lot better*** 🧠 - LewdDeveloper
+> ***Lmaobox development just got a whole lot better*** 🧠 - LewdDeveloper
 
 ## Installation guide
 
@@ -15,15 +15,9 @@ Based on 22 Nov 2022 Update
 5. Find **Workspace: Library** and click on **Add Item**
 6. Select the **library** folder of this repo
 
-*Shh, **${workspaceFolder}** is a [variable](https://code.visualstudio.com/docs/editor/variables-reference) in VSCode*
-
 ---
 
 If you managed to setup correctly, confetti for you 🎉
-
-Enjoy.
-
-> PS, If you see named return value, yea.. I think it's a good idea to help user naming variable
 
 ![1670231242609](image/readme/1670231242609.png)
 
@@ -34,12 +28,6 @@ Enjoy.
 ## Adding more annotations
 
 To know more about annotations, refer to [this wiki](https://github.com/sumneko/lua-language-server/wiki/Annotations)
-
-Shortcut to make life easier**™**
-
-1. ![1670231723312](image/readme/1670231723312.png "Click on text to copy, then CTRL-A  CTRL-C")
-2. ![1670231762183](image/readme/1670231762183.png "explorer.newFile")
-3. [**https://youtu.be/R4jODwUCuMg**](https://youtu.be/R4jODwUCuMg "Regex + Multi Line Cursor")
 
 ## Console commands
 
@@ -53,6 +41,6 @@ Shortcut to make life easier**™**
 ## TODO
 
 - [ ] Call every possible function/methods and inspect it's return value.
-- [ ]Add annotation tag for function that has meaningful/purposeful return value: **@nodiscard**
-- [x] Find someone rewriting readme
+- [ ] Add annotation tag for function that has meaningful/purposeful return value: **@nodiscard**
+- [X] Find someone rewriting readme
 - [ ] Find a dedicated maintainer.

@@ -25,13 +25,9 @@ function gamecoordinator.HasLiveMatch() end
 function gamecoordinator.IsConnectedToMatchServer() end
 
 ---Abandons the current match and forcefully disconnects the player from the match server.
----
----[See Example](../Examples/auto-queue.lua)
 function gamecoordinator.AbandonMatch() end
 
 ---Returns the status of the match relative to the player connection.
----
----[See Example](../Examples/auto-queue.lua)
 ---@return MatchAbandonStatus
 ---@nodiscard
 function gamecoordinator.GetMatchAbandonStatus() end
@@ -42,7 +38,7 @@ function gamecoordinator.GetMatchAbandonStatus() end
 function gamecoordinator.GetDataCenterPingData() end
 
 ---Returns the number of match invites the player has.
----@return integer
+---@return integer # 0: no invites
 ---@nodiscard
 function gamecoordinator.GetNumMatchInvites() end
 
@@ -50,9 +46,9 @@ function gamecoordinator.GetNumMatchInvites() end
 function gamecoordinator.AcceptMatchInvites() end
 
 ---Enumerates the maps in the queue and calls the callback function for each map. 
----
+--
 ---The callback function receives the MatchMapDefinition and the health of the map represented as a number from 0 to 1. 
----
+--
 ---You must receive the GameCoordinator's map health update at least once to use this function (i.e. by queueing up).
 ---@param callback fun(matchMapDefinition: MatchMapDefinition, health: number)
 function gamecoordinator.EnumerateQueueMapsHealth(callback) end

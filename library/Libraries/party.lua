@@ -31,7 +31,7 @@ function party.GetGroupID() end
 function party.GetQueuedMatchGroups() end
 
 ---Returns a table where values are all possible match groups as MatchGroup objects.
----@return table<string, MatchGroup>
+---@return { Casual : MatchGroup, Competitive6v6 : MatchGroup, Bootcamp : MatchGroup, MannUp : MatchGroup, SpecialEvent : MatchGroup }
 ---@nodiscard
 function party.GetAllMatchGroups() end
 

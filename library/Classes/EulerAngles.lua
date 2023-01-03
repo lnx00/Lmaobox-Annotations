@@ -17,6 +17,9 @@
 ---@operator pow: EulerAngles
 local EulerAngles = {}
 
+---Returns the X, Y, and Z coordinates as a separate variables.
+function EulerAngles:Unpack() end
+
 ---Reset the angles to 0.
 function EulerAngles:Clear() end
 

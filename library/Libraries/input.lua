@@ -9,24 +9,24 @@ input = {}
 function input.GetMousePos() end
 
 ---Checks if a button is down.
----
----[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
+--
+---[Key Codes](./enums.lua)
 ---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonDown(key) end
 
 ---Checks if a button is pressed.
----
----[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
+--
+---[Key Codes](./enums.lua)
 ---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonPressed(key) end
 
 ---Checks if a button is released.
----
----[Key Codes](https://lmaobox.net/lua/Lua_Constants/)
+--
+---[Key Codes](./enums.lua)
 ---@param key ButtonCode|integer
 ---@return boolean
 ---@nodiscard

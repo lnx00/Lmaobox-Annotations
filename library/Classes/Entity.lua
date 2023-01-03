@@ -1,14 +1,13 @@
 ---@meta
 
 ---Represents an entity in the game world.
----
+--
 ---Make sure to not store entities long term, they can become invalid over time - their methods will return nil in that case.
 ---@class Entity
 local Entity = {}
 
 ---Returns whether the entity is valid. This is done automatically and all other functions will return nil if the entity is invalid.
----
----[See Example](../Examples/world-esp.lua)
+--
 function Entity:IsValid() end
 
 ---Returns the name of the entity if its a player
@@ -95,7 +94,7 @@ function Entity:HitboxSurroundingBox() end
 function Entity:EntitySpaceHitboxSurroundingBox() end
 
 ---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
----@param currentTime number
+---@param currentTime? number # optional (default = ``0``)
 ---@return table<TF2_HITBOX, {[1]: Vector3, [2]: Vector3}>
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end
@@ -152,7 +151,7 @@ function Entity:GetPropVector(...) end
 
 ---Returns the Entity class of the given netvar, usually those that has prefix: ``m_hXXXX``
 ---@param ... string
----@return Entity
+---@return Entity handle
 ---@nodiscard
 function Entity:GetPropEntity(...) end
 
@@ -355,19 +354,19 @@ function Entity:GetLastRapidFireCritCheckTime() end
 ---Returns the base damage of the weapon.
 ---@return number
 ---@nodiscard
----[See Example](../Examples/crit-bucket.lua)
 function Entity:GetWeaponBaseDamage() end
 
 ---Returns the weapon's current crit chance as a number from 0 to 1. This crit chance changes during gameplay based on player's recently dealt damage.
 ---@return number
 ---@nodiscard
----[See Example](../Examples/crit-bucket.lua)
 function Entity:GetCritChance() end
 
 ---Calculates the cost of a crit
 ---@param tokenBucket number
 ---@param critSeedRequestCount number
 ---@param critCheckCount integer
+---@return number
+---@nodiscard
 function Entity:GetCritCost(tokenBucket, critSeedRequestCount, critCheckCount) end
 
 ---This function estimates the observed crit chance. The observed crit chance is calculated on the server from the damage you deal across a game round. It is only rarely sent to the client, but is important for crit calculations.
@@ -389,3 +388,8 @@ function Entity:IsAttackCritical(commandNumber) end
 ---@return RoundDamageStats
 ---@nodiscard
 function Entity:GetWeaponDamageStats() end
+
+---Returns the weapon's attributes
+---@return WeaponData
+---@nodiscard
+function Entity:GetWeaponData() end
