@@ -87,11 +87,11 @@ function draw.SetFont(font) end
 ---@nodiscard
 function draw.CreateTexture(texturePath) end
 
----Create new texture.
+---Create new texture from string.
 --
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
 --
----[https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations]
+---[String creation guide](https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations#string-concatenation)
 ---@param rgba string
 ---@param width integer
 ---@return Texture

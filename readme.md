@@ -33,7 +33,7 @@ To know more about annotations, refer to [this wiki](https://github.com/sumneko/
 
 | Command           | What it do[🤔](https://emojipedia.org/thinking-face/) |
 | ----------------- | -------------------------------------------------- |
-| lua_tc            | Toggle lua interactive console                     |
+| lua_tc            | Toggle lua evaluation mode                         |
 | lua_load [[path]] | Load a lua script in localappdata folder           |
 | lua_exec [[code]] | evaluate lua code                                 |
 | lua               | same as lua_exec                                   |
