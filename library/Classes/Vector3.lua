@@ -72,6 +72,11 @@ function Vector3:Up() end
 ---@nodiscard
 function Vector3:Angles() end
 
+---Create a new Vector3 with all values set to 0.
+---@return Vector3
+---@nodiscard
+function _G.Vector3() end
+
 ---Create a new Vector3.
 ---@param x number
 ---@param y number
