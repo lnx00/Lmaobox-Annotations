@@ -92,8 +92,7 @@ function client.GetConVar(name) end
 ---Set game convar.
 ---@param name string
 ---@param value string|integer|number
----@param unrestrict boolean
-function client.SetConVar(name, value, unrestrict) end
+function client.SetConVar(name, value) end
 
 ---Remove convar protection.                                                    
 --

@@ -362,6 +362,8 @@ function Entity:GetWeaponBaseDamage() end
 function Entity:GetCritChance() end
 
 ---Calculates the cost of a crit
+--
+---use GetCritCost(GetCritTokenBucket,GetCritSeedRequestCount, GetCritCheckCount) to get the current cost of a crit
 ---@param tokenBucket number
 ---@param critSeedRequestCount number
 ---@param critCheckCount integer
