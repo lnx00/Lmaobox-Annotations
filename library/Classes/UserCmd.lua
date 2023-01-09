@@ -27,7 +27,7 @@
 local UserCmd = {}
 
 ---Returns the viewangles.
----@return EulerAngles
+---@return number, number, number
 ---@nodiscard
 function UserCmd:GetViewAngles() end
 
