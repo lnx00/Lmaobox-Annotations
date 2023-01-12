@@ -55,8 +55,6 @@ function draw.TextShadow(x, y, text) end
 function draw.GetScreenSize() end
 
 ---Create font by name.
---
----[Cool Fonts](./Examples/3rd/CoolFonts.lua)
 ---@param name string
 ---@param height integer
 ---@param weight FontWeight|integer

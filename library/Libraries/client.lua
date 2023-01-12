@@ -74,7 +74,7 @@ function client.GetPlayerInfo(index) end
 
 ---Print text on chat.
 --
----[See Example](./Examples/client.md)
+---[See Example](../Examples/client.md)
 ---@param msg string
 function client.ChatPrintf(msg) end
 
