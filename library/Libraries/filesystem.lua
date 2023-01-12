@@ -14,7 +14,7 @@ function filesystem.CreateDirectory(filePath) end
 --
 ---You are not allowed to call function outside of the game's root directory.
 --
----[See Example](./Examples/filesystem.md)
+---[See Example](../Examples/filesystem.md)
 ---@param filePath string
 ---@param callback fun(filename: string, attributes: integer)
 function filesystem.EnumerateDirectory(filePath, callback) end
