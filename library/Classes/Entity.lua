@@ -120,94 +120,97 @@ function Entity:AttributeHookFloat(name, defaultValue) end
 function Entity:AttributeHookInt(name, defaultValue) end
 
 ---Returns the float value of the given netvar
----@param ... string
+---@vararg string
 ---@return number
 ---@nodiscard
 function Entity:GetPropFloat(...) end
 
 ---Returns the int value of the given netvar
----@param ... string
+---@vararg string
 ---@return integer
 ---@nodiscard
 function Entity:GetPropInt(...) end
 
 ---Returns the bool value of the given netvar
----@param ... string
+---@vararg string
 ---@return boolean
 ---@nodiscard
 function Entity:GetPropBool(...) end
 
 ---Returns the string value of the given netvar
----@param ... string
+---@vararg string
 ---@return string
 ---@nodiscard
 function Entity:GetPropString(...) end
 
 ---Returns the vector value of the given netvar
----@param ... string
+---@vararg string
 ---@return Vector3
 ---@nodiscard
 function Entity:GetPropVector(...) end
 
 ---Returns the Entity class of the given netvar, usually those that has prefix: ``m_hXXXX``
----@param ... string
+---@vararg string
 ---@return Entity handle
 ---@nodiscard
 function Entity:GetPropEntity(...) end
 
 ---Sets the float value of the given netvar.
 ---@param value number
----@param ... string
+---@vararg string
 function Entity:SetPropFloat(value, ...) end
 
 ---Sets the int value of the given netvar.
 ---@param value integer
----@param ... string
+---@vararg string
 function Entity:SetPropInt(value, ...) end
 
 ---Sets the bool value of the given netvar.
 ---@param value boolean
----@param ... string
+---@vararg string
 function Entity:SetPropBool(value, ...) end
 
 ---Set the entity value of the given netvar.
 ---@param value Entity
----@param ... string
+---@vararg string
 function Entity:SetPropEntity(value, ...) end
 
 ---Set the vector value of the given netvar.
 ---@param value Vector3
----@param ... string
+---@vararg string
 function Entity:SetPropVector(value, ...) end
 
 ---Returns a table of floats, index them with integers based on context of the netvar
+---@vararg string
 ---@return table<integer, number>
 function Entity:GetPropDataTableFloat(...) end
 
 ---Returns a table of ints, index them with integers based on context of the netvar
+---@vararg string
 ---@return table<integer, integer>
 function Entity:GetPropDataTableInt(...) end
 
 ---Returns a table of entities, index them with integers based on context of the netvar
+---@vararg string
 ---@return table<integer, Entity>
 function Entity:GetPropDataTableEntity(...) end
 
 ---Sets the number value of the given netvar at the given index.
 ---@param value number
 ---@param index integer
----@param ... string
+---@vararg string
 function Entity:SetPropDataTableFloat(value, index, ...) end
 
 ---Sets the integer value of the given netvar at the given index.
 ---@param value integer
 ---@param index integer
----@param ... string
+---@vararg string
 function Entity:SetPropDataTableInt(value, index, ...) end
 
 ---Sets the Entity value of the given netvar at the given index.
 ---@param value Entity
 ---@param index integer
----@param ... string
+---@vararg string
 function Entity:SetPropDataTableEntity(value, index, ...) end
 
 ---Returns whether the player is in the specified condition. List of conditions in TF2 can be found

@@ -2,7 +2,7 @@
 ---@meta
 
 ---Prints message to console. Each argument is printed on a new line.
----@param ... table|string|number|boolean|nil
+---@vararg table|string|number|boolean|nil
 function _G.print(...) end
 
 ---Prints a colored message to console. Each argument is printed on a new line.
@@ -10,7 +10,7 @@ function _G.print(...) end
 ---@param g integer
 ---@param b integer
 ---@param a integer
----@param ... table|string|number|boolean|nil
+---@vararg table|string|number|boolean|nil
 function _G.printc(r, g, b, a, ...) end
 
 ---Loads a Lua script from given file.                 \
