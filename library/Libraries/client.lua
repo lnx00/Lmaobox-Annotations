@@ -61,7 +61,7 @@ function client.GetPlayerNameByUserID(userid) end
 ---@class PlayerInfo
 ---@field Name string
 ---@field UserID integer
----@field SteamID integer # SteamID3: ``STEAM_0:?:?``
+---@field SteamID string # SteamID3: ``STEAM_0:?:?``
 ---@field IsBot boolean
 ---@field IsGOTV boolean
 local PlayerInfo = {}
