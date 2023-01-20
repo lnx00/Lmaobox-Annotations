@@ -51,6 +51,7 @@ function gamerules.GetCurrentNextMapVotingState() end
 
 ---Returns the vote state of the player with the given index.
 ---@param entityindex integer
+---@return integer
 function gamerules.GetPlayerVoteState ( entityindex ) end
 
 ---Returns last recieved state of a round as integer.
