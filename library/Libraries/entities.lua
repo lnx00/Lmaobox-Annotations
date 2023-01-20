@@ -4,8 +4,7 @@
 entities = {}
 
 ---Find all entities with given class name.
---
----Use ``pairs`` to iterate all entities
+-- * Use `pairs` to iterate through each entity.
 ---@param className string
 ---@return table<integer, Entity>
 ---@nodiscard

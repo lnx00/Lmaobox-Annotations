@@ -23,7 +23,7 @@ function client.HasCompetitiveAccess() end
 ---@nodiscard
 function client.IsInCoachesList() end
 
----Translate world position into screen position (x, y).
+--Translate world position into screen position (x, y).
 ---@param position Vector3
 ---@return { [1]: integer, [2]: integer }|nil
 ---@nodiscard
@@ -61,20 +61,20 @@ function client.GetPlayerNameByUserID(userid) end
 ---@class PlayerInfo
 ---@field Name string
 ---@field UserID integer
----@field SteamID integer # SteamID3: ``STEAM_0:?:?``
+---@field SteamID string # SteamID3: ``STEAM_0:?:?``
 ---@field IsBot boolean
 ---@field IsGOTV boolean
 local PlayerInfo = {}
 
----Returns info about the player.
+-- Returns info about the player.
+-- * Sometime `UserID`, `SteamID` is only obtainable when player is fully connected.
 ---@param index integer
 ---@return PlayerInfo
 ---@nodiscard
 function client.GetPlayerInfo(index) end
 
----Print text on chat.
---
----[See Example](../Examples/client.md)
+-- Print text on chat.
+-- * Additionally text chat can be color coded
 ---@param msg string
 function client.ChatPrintf(msg) end
 
@@ -83,26 +83,26 @@ function client.ChatPrintf(msg) end
 ---@nodiscard
 function client.GetLocalPlayerIndex() end
 
----Get game convar.
+-- Get game convar.
 ---@param name string
 ---@return integer, number, string|nil
 ---@nodiscard
 function client.GetConVar(name) end
 
----Set game convar.
+-- Set game convar.
 ---@param name string
----@param value string|integer|number
+---@param value string|number
 function client.SetConVar(name, value) end
 
----Remove convar protection.                                                    
---
----This is needed for convars that are not allowed to be changed by the server.
+-- Remove convar protection.                                                    
+-- * This is needed for convars that are not allowed to be changed by the server.
 ---@param name string
 function client.RemoveConVarProtection(name) end
 
----Returns a localized string.                                                             
---
----The localizable strings usually start with a ``#`` character, but there are exceptions.
+-- Returns a localized ASCII string.                                                         
+-- * The localizable strings usually start with a `#` character, but there are exceptions.
+-- * Depends on localization files, the returned string can contain unexpected characters, string sanitization is recommended. 
+-- * When using non-english language, consider using utf8 library. 
 ---@param key string
 ---@return string|nil
 ---@nodiscard

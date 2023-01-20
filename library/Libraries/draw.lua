@@ -49,8 +49,8 @@ function draw.Text(x, y, text) end
 ---@param text string
 function draw.TextShadow(x, y, text) end
 
----Get the size of the current screen.
----@return integer gamewidth, integer gameheight
+---Get the size of the current window.
+---@return integer windowwidth, integer windowheight
 ---@nodiscard
 function draw.GetScreenSize() end
 
@@ -98,7 +98,7 @@ function draw.CreateTextureRGBA(rgba, width, height) end
 
 ---Returns size of the texture as integers
 ---@param id Texture|integer
----@return integer picwidth, integer picheight
+---@return integer width, integer height
 ---@nodiscard
 function draw.GetTextureSize(id) end
 

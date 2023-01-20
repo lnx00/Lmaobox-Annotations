@@ -94,7 +94,7 @@ function Entity:HitboxSurroundingBox() end
 function Entity:EntitySpaceHitboxSurroundingBox() end
 
 ---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
----@param currentTime? number # optional (default = ``0``)
+---@param currentTime? number # optional (default = `0`)
 ---@return table<TF2_HITBOX, {[1]: Vector3, [2]: Vector3}>
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end

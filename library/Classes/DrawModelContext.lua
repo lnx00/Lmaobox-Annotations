@@ -5,7 +5,7 @@
 local DrawModelContext = {}
 
 ---Returns the name of the model.
----@return string modelName
+---@return string
 ---@nodiscard
 function DrawModelContext:GetModelName() end
 

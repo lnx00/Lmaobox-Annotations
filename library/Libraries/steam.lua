@@ -20,7 +20,7 @@ function steam.GetPlayerName(SteamID3) end
 ---@nodiscard
 function steam.IsFriend(SteamID3) end
 
----Returns a table of all friends of the user.
+---Returns a table of SteamID3 of all friends of the user.
 ---@return string[]
 function steam.GetFriends() end
 
