@@ -63,12 +63,12 @@ function engine.GetViewAngles() end
 ---@param angles EulerAngles
 function engine.SetViewAngles(angles) end
 
--- Plays a sound at the given path, relative to the game's root folder `Team Fortress 2/tf/sound`
+-- Plays a sound at the given path, relative to the game's root directory `Team Fortress 2/tf/sound`
 -- * The list of available sounds can be found in `tf2_sound_misc_dir.vpk`
 ---@param audioPath string
 function engine.PlaySound(audioPath) end
 
--- Returns game install directory `Team Fortress 2/tf`
+-- Returns game files directory `Team Fortress 2/tf`
 ---@return string
 ---@nodiscard
 function engine.GetGameDir() end
@@ -79,7 +79,15 @@ function engine.GetGameDir() end
 function engine.SendKeyValues(keyvalue) end
 
 -- Creates a System message in the TF2 client.
--- * Additionally System message can be color coded
+-- * message can be color coded
+-- [`ColorizeText`](https://github.dev/lua9520/source-engine-2018-hl2_src/blob/3bf9df6b2785fa6d951086978a3e66f49427166a/game/client/econ/econ_notifications.cpp#L186)
+-- ```
+-- "\x01" -- normal text color
+-- "\x02" -- label text foreground color
+-- "\x03" -- yellow color (255, 178, 0, 255)
+-- "\x04" -- dark green color (64, 255, 64, 255)
+-- "\x05" -- achievement text color
+-- ```
 ---@param title string
 ---@param longtext? string
 function engine.Notification(title, longtext) end

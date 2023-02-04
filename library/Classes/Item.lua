@@ -16,7 +16,6 @@ function Item:GetName() end
 
 ---Returns the item's definition index. Can be used to get the item's definition.
 ---@return integer
----TODO MAYBE?
 ---@nodiscard
 function Item:GetDefIndex() end
 
@@ -52,7 +51,7 @@ function Item:IsEquippedForClass(classID) end
 function Item:GetImageTextureID() end
 
 ---Returns the item's attributes as a table where keys are AttributeDefinition objects and values are the values of the attributes.
----@return table<AttributeDefinition, any>
+---@return nil|table<AttributeDefinition, any>
 ---@nodiscard
 function Item:GetAttributes() end
 

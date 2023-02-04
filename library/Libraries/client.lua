@@ -8,7 +8,7 @@ client = {}
 ---@nodiscard
 function client.GetExtraInventorySlots() end
 
----Returns whether the user is a free trial account.
+---Returns whether the user has premium upgrades.
 ---@return boolean
 ---@nodiscard
 function client.IsFreeTrialAccount() end
@@ -25,7 +25,7 @@ function client.IsInCoachesList() end
 
 --Translate world position into screen position (x, y).
 ---@param position Vector3
----@return { [1]: integer, [2]: integer }|nil
+---@return { [1]:integer, [2]: integer }|nil
 ---@nodiscard
 function client.WorldToScreen(position) end
 
@@ -46,11 +46,11 @@ function client.ChatTeamSay(msg) end
 ---@param event string
 function client.AllowListener(event) end
 
----Returns player name by index.
----@param index integer
+---Returns player name by player index.
+---@param playerindex integer
 ---@return string
 ---@nodiscard
-function client.GetPlayerNameByIndex(index) end
+function client.GetPlayerNameByIndex(playerindex) end
 
 ---Returns player name by user id.
 ---@param userid integer
@@ -67,25 +67,40 @@ function client.GetPlayerNameByUserID(userid) end
 local PlayerInfo = {}
 
 -- Returns info about the player.
--- * Sometime `UserID`, `SteamID` is only obtainable when player is fully connected.
+-- * Note : `UserID`, `SteamID` is only obtainable when client is fully connected.
 ---@param index integer
 ---@return PlayerInfo
 ---@nodiscard
 function client.GetPlayerInfo(index) end
 
 -- Print text on chat.
--- * Additionally text chat can be color coded
+-- * message can be color coded
+--  [`CBaseHudChatLine::InsertAndColorizeText`](https://github.dev/lua9520/source-engine-2018-hl2_src/blob/3bf9df6b2785fa6d951086978a3e66f49427166a/game/client/hud_basechat.cpp#L1380)
+-- ```
+-- "\x01" -- normal text color
+-- "\x03" -- your team color
+-- "\x04" -- location text color
+-- "\x05" -- achievement text color
+-- "\x07" -- 6 digit hex color RRGGBB
+-- "\x08" -- 8 digit hex color RRGGBBAA
+-- ```
 ---@param msg string
 function client.ChatPrintf(msg) end
 
----Returns local player index.
+-- Returns local player index.
+-- ```
+-- -- filter local player from all players
+-- local players = entities.FindByClass("CTFPlayer")
+-- players[client.GetLocalPlayerIndex()] = nil
+-- for k, v in pairs(players) do print(k .. ":" .. tostring(v)) end
+-- ```
 ---@return integer
 ---@nodiscard
 function client.GetLocalPlayerIndex() end
 
 -- Get game convar.
 ---@param name string
----@return integer, number, string|nil
+---@return nil|integer, number, string
 ---@nodiscard
 function client.GetConVar(name) end
 
@@ -101,8 +116,8 @@ function client.RemoveConVarProtection(name) end
 
 -- Returns a localized ASCII string.                                                         
 -- * The localizable strings usually start with a `#` character, but there are exceptions.
--- * Depends on localization files, the returned string can contain unexpected characters, string sanitization is recommended. 
--- * When using non-english language, consider using utf8 library. 
+-- * If you use this feature it's critical that you sanitize the input string.
+-- * Consider using utf8 library if you plan to support non-English Team Fortress 2 players.
 ---@param key string
 ---@return string|nil
 ---@nodiscard

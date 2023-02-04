@@ -75,7 +75,7 @@ function draw.SetFont(font) end
 
 ---Create new texture from image on the given path.
 --
----Default path is relative to ``localappdata`` folder, However it's recommended to use absolute path instead
+---If no absolute path is provided, it will search the file in `localappdata` folder, then game's root directory `Team Fortress 2`. 
 --
 ---Supported image extensions: PNG, JPG, BMP, TGA, VTF
 --

@@ -9,7 +9,7 @@ function inventory.Enumerate(callback) end
 
 ---Returns the item at the given position in the inventory.
 ---@param position number
----@return integer
+---@return Item
 ---@nodiscard
 function inventory.GetItemByPosition(position) end
 
