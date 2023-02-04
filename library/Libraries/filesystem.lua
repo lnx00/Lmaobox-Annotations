@@ -10,7 +10,7 @@ filesystem = {}
 ---@return boolean success, string|nil error
 function filesystem.CreateDirectory(filePath) end
 
----Enumerates the files and directories in the specified directory. The callback function receives the filename and attributes of each file or directory. The path is relative to the game directory or absolute. 
+---Enumerates the files and directories in the specified directory. The callback function receives the filename and attributes of each file or directory. The path is relative to the game directory or absolute.
 --
 ---You are not allowed to call function outside of the game's root directory.
 --
@@ -33,5 +33,10 @@ function filesystem.GetFileAttributes(filePath) end
 ---@param filePath string
 ---@param attributes integer
 function filesystem.SetFileAttributes(filePath, attributes) end
+
+---Returns the modification time of the file at the specified path.
+---@param filePath string
+---@return integer
+function filesystem.GetFileTime(filePath) end
 
 return filesystem
