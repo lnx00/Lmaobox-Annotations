@@ -3,7 +3,8 @@
 
 -- Prints message to console. Each argument is printed on a new line.
 ---@vararg any
-function _G.print(...) end
+function _G.print(...)
+end
 
 -- Prints a colored message to console. Each argument is printed on a new line.
 ---@param r integer
@@ -11,27 +12,46 @@ function _G.print(...) end
 ---@param b integer
 ---@param a integer
 ---@vararg any
-function _G.printc(r, g, b, a, ...) end
+function _G.printc(r, g, b, a, ...)
+end
 
 -- Loads a Lua script from given file path.
 -- * Displays a console message if function fails to load script
 ---@param scriptPath string
 ---@return boolean success
-function _G.LoadScript(scriptPath) end
+function _G.LoadScript(scriptPath)
+end
 
 -- Unloads a Lua script from given file.
 ---@param scriptPath string
 ---@return boolean success
-function _G.UnloadScript(scriptPath) end
+function _G.UnloadScript(scriptPath)
+end
 
 -- Returns current script's file name.
 ---@return string scriptPath
 ---@nodiscard
-function _G.GetScriptName() end
+function _G.GetScriptName()
+end
 
--- Prints Lua Table to console. 
----@param t table|nil
-function _G.printLuaTable(t) end
+-- Prints Lua Table to console.
+---@param a table|nil
+---@param indent integer|nil
+function _G.printLuaTable(a, indent)
+    if a == nil then
+        print("nil")
+        return
+    end
+    if indent == nil then indent = 0 end
+    for b, c in pairs(a) do
+        if type(c) == "table" then
+            print(string.rep("  ", indent) .. tostring(b) .. ":")
+            printLuaTable(c, indent + 1)
+        else
+            print(string.rep("  ", indent) .. tostring(b) .. ": " .. tostring(c))
+        end
+    end
+end
 
 -- UserCmd buttons
 IN_ATTACK = (1 << 0)
@@ -670,8 +690,8 @@ MASK_SPLITAREAPORTAL = (CONTENTS_WATER|CONTENTS_SLIME)
 MASK_CURRENT = (CONTENTS_CURRENT_0|CONTENTS_CURRENT_90|CONTENTS_CURRENT_180|CONTENTS_CURRENT_270|CONTENTS_CURRENT_UP|CONTENTS_CURRENT_DOWN)
 MASK_DEADSOLID = (CONTENTS_SOLID|CONTENTS_PLAYERCLIP|CONTENTS_WINDOW|CONTENTS_GRATE)
 MAX_COORD_INTEGER = (16384)
-COORD_EXTENT = (2*MAX_COORD_INTEGER)
-MAX_TRACE_LENGTH = (1.732050807569*COORD_EXTENT)
+COORD_EXTENT = (2 * MAX_COORD_INTEGER)
+MAX_TRACE_LENGTH = (1.732050807569 * COORD_EXTENT)
 
 -- Material flags
 MATERIAL_VAR_DEBUG = (1 << 0)
