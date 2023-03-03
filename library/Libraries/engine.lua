@@ -18,23 +18,25 @@ function engine.IsGameUIVisible() end
 ---@nodiscard
 function engine.IsTakingScreenshot() end
 
--- Traces line from src to dst.
+-- Traces line from src to dst, returns Trace class. The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit. It should return true if the entity should be hit, and false otherwise.
 ---@param src Vector3
 ---@param dst Vector3
 ---@param mask? integer
+---@param shouldHitEntity? fun(ent: Entity, contentsMask: integer): boolean
 ---@return Trace
 ---@nodiscard
-function engine.TraceLine(src, dst, mask) end
+function engine.TraceLine(src, dst, mask, shouldHitEntity) end
 
--- Traces hull from src to dst.
+-- Traces hull from src to dst, returns Trace class. The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit. It should return true if the entity should be hit, and false otherwise.
 ---@param src Vector3
 ---@param dst Vector3
 ---@param mins Vector3
 ---@param maxs Vector3
 ---@param mask? integer
+---@param shouldHitEntity? fun(ent: Entity, contentsMask: integer): boolean
 ---@return Trace
 ---@nodiscard
-function engine.TraceHull(src, dst, mins, maxs, mask) end
+function engine.TraceHull(src, dst, mins, maxs, mask, shouldHitEntity) end
 
 -- Checks if given point is inside wall, returns contents.
 ---@param point Vector3

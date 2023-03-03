@@ -185,6 +185,11 @@ function Entity:SetPropVector(value, ...) end
 ---@return table<integer, number>
 function Entity:GetPropDataTableFloat(...) end
 
+---Returns a table of bools, index them with integers based on context of the netvar
+---@vararg string
+---@return table<integer, boolean>
+function Entity:GetPropDataTableBool(...) end
+
 ---Returns a table of ints, index them with integers based on context of the netvar
 ---@vararg string
 ---@return table<integer, integer>
@@ -200,6 +205,12 @@ function Entity:GetPropDataTableEntity(...) end
 ---@param index integer
 ---@vararg string
 function Entity:SetPropDataTableFloat(value, index, ...) end
+
+---Sets the bool value of the given netvar at the given index.
+---@param value boolean
+---@param index integer
+---@vararg string
+function Entity:SetPropDataTableBool(value, index, ...) end
 
 ---Sets the integer value of the given netvar at the given index.
 ---@param value integer
