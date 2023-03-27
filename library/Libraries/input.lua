@@ -11,7 +11,7 @@ function input.GetMousePos() end
 ---Checks if a button is down.
 --
 ---[Key Codes](./enums.lua)
----@param key ButtonCode|integer
+---@param key EButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonDown(key) end
@@ -19,7 +19,7 @@ function input.IsButtonDown(key) end
 ---Checks if a button is pressed.
 --
 ---[Key Codes](./enums.lua)
----@param key ButtonCode|integer
+---@param key EButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonPressed(key) end
@@ -27,7 +27,7 @@ function input.IsButtonPressed(key) end
 ---Checks if a button is released.
 --
 ---[Key Codes](./enums.lua)
----@param key ButtonCode|integer
+---@param key EButtonCode|integer
 ---@return boolean
 ---@nodiscard
 function input.IsButtonReleased(key) end

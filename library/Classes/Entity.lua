@@ -26,7 +26,7 @@ function Entity:GetClass() end
 function Entity:GetIndex() end
 
 ---Returns the team number of the entity
----@return TF2_TEAM
+---@return ETFTeam
 function Entity:GetTeamNumber() end
 
 ---Returns the absolute position of the entity
@@ -79,7 +79,7 @@ function Entity:IsAlive() end
 function Entity:EstimateAbsVelocity() end
 
 ---Returns the move type of the entity
----@return MoveType
+---@return EMoveType
 ---@nodiscard
 function Entity:GetMoveType() end
 
@@ -95,7 +95,7 @@ function Entity:EntitySpaceHitboxSurroundingBox() end
 
 ---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
 ---@param currentTime? number # optional (default = `0`)
----@return table<TF2_HITBOX, {[1]: Vector3, [2]: Vector3}>
+---@return table<EHitbox, {[1]: Vector3, [2]: Vector3}>
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end
 
@@ -225,18 +225,18 @@ function Entity:SetPropDataTableInt(value, index, ...) end
 function Entity:SetPropDataTableEntity(value, index, ...) end
 
 ---Returns whether the player is in the specified condition. List of conditions in TF2 can be found
----@param condition TF2_COND
+---@param condition ETFCOND
 ---@return boolean
 ---@nodiscard
 function Entity:InCond(condition) end
 
 ---Adds the specified condition to the player
----@param condition TF2_COND
+---@param condition ETFCOND
 ---@param duration? number # optional (default = `-1`: infinite)
 function Entity:AddCond(condition, duration) end
 
 ---Removes the specified condition from the player
----@param condition TF2_COND
+---@param condition ETFCOND
 function Entity:RemoveCond(condition) end
 
 ---Whether the player is currently crit boosted by an external source
@@ -250,7 +250,7 @@ function Entity:IsCritBoosted() end
 function Entity:GetCritMult() end
 
 ---For game mode where players can carry runes, returns the type of rune the player is carrying
----@return RuneType
+---@return ERuneType
 ---@nodiscard
 function Entity:GetCarryingRuneType() end
 
@@ -260,7 +260,7 @@ function Entity:GetCarryingRuneType() end
 function Entity:GetMaxBuffedHealth() end
 
 ---Returns the entity for the specified loadout slot. This can be used to get the hat entity for the slot, or the weapon entity for the slot
----@param slot LoadoutSlot
+---@param slot ELoadoutSlot
 ---@return Entity
 ---@nodiscard
 function Entity:GetEntityForLoadoutSlot(slot) end
@@ -290,12 +290,12 @@ function Entity:IsMedigun() end
 function Entity:CanRandomCrit() end
 
 ---Returns the loadout slot ID of the weapon.
----@return LoadoutSlot
+---@return ELoadoutSlot
 ---@nodiscard
 function Entity:GetLoadoutSlot() end
 
 ---Returns the projectile type of the weapon, returns nil if the weapon is not a projectile weapon.
----@return ProjectileType
+---@return EProjectileType
 ---@nodiscard
 function Entity:GetWeaponProjectileType() end
 

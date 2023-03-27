@@ -56,7 +56,7 @@ function gamerules.GetPlayerVoteState ( entityindex ) end
 
 ---Returns last recieved state of a round as integer.
 ---
----@return RoundState
+---@return ERoundState
 function gamerules.GetRoundState() end
 
 return gamerules
