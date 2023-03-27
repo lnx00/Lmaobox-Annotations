@@ -36,7 +36,8 @@ function filesystem.SetFileAttributes(filePath, attributes) end
 
 ---Returns the modification time of the file at the specified path.
 ---@param filePath string
----@return integer
+---@return integer creationTime, integer lastAccessTime, integer lastWriteTime
+---@nodiscard
 function filesystem.GetFileTime(filePath) end
 
 return filesystem
