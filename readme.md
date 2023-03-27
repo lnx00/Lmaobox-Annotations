@@ -1,6 +1,6 @@
 # Lmaobox Lua Annotations
 
-Based on 22 Nov 2022 Update
+Based on March 26 2023 update
 
 > ***Lmaobox development just got a whole lot better*** 🧠 - LewdDeveloper
 
@@ -17,30 +17,20 @@ Based on 22 Nov 2022 Update
 
 ---
 
-If you managed to setup correctly, confetti for you 🎉
+You should now get autocomplete for all the functions and methods in the library folder.
+It should look like this:
 
-![1670231242609](image/readme/1670231242609.png)
+![Preview](image/readme/1670231242609.png)
 
-### Learn how to use lua-language-server
+## How to use annotations
 
-[https://github.com/sumneko/lua-language-server/wiki/Settings](https://github.com/sumneko/lua-language-server/wiki/Settings)
-
-## Adding more annotations
-
-To know more about annotations, refer to [this wiki](https://github.com/sumneko/lua-language-server/wiki/Annotations)
+[Lua Language Server Wiki](https://github.com/LuaLS/lua-language-server/wiki)
 
 ## Console commands
 
-| Command           | What it do[🤔](https://emojipedia.org/thinking-face/) |
-| ----------------- | -------------------------------------------------- |
-| lua_tc            | Toggle lua evaluation mode                         |
-| lua_load [[path]] | Load a lua script in localappdata folder           |
-| lua_exec [[code]] | evaluate lua code                                 |
-| lua               | same as lua_exec                                   |
-
-## TODO
-
-- [ ] Call every possible function/methods and inspect it's return value.
-- [ ] Add annotation tag for function that has meaningful/purposeful return value: **@nodiscard**
-- [X] Find someone rewriting readme
-- [ ] Find a dedicated maintainer.
+| Command | Description |
+| - | - |
+| lua_tc | Toggle lua evaluation mode |
+| lua_load ***PATH*** | Load a lua script in localappdata folder |
+| lua_exec ***CODE*** | Evaluate lua code |
+| lua | Same as lua_exec |
