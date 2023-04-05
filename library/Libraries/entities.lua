@@ -11,24 +11,24 @@ entities = {}
 function entities.FindByClass(className) end
 
 ---Returns local player entity.
----@return Entity me
+---@return Entity|nil me
 ---@nodiscard
 function entities.GetLocalPlayer() end
 
 ---Returns entity by index.
 ---@param index integer
----@return Entity
+---@return Entity|nil entity
 ---@nodiscard
 function entities.GetByIndex(index) end
 
 ---Returns entity by user id.
 ---@param userID integer
----@return Entity
+---@return Entity|nil entity
 ---@nodiscard
 function entities.GetByUserID(userID) end
 
 ---Returns the player resources entity.
----@return Entity
+---@return Entity|nil pr
 ---@nodiscard
 function entities.GetPlayerResources() end
 
