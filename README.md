@@ -1,6 +1,6 @@
 # Lmaobox Lua Annotations
 
-Based on March 26 2023 update
+Based on April 17 2023 update
 
 > ***Lmaobox development just got a whole lot better*** 🧠 - LewdDeveloper
 
