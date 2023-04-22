@@ -50,7 +50,7 @@ function draw.Text(x, y, text) end
 function draw.TextShadow(x, y, text) end
 
 ---Get the size of the current window.
----@return integer windowwidth, integer windowheight
+---@return integer width, integer height
 ---@nodiscard
 function draw.GetScreenSize() end
 
