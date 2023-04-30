@@ -32,8 +32,10 @@ local UserCmd = {}
 function UserCmd:GetViewAngles() end
 
 ---Set the viewangles.
----@param angles EulerAngles
-function UserCmd:SetViewAngles(angles) end
+---@param pitch number
+---@param yaw number
+---@param roll number
+function UserCmd:SetViewAngles(pitch, yaw, roll) end
 
 ---Set the value of sendpacket.
 ---@param value boolean

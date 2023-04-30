@@ -18,6 +18,7 @@
 local EulerAngles = {}
 
 ---Returns the X, Y, and Z coordinates as a separate variables.
+---@return number pitch, number yaw, number roll
 function EulerAngles:Unpack() end
 
 ---Reset the angles to 0.
