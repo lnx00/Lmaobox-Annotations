@@ -6,8 +6,11 @@
 ---@class Entity
 local Entity = {}
 
+--[[ Methods ]]
+
 ---Returns whether the entity is valid. This is done automatically and all other functions will return nil if the entity is invalid.
---
+---@return boolean
+---@nodiscard
 function Entity:IsValid() end
 
 ---Returns the name of the entity if its a player
@@ -99,6 +102,15 @@ function Entity:EntitySpaceHitboxSurroundingBox() end
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end
 
+---Sets the model of the entity, returns true if successful
+---@param modelPath string
+function Entity:SetModel(modelPath) end
+
+---Releases the entity, making it invalid. \
+---Calling this for networkable entities will kick you from the server. \
+---This is only useful for non-networkable entities created with `entities.CreateEntityByName`
+function Entity:Release() end
+
 ---Returns true if the entity is dormant (not being updated). Dormant entities are not drawn and shouldn't be interacted with.
 ---@return boolean
 ---@nodiscard
@@ -109,6 +121,8 @@ function Entity:IsDormant() end
 ---@nodiscard
 function Entity:ToInventoryItem() end
 
+--[[ Attributes ]]
+
 ---Returns the number value of the attribute present on the entity
 ---@param name string
 ---@param defaultValue? number # optional (default = `1.0`)
@@ -116,8 +130,10 @@ function Entity:AttributeHookFloat(name, defaultValue) end
 
 ---Returns the integer value of the attribute present on the entity
 ---@param name string
----@param defaultValue? number # optional (default = `1.0`)
+---@param defaultValue? integer # optional (default = `1`)
 function Entity:AttributeHookInt(name, defaultValue) end
+
+--[[ Entity netvars/props ]]
 
 ---Returns the float value of the given netvar
 ---@vararg string
@@ -180,6 +196,8 @@ function Entity:SetPropEntity(value, ...) end
 ---@vararg string
 function Entity:SetPropVector(value, ...) end
 
+--[[ Prop Data Tables ]]
+
 ---Returns a table of floats, index them with integers based on context of the netvar
 ---@vararg string
 ---@return table<integer, number>
@@ -223,6 +241,8 @@ function Entity:SetPropDataTableInt(value, index, ...) end
 ---@param index integer
 ---@vararg string
 function Entity:SetPropDataTableEntity(value, index, ...) end
+
+--[[ Player entity methods ]]
 
 ---Returns whether the player is in the specified condition. List of conditions in TF2 can be found
 ---@param condition ETFCOND
@@ -269,6 +289,8 @@ function Entity:GetEntityForLoadoutSlot(slot) end
 ---@return boolean
 function Entity:IsInFreezecam() end
 
+--[[ Weapon entity methods ]]
+
 ---Returns whether the weapon is a weapon that can shoot projectiles or hitscan.
 ---@return boolean
 ---@nodiscard
@@ -304,6 +326,8 @@ function Entity:GetWeaponProjectileType() end
 ---@nodiscard
 function Entity:IsViewModelFlipped() end
 
+--[[ Melee Weapon Methods ]]
+
 ---Returns the swing range of the weapon, returns nil if the weapon is not a melee weapon.
 ---@return integer
 ---@nodiscard
@@ -334,6 +358,8 @@ function Entity:GetMedigunHealingRange() end
 ---@return boolean
 ---@nodiscard
 function Entity:IsMedigunAllowedToHealTarget(target) end
+
+--[[ Weapon Crit Methods ]]
 
 ---Returns the current crit token bucket value.
 ---@return number
@@ -397,11 +423,7 @@ function Entity:CalcObservedCritChance() end
 function Entity:IsAttackCritical(commandNumber) end
 
 ---Returns the round damage stats
----@class RoundDamageStats
----@field total integer
----@field critical integer
----@field melee integer
----@return RoundDamageStats
+---@return { total : integer, critical : integer, melee : integer }
 ---@nodiscard
 function Entity:GetWeaponDamageStats() end
 

@@ -14,15 +14,22 @@ callbacks = {}
 ---| "ServerCmdKeyValues" # Called when the client sends a keyvalues message to the server.
 ---| "OnFakeUncrate" # Called when a fake crate is to be uncrated.
 ---| "OnLobbyUpdated" # Called when a lobby is found or updated.
+---| "SetRichPresence" # Called when the rich presence is updated.
 ---| "Unload" # Called when script is getting unloaded.
+
+---Register new callback.
+---@param id CallbackID
+---@param callback fun()
+---@return boolean success
+function callbacks.Register(id, callback) end
 
 ---Register new callback.\
 ---Throws an error if another callback unique is already existed, or unknown callback id
 ---@param id CallbackID
----@param callback fun(userdata: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil)
----@overload fun(id: CallbackID, unique: string, callback: fun(userdata: DrawModelContext|UserCmd|GameEvent|UserMessage|StringCmd|Entity|nil))
+---@param unique string
+---@param callback fun()
 ---@return boolean success
-function callbacks.Register(id, callback) end
+function callbacks.Register(id, unique, callback) end
 
 ---Unregister callback.\
 ---Throws an error on unknown callback id
