@@ -36,6 +36,6 @@ function entities.GetPlayerResources() end
 ---Keep in mind that YOU are responsible for its entire lifecycle and for releasing the entity later by calling `entity:Release`.
 ---@param className string
 ---@return Entity? entity
-function CreateEntityByName(className) end
+function entities.CreateEntityByName(className) end
 
 return entities
