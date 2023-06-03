@@ -100,7 +100,7 @@ function client.GetLocalPlayerIndex() end
 
 -- Get game convar.
 ---@param name string
----@return nil|integer, number, string
+---@return integer?, number, string
 ---@nodiscard
 function client.GetConVar(name) end
 
