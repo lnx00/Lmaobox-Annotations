@@ -316,6 +316,11 @@ function Entity:CanRandomCrit() end
 ---@nodiscard
 function Entity:GetLoadoutSlot() end
 
+---Returns the weapon ID of the weapon.
+---@return EWeaponID
+---@nodiscard
+function Entity:GetWeaponID() end
+
 ---Returns the projectile type of the weapon, returns nil if the weapon is not a projectile weapon.
 ---@return EProjectileType
 ---@nodiscard

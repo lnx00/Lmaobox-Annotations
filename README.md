@@ -1,6 +1,6 @@
 # Lmaobox Lua Annotations
 
-Based on May 25 2023 update
+Based on June 13 2023 update
 
 > ***Lmaobox development just got a whole lot better*** 🧠 - LewdDeveloper
 
@@ -20,7 +20,7 @@ Based on May 25 2023 update
 You should now get autocomplete for all the functions and methods in the library folder.
 It should look like this:
 
-![Preview](image/readme/1670231242609.png)
+![Preview](.github/images/AC_Preview.png)
 
 ## How to use annotations
 
