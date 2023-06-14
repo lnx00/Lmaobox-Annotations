@@ -32,22 +32,22 @@ function clientstate.GetChokedCommands() end
 function clientstate.GetLastCommandAck() end
 
 ---Returns the time the client connected to the server.
----@return number|nil
+---@return number?
 ---@nodiscard
 function clientstate.GetConnectTime() end
 
 ---Returns the time since the last tick was received.
----@return number|nil
+---@return number?
 ---@nodiscard
 function clientstate.GetTimeSinceLastReceived() end
 
 ---Returns the incoming latency.
----@return number|nil
+---@return number?
 ---@nodiscard
 function clientstate.GetLatencyIn() end
 
 ---Returns the outgoing latency.
----@return number|nil
+---@return number?
 ---@nodiscard
 function clientstate.GetLatencyOut() end
 
