@@ -12,3 +12,4 @@
 
 ---@class Texture : integer
 ---@class Font : integer
+---@class SteamID : integer
