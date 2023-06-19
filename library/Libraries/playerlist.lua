@@ -16,8 +16,8 @@ function playerlist.GetPriority(player) end
 ---@nodiscard
 function playerlist.GetPriority(userID) end
 
----Returns the priority of the player by Steam ID.
----@param steamID string
+---Returns the priority of the player by Steam ID (3 or 64).
+---@param steamID SteamID3
 ---@return integer
 ---@nodiscard
 function playerlist.GetPriority(steamID) end
@@ -32,8 +32,8 @@ function playerlist.SetPriority(player, priority) end
 ---@param priority integer
 function playerlist.SetPriority(userID, priority) end
 
----Sets the priority of the player by Steam ID.
----@param steamID string
+---Sets the priority of the player by Steam ID (3 or 64).
+---@param steamID SteamID3
 ---@param priority integer
 function playerlist.SetPriority(steamID, priority) end
 
@@ -49,8 +49,8 @@ function playerlist.GetColor(player) end
 ---@nodiscard
 function playerlist.GetColor(userID) end
 
----Returns the color of the player by Steam ID.
----@param steamID string
+---Returns the color of the player by Steam ID (3 or 64).
+---@param steamID SteamID3
 ---@return integer
 ---@nodiscard
 function playerlist.GetColor(steamID) end
@@ -65,8 +65,8 @@ function playerlist.SetColor(player, color) end
 ---@param color integer
 function playerlist.SetColor(userID, color) end
 
----Sets the color of the player by Steam ID.
----@param steamID string
+---Sets the color of the player by Steam ID (3 or 64).
+---@param steamID SteamID3
 ---@param color integer
 function playerlist.SetColor(steamID, color) end
 

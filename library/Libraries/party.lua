@@ -10,8 +10,8 @@ party = {}
 ---@nodiscard
 function party.GetLeader() end
 
----Returns a table containing the player's party members' SteamIDs as strings.
----@return table<string>
+---Returns a table containing the player's party members' their SteamID3 as strings.
+---@return table<SteamID3>
 ---@nodiscard
 function party.GetMembers() end
 
@@ -75,11 +75,12 @@ function party.CancelQueueStandby() end
 function party.GetMemberActivity(index) end
 
 ---Promotes the given player to the party leader. Works only if you are the party leader.
----@param steamID string
+---@param steamID SteamID3
 function party.PromoteMemberToLeader(steamID) end
 
 ---Kicks the given player from the party. Works only if you are the party leader.
----@param steamID string
+---@param steamID SteamID3
+---@return boolean success
 function party.KickMember(steamID) end
 
 ---Returns true if the given map is selected for casual play.

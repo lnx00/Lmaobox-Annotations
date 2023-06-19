@@ -15,7 +15,7 @@ function steam.GetSteamID() end
 function steam.GetPlayerName(SteamID3) end
 
 ---Returns true if the player is a friend of the user.
----@param SteamID3 string
+---@param SteamID3 SteamID3
 ---@return boolean
 ---@nodiscard
 function steam.IsFriend(SteamID3) end
@@ -26,7 +26,7 @@ function steam.GetFriends() end
 
 ---Returns the 64bit SteamID of the player as a long integer.
 ---@param SteamID3 string
----@return number SteamID64
+---@return SteamID64 SteamID64
 ---@nodiscard
 function steam.ToSteamID64(SteamID3) end
 
