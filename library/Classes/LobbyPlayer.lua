@@ -23,3 +23,19 @@ function LobbyPlayer:GetName() end
 -- Returns the last time the player connected to the server as a unix timestamp.
 ---@return integer
 function LobbyPlayer:GetLastConnectTime() end
+
+-- Returns the normalized rating of the player - a measure of the player's skill?
+---@return number
+function LobbyPlayer:GetNormalizedRating() end
+
+-- Returns the normalized uncertainty of the player - a measure of how confident the GC is in the player's rating.
+---@return number
+function LobbyPlayer:GetNormalizedUncertainty() end
+
+-- Returns the rank of the player. Integer representing the player's rank.
+---@return integer
+function LobbyPlayer:GetRank() end
+
+-- Returns true if the player is chat suspended.
+---@return boolean
+function LobbyPlayer:IsChatSuspended() end
