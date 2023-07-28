@@ -35,28 +35,38 @@ function gamerules.IsMvM() end
 
 ---Returns the current match group.
 ---@return MatchGroup
+---@nodiscard
 function gamerules.GetCurrentMatchGroup() end
 
 ---Returns true if current gamemode allows players to use the grappling hook.
 ---@return boolean
+---@nodiscard
 function gamerules.IsUsingGrapplingHook() end
 
 ---Returns true if current gamemode allows players to use spells.
 ---@return boolean
+---@nodiscard
 function gamerules.IsUsingSpells() end
 
 ---Returns the current next map voting state.
 ---@return integer
+---@nodiscard
 function gamerules.GetCurrentNextMapVotingState() end
 
 ---Returns the vote state of the player with the given index.
----@param entityindex integer
+---@param playerIndex integer
 ---@return integer
-function gamerules.GetPlayerVoteState ( entityindex ) end
+---@nodiscard
+function gamerules.GetPlayerVoteState(playerIndex) end
 
 ---Returns last recieved state of a round as integer.
----
 ---@return ERoundState
+---@nodiscard
 function gamerules.GetRoundState() end
+
+---Returns if the player is ready
+---@return boolean
+---@nodiscard
+function gamerules.IsPlayerReady(playerIndex) end
 
 return gamerules
