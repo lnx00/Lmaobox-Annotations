@@ -567,9 +567,9 @@ ETFCOND = {
 
 ---@enum ELifeState
 ELifeState = {
-    LIFE_ALIVE = 0,
-    LIFE_DYING = 1,
-    LIFE_DEAD = 2,
+    LIFE_ALIVE = 0,     -- alive
+    LIFE_DYING = 1,     -- playing death animation or still falling off of a ledge waiting to hit ground
+    LIFE_DEAD = 2,      -- dead. lying still.
     LIFE_RESPAWNABLE = 3,
     LIFE_DISCARDAIM_BODY = 4
 }
@@ -690,14 +690,14 @@ EWeaponID = {
 
 ---@enum ESignonState
 ESignonState = {
-    SIGNONSTATE_NONE = 0,
-    SIGNONSTATE_CHALLENGE = 1,
-    SIGNONSTATE_CONNECTED = 2,
-    SIGNONSTATE_NEW = 3,
-    SIGNONSTATE_PRESPAWN = 4,
-    SIGNONSTATE_SPAWN = 5,
-    SIGNONSTATE_FULL = 6,
-    SIGNONSTATE_CHANGELEVEL = 7
+    SIGNONSTATE_NONE = 0,       -- no state yet, about to connect
+    SIGNONSTATE_CHALLENGE = 1,  -- client challenging server, all OOB packets
+    SIGNONSTATE_CONNECTED = 2,  -- client is connected to server, netchans ready
+    SIGNONSTATE_NEW = 3,        -- just got serverinfo and string tables
+    SIGNONSTATE_PRESPAWN = 4,   -- received signon buffers
+    SIGNONSTATE_SPAWN = 5,      -- ready to receive entity packets
+    SIGNONSTATE_FULL = 6,       -- we are fully connected, first non-delta packet received
+    SIGNONSTATE_CHANGELEVEL = 7 -- server is changing level, please wait
 }
 
 ---@enum ELoadoutSlot
@@ -725,30 +725,53 @@ ELoadoutSlot = {
 
 ---@enum ERoundState
 ERoundState = {
+    -- initialize the game, create teams
     GR_STATE_INIT = 0,
+
+    -- Before players have joined the game. Periodically checks to see if enough players are ready to start a game. Also reverts to this when there are no active players
     GR_STATE_PREGAME = 1,
+
+    -- The game is about to start, wait a bit and spawn everyone
     GR_STATE_STARTGAME = 2,
+
+    -- All players are respawned, frozen in place
     GR_STATE_PREROUND = 3,
+
+    -- Round is on, playing normally
     GR_STATE_RND_RUNNING = 4,
+
+    -- Someone has won the round
     GR_STATE_TEAM_WIN = 5,
+
+    -- Noone has won, manually restart the game, reset scores
     GR_STATE_RESTART = 6,
+
+    -- Noone has won, restart the game
     GR_STATE_STALEMATE = 7,
+
+    -- Game is over, showing the scoreboard etc
     GR_STATE_GAME_OVER = 8,
+
+    -- Game is in a bonus state, transitioned to after a round ends
     GR_STATE_BONUS = 9,
+
+    -- Game is awaiting the next wave/round of a multi round experience
     GR_STATE_BETWEEN_RNDS = 10,
+
     GR_NUM_ROUND_STATES = 11
 }
 
 ---@enum ESpectatorMode
 ESpectatorMode = {
-    OBS_MODE_NONE = 0,
-    OBS_MODE_DEATHCAM = 1,
-    OBS_MODE_FREEZECAM = 2,
-    OBS_MODE_FIXED = 3,
-    OBS_MODE_IN_EYE = 4,
-    OBS_MODE_CHASE = 5,
-    OBS_MODE_POI = 6,
-    OBS_MODE_ROAMING = 7,
+    OBS_MODE_NONE = 0,      -- not in spectator mode
+    OBS_MODE_DEATHCAM = 1,  -- special mode for death cam animation
+    OBS_MODE_FREEZECAM = 2, -- zooms to a target, and freeze-frames on them
+    OBS_MODE_FIXED = 3,     -- view from a fixed camera position
+    OBS_MODE_IN_EYE = 4,    -- follow a player in first person view
+    OBS_MODE_CHASE = 5,     -- follow a player in third person view
+    OBS_MODE_POI = 6,       -- PASSTIME point of interest - game objective, big fight, anything interesting; added in the middle of the enum due to tons of hard-coded "<ROAMING" enum compares
+    OBS_MODE_ROAMING = 7,   -- free roaming
+
     NUM_OBSERVER_MODES = 8
 }
 
@@ -801,18 +824,23 @@ EProjectileType = {
 
 ---@enum EMoveType
 EMoveType = {
-    MOVETYPE_NONE = 0,
-    MOVETYPE_ISOMETRIC = 1,
-    MOVETYPE_WALK = 2,
-    MOVETYPE_STEP = 3,
-    MOVETYPE_FLY = 4,
-    MOVETYPE_FLYGRAVITY = 5,
-    MOVETYPE_VPHYSICS = 6,
-    MOVETYPE_PUSH = 7,
-    MOVETYPE_NOCLIP = 8,
-    MOVETYPE_LADDER = 9,
-    MOVETYPE_OBSERVER = 10,
-    MOVETYPE_CUSTOM = 11
+    MOVETYPE_NONE = 0,          -- never moves
+    MOVETYPE_ISOMETRIC = 1,     -- For players -- in TF2 commander view, etc.
+    MOVETYPE_WALK = 2,          -- Player only - moving on the ground
+    MOVETYPE_STEP = 3,          -- gravity, special edge handling -- monsters use this
+    MOVETYPE_FLY = 4,           -- No gravity, but still collides with stuff
+    MOVETYPE_FLYGRAVITY = 5,    -- flies through the air + is affected by gravity
+    MOVETYPE_VPHYSICS = 6,      -- uses VPHYSICS for simulation
+    MOVETYPE_PUSH = 7,          -- no clip to world, push and crush
+    MOVETYPE_NOCLIP = 8,        -- No gravity, no collisions, still do velocity/avelocity
+    MOVETYPE_LADDER = 9,        -- Used by players only when going onto a ladder
+    MOVETYPE_OBSERVER = 10,     -- Observer movement, depends on player's observer mode
+    MOVETYPE_CUSTOM = 11,        -- Allows the entity to describe its own physics
+    
+    -- should always be defined as the last item in the list
+    MOVETYPE_LAST = EMoveType.MOVETYPE_CUSTOM,
+
+    MOVETYPE_MAX_BITS = 4
 }
 
 ---@enum EHitbox
@@ -945,14 +973,16 @@ ETFClass = {
 
 ---@enum ETFTeam
 ETFTeam = {
-    TEAM_UNASSIGNED = 0,
-    TEAM_SPECTATOR = 1,
-    TF_TEAM_PVE_DEFENDERS = 2,
+    TEAM_ANY = -2,
+    TEAM_INVALID = -1,
+    TEAM_UNASSIGNED = 0,    -- not assigned to a team
+    TEAM_SPECTATOR = 1,     -- spectator team
+
     TF_TEAM_RED = 2,
     TF_TEAM_BLUE = 3,
-    TF_TEAM_PVE_INVADERS = 3,
     TF_TEAM_COUNT = 4,
-    TF_TEAM_PVE_INVADERS_GIANTS = 4,
-    TEAM_ANY = -1,
-    TEAM_INVALID = -1
+
+    TF_TEAM_PVE_INVADERS = 3,       -- invading bot team in mann vs machine
+    TF_TEAM_PVE_DEFENDERS = 2,      -- defending player team in mann vs machine
+    TF_TEAM_PVE_INVADERS_GIANTS = 4 --  hack for replacing visuals via itemdef
 }
