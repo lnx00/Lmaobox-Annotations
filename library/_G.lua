@@ -35,8 +35,8 @@ function _G.GetScriptName()
 end
 
 -- Prints Lua Table to console.
----@param a table|nil
----@param indent integer|nil
+---@param a table?
+---@param indent integer?
 function _G.printLuaTable(a, indent)
     if a == nil then
         print("nil")

@@ -4,15 +4,15 @@
 ---@class DrawModelContext
 local DrawModelContext = {}
 
+---Returns the entity linked to the drawn model, can be nil.
+---@return Entity?
+---@nodiscard
+function DrawModelContext:GetEntity() end
+
 ---Returns the name of the model.
 ---@return string
 ---@nodiscard
 function DrawModelContext:GetModelName() end
-
----Returns the entity linked to the drawn model, can be nil.
----@return Entity
----@nodiscard
-function DrawModelContext:GetEntity() end
 
 ---Replace material used to draw the model.
 ---@param mat Material
@@ -43,4 +43,4 @@ function DrawModelContext:DepthRange(min, max) end
 
 ---Suppresses the engine lighting when drawing the model.
 ---@param suppress boolean
-function DrawModelContext:SuppressEngineLighting( suppress ) end
+function DrawModelContext:SuppressEngineLighting(suppress) end

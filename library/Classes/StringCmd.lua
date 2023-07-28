@@ -13,4 +13,3 @@ function StringCmd:Get() end
 --
 ---@param command string
 function StringCmd:Set(command) end
-

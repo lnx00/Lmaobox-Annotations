@@ -567,9 +567,9 @@ ETFCOND = {
 
 ---@enum ELifeState
 ELifeState = {
-    LIFE_ALIVE = 0,     -- alive
-    LIFE_DYING = 1,     -- playing death animation or still falling off of a ledge waiting to hit ground
-    LIFE_DEAD = 2,      -- dead. lying still.
+    LIFE_ALIVE = 0, -- alive
+    LIFE_DYING = 1, -- playing death animation or still falling off of a ledge waiting to hit ground
+    LIFE_DEAD = 2,  -- dead. lying still.
     LIFE_RESPAWNABLE = 3,
     LIFE_DISCARDAIM_BODY = 4
 }
@@ -824,19 +824,19 @@ EProjectileType = {
 
 ---@enum EMoveType
 EMoveType = {
-    MOVETYPE_NONE = 0,          -- never moves
-    MOVETYPE_ISOMETRIC = 1,     -- For players -- in TF2 commander view, etc.
-    MOVETYPE_WALK = 2,          -- Player only - moving on the ground
-    MOVETYPE_STEP = 3,          -- gravity, special edge handling -- monsters use this
-    MOVETYPE_FLY = 4,           -- No gravity, but still collides with stuff
-    MOVETYPE_FLYGRAVITY = 5,    -- flies through the air + is affected by gravity
-    MOVETYPE_VPHYSICS = 6,      -- uses VPHYSICS for simulation
-    MOVETYPE_PUSH = 7,          -- no clip to world, push and crush
-    MOVETYPE_NOCLIP = 8,        -- No gravity, no collisions, still do velocity/avelocity
-    MOVETYPE_LADDER = 9,        -- Used by players only when going onto a ladder
-    MOVETYPE_OBSERVER = 10,     -- Observer movement, depends on player's observer mode
-    MOVETYPE_CUSTOM = 11,        -- Allows the entity to describe its own physics
-    
+    MOVETYPE_NONE = 0,       -- never moves
+    MOVETYPE_ISOMETRIC = 1,  -- For players -- in TF2 commander view, etc.
+    MOVETYPE_WALK = 2,       -- Player only - moving on the ground
+    MOVETYPE_STEP = 3,       -- gravity, special edge handling -- monsters use this
+    MOVETYPE_FLY = 4,        -- No gravity, but still collides with stuff
+    MOVETYPE_FLYGRAVITY = 5, -- flies through the air + is affected by gravity
+    MOVETYPE_VPHYSICS = 6,   -- uses VPHYSICS for simulation
+    MOVETYPE_PUSH = 7,       -- no clip to world, push and crush
+    MOVETYPE_NOCLIP = 8,     -- No gravity, no collisions, still do velocity/avelocity
+    MOVETYPE_LADDER = 9,     -- Used by players only when going onto a ladder
+    MOVETYPE_OBSERVER = 10,  -- Observer movement, depends on player's observer mode
+    MOVETYPE_CUSTOM = 11,    -- Allows the entity to describe its own physics
+
     -- should always be defined as the last item in the list
     MOVETYPE_LAST = EMoveType.MOVETYPE_CUSTOM,
 
@@ -975,8 +975,8 @@ ETFClass = {
 ETFTeam = {
     TEAM_ANY = -2,
     TEAM_INVALID = -1,
-    TEAM_UNASSIGNED = 0,    -- not assigned to a team
-    TEAM_SPECTATOR = 1,     -- spectator team
+    TEAM_UNASSIGNED = 0, -- not assigned to a team
+    TEAM_SPECTATOR = 1,  -- spectator team
 
     TF_TEAM_RED = 2,
     TF_TEAM_BLUE = 3,

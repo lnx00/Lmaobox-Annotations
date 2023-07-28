@@ -46,4 +46,3 @@ function GameEvent:SetFloat(field, value) end
 ---@param field string
 ---@param value boolean
 function GameEvent:SetBool(field, value) end
-

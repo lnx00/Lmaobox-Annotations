@@ -12,23 +12,23 @@ local UserMessage = {}
 function UserMessage:GetID() end
 
 ---Returns the length of the message in bits
----@return integer
+---@return integer bits
 ---@nodiscard
 function UserMessage:GetDataBits() end
 
 ---Returns the length of the message in bytes
----@return integer
+---@return integer bytes
 ---@nodiscard
 function UserMessage:GetDataBytes() end
+
+---Sets the current bit position in the message.
+---@param bit integer
+function UserMessage:SetCurBit(bit) end
 
 ---Returns the current bit position in the message.
 ---@return integer
 ---@nodiscard
 function UserMessage:GetCurBit() end
-
----Sets the current bit position in the message.
----@param bit integer
-function UserMessage:SetCurBit(bit) end
 
 ---Sets the position to the beginning of the message
 --
@@ -38,40 +38,41 @@ function UserMessage:Reset() end
 ---Reads a bit from the message.
 --
 ---Returns bit, current bit position
----@return integer, integer
+---@return integer bit, integer pos
 function UserMessage:ReadBit() end
 
 ---Reads a byte from the message.
 --
 ---Returns integer, current bit position
----@return integer, integer
+---@return integer byte, integer pos
 function UserMessage:ReadByte() end
 
 ---Reads n bit from the message.
 --
 ---Returns float, current bit position
 ---@param n integer? # optional number of bits to read (default = ``32``)
----@return number, integer
+---@return number float, integer pos
 function UserMessage:ReadFloat(n) end
 
 ---Reads n bit from the message.
 --
 ---Returns integer, current bit position
 ---@param n integer? # optional number of bits to read (default = ``32``)
----@return integer, integer
+---@return integer int, integer pos
 function UserMessage:ReadInt(n) end
 
----Reads n byte from the message.
---
----Returns string, current bit position
----@param n integer
----@return string, integer
-function UserMessage:ReadString(n) end
+---Reads a string from the message.\
+---You must specify valid maxlen.\
+---The string will be truncated if it is longer than maxlen. Returns the string read as first return value, and current bit position as second return value.
+---@param maxlen integer
+---@return string str, integer pos
+function UserMessage:ReadString(maxlen) end
 
 --- Writes a single bit to the message.
 --
 --- When writing, make sure that your current bit position is correct and that you do not overflow the message.
-function UserMessage:WriteBit() end
+---@param bit integer
+function UserMessage:WriteBit(bit) end
 
 --- Writes a single byte to the message.
 --
@@ -102,4 +103,5 @@ function UserMessage:WriteInt(int, n) end
 --- 1 character = 1 byte (8 bits)
 --
 --- When writing, make sure that your current bit position is correct and that you do not overflow the message.
+---@param s string
 function UserMessage:WriteString(s) end

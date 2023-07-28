@@ -4,7 +4,7 @@
 ---@class LobbyPlayer
 local LobbyPlayer = {}
 
--- Returns the SteamID of the player as a string.
+-- Returns the SteamID64 of the player as a string.
 ---@return string
 ---@nodiscard
 function LobbyPlayer:GetSteamID() end

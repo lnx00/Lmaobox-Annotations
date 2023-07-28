@@ -40,7 +40,7 @@ function Item:GetItemID() end
 function Item:GetInventoryPosition() end
 
 ---Returns true if the item is equipped for the given class.
----@param classID integer
+---@param classID ETFClass
 ---@return boolean
 ---@nodiscard
 function Item:IsEquippedForClass(classID) end
@@ -51,7 +51,7 @@ function Item:IsEquippedForClass(classID) end
 function Item:GetImageTextureID() end
 
 ---Returns the item's attributes as a table where keys are AttributeDefinition objects and values are the values of the attributes.
----@return nil|table<AttributeDefinition, any>
+---@return table<AttributeDefinition, any>?
 ---@nodiscard
 function Item:GetAttributes() end
 

@@ -84,4 +84,3 @@ function _G.Vector3() end
 ---@return Vector3
 ---@nodiscard
 function _G.Vector3(x, y, z) end
-

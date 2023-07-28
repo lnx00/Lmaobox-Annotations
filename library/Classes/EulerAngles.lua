@@ -45,16 +45,15 @@ function EulerAngles:Normalize() end
 ---Clamp the angle.
 function EulerAngles:Clamp() end
 
----Create a new EulerAngles with .
+---Creates a new EulerAngles with all values set to 0.
 ---@return EulerAngles
 ---@nodiscard
 function _G.EulerAngles() end
 
----Create a new EulerAngles.
+---Creates a new EulerAngles.
 ---@param pitch number
 ---@param yaw number
 ---@param roll number
 ---@return EulerAngles
 ---@nodiscard
 function _G.EulerAngles(pitch, yaw, roll) end
-

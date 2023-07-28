@@ -5,7 +5,7 @@
 local Material = {}
 
 ---Returns material path.
----@return string 
+---@return string
 ---@nodiscard
 function Material:GetName() end
 
@@ -15,7 +15,7 @@ function Material:GetName() end
 function Material:GetTextureGroupName() end
 
 ---Modulate transparency of material. [0-1], increments by 0.1.
----@param alpha integer
+---@param alpha number
 function Material:AlphaModulate(alpha) end
 
 ---Modulate color of material. Colors are between 0 and 1.
