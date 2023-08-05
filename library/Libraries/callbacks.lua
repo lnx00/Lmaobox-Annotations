@@ -6,6 +6,7 @@ callbacks = {}
 ---@alias CallbackID
 ---| "Draw" # Called during the drawing stage every frame.
 ---| "DrawModel" # Called before drawing a model.
+---| "DrawStaticPropArrayFast" # Called every time static props are just about to be drawn on the screen.
 ---| "CreateMove" # Called every input update.
 ---| "FireGameEvent" # Called for selected game events.
 ---| "DispatchUserMessage" # Called on every user message received from server.
@@ -34,7 +35,7 @@ function callbacks.Register(id, unique, callback) end
 ---Unregister callback.\
 ---Throws an error on unknown callback id
 ---@param id CallbackID
----@param unique string|""
+---@param unique string
 ---@return boolean success
 function callbacks.Unregister(id, unique) end
 
