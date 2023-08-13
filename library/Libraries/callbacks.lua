@@ -6,7 +6,7 @@ callbacks = {}
 ---@alias CallbackID
 ---| "Draw" # Called during the drawing stage every frame.
 ---| "DrawModel" # Called before drawing a model.
----| "DrawStaticPropArrayFast" # Called every time static props are just about to be drawn on the screen.
+---| "DrawStaticProps" # Called every time static props are just about to be drawn on the screen.
 ---| "CreateMove" # Called every input update.
 ---| "FireGameEvent" # Called for selected game events.
 ---| "DispatchUserMessage" # Called on every user message received from server.

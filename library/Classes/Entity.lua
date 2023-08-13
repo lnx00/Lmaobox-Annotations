@@ -321,15 +321,70 @@ function Entity:GetLoadoutSlot() end
 ---@nodiscard
 function Entity:GetWeaponID() end
 
+---Returns whether the weapon's view model is flipped.
+---@return boolean
+---@nodiscard
+function Entity:IsViewModelFlipped() end
+
+--[[ Weapon shooting gun methods ]]
+
+---@param player Entity
+---@param vecOffset Vector3
+---@param bHitTeammates boolean
+---@param flEndDist number
+---@return Vector3 vecSrc, Vector3 angForward
+function Entity:GetProjectileFireSetup(player, vecOffset, bHitTeammates, flEndDist) end
+
 ---Returns the projectile type of the weapon, returns nil if the weapon is not a projectile weapon.
 ---@return EProjectileType
 ---@nodiscard
 function Entity:GetWeaponProjectileType() end
 
----Returns whether the weapon's view model is flipped.
+---Returns the spread of the weapon, returns nil if the weapon is not a gun weapon.
+---@return number? spread
+---@nodiscard
+function Entity:GetWeaponSpread() end
+
+---Returns the projectile speed of the weapon, returns nil if the weapon is not a projectile weapon.
+---Can return 0 if the weapon has the speed hardcoded somewhere else.
+---In that case its up to you to figure out the speed.
+---@return number? speed
+---@nodiscard
+function Entity:GetWeaponProjectileSpeed() end
+
+---Returns the projectile gravity of the weapon, returns nil if the weapon is not a projectile weapon.
+---Can return 0 if the weapon has the gravity hardcoded somewhere else.
+---In that case its up to you to figure out the gravity.
+---@return number? gravity
+---@nodiscard
+function Entity:GetWeaponProjectileGravity() end
+
+---Returns the projectile spread of the weapon, returns nil if the weapon is not a projectile weapon.
+---@return number? spread
+---@nodiscard
+function Entity:GetProjectileSpread() end
+
+--[[ ChargeUpWeapon methods ]]
+
+---Returns whether the weapon can be charged up.
 ---@return boolean
 ---@nodiscard
-function Entity:IsViewModelFlipped() end
+function Entity:CanCharge() end
+
+---Returns the time the weapon started charging up, returns nil if the weapon is not a charge up weapon.
+---@return number? time
+---@nodiscard
+function Entity:GetChargeBeginTime() end
+
+---Returns the max charge time of the weapon, returns nil if the weapon is not a charge up weapon.
+---@return number? maxTime
+---@nodiscard
+function Entity:GetChargeMaxTime() end
+
+---Returns the current charge of the weapon, returns nil if the weapon is not a charge up weapon.
+---@return number? charge
+---@nodiscard
+function Entity:GetCurrentCharge() end
 
 --[[ Melee Weapon Methods ]]
 

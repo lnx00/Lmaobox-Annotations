@@ -7,7 +7,7 @@ filesystem = {}
 --
 ---You are not allowed to call function outside of the game's root directory.
 ---@param filePath string
----@return boolean success, string|nil error
+---@return boolean success, string fullPath
 function filesystem.CreateDirectory(filePath) end
 
 ---Enumerates the files and directories in the specified directory. The callback function receives the filename and attributes of each file or directory. The path is relative to the game directory or absolute.
