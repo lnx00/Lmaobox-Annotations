@@ -1,5 +1,6 @@
 ---@meta
 
+---The client library is used to get information about the client.
 ---@class client
 client = {}
 

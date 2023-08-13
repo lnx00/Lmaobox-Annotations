@@ -1,5 +1,6 @@
 ---@meta
 
+---The gamerules library contains functions for detecting the game rules of a TF2 match.
 ---@class gamerules
 gamerules = {}
 

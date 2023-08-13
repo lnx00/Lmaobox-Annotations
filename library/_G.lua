@@ -3,8 +3,7 @@
 
 -- Prints message to console. Each argument is printed on a new line.
 ---@vararg any
-function _G.print(...)
-end
+function _G.print(...) end
 
 -- Prints a colored message to console. Each argument is printed on a new line.
 ---@param r integer
@@ -12,27 +11,23 @@ end
 ---@param b integer
 ---@param a integer
 ---@vararg any
-function _G.printc(r, g, b, a, ...)
-end
+function _G.printc(r, g, b, a, ...) end
 
 -- Loads a Lua script from given file path.
 -- * Displays a console message if function fails to load script
 ---@param scriptPath string
 ---@return boolean success
-function _G.LoadScript(scriptPath)
-end
+function _G.LoadScript(scriptPath) end
 
 -- Unloads a Lua script from given file.
 ---@param scriptPath string
 ---@return boolean success
-function _G.UnloadScript(scriptPath)
-end
+function _G.UnloadScript(scriptPath) end
 
 -- Returns current script's file name.
 ---@return string scriptPath
 ---@nodiscard
-function _G.GetScriptName()
-end
+function _G.GetScriptName() end
 
 -- Prints Lua Table to console.
 ---@param a table?
@@ -54,6 +49,7 @@ function _G.printLuaTable(a, indent)
 end
 
 --[[ Global Constants ]]
+
 -- UserCmd buttons
 IN_ATTACK = (1 << 0)
 IN_JUMP = (1 << 1)

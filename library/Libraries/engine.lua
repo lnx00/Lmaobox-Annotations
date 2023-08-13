@@ -1,5 +1,6 @@
 ---@meta
 
+---The engine library provides access to the game's core functionality.
 ---@class engine
 engine = {}
 

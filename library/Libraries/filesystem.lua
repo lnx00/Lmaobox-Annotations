@@ -1,5 +1,6 @@
 ---@meta
 
+---This library provides a simple interface to the filesystem.
 ---@class filesystem
 filesystem = {}
 

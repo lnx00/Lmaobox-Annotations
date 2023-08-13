@@ -1,5 +1,6 @@
 ---@meta
 
+---The entities library provides a way to find entities by their name, or by their class.
 ---@class entities
 entities = {}
 

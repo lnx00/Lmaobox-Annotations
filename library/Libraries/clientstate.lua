@@ -1,5 +1,6 @@
 ---@meta
 
+---The clientstate library is used to get information about the internal client state.
 ---@class clientstate
 clientstate = {}
 

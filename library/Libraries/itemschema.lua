@@ -1,6 +1,8 @@
 ---@meta
 
----@userdata itemschema
+---The itemschema library contains functions for retrieving information about items.
+---Items referred to in this library are of the ItemDefinition type.
+---@class itemschema
 itemschema = {}
 
 ---Returns the item definition for the item with the given ID.

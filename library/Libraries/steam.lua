@@ -1,5 +1,6 @@
 ---@meta
 
+---The steam library provides access to basic Steam API functionality and data.
 ---@class steam
 steam = {}
 

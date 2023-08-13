@@ -1,5 +1,7 @@
 ---@meta
 
+---This library allows you to draw shapes and text on the screen.
+---It also allows you to create textures from images and draw them.
 ---@class draw
 draw = {}
 

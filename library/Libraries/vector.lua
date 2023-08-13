@@ -1,8 +1,8 @@
 ---@meta
 
----The vector library provides a simple way to manipulate 3D vectors. 
---
----You can use both Lua tables and Vector3|ArrayVector instances as arguments. The functions below showcase only the table-based option.
+---The vector library provides a simple way to manipulate 3D vectors.
+---You can use both Lua tables and Vector3|ArrayVector instances as arguments.
+---The functions below showcase only the table-based option.
 ---@class vector
 vector = {}
 

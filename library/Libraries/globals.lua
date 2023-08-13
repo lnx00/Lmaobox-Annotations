@@ -1,5 +1,6 @@
 ---@meta
 
+---This library contains global source engine variables.
 ---@class globals
 globals = {}
 

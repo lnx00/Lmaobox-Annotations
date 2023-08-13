@@ -1,5 +1,6 @@
 ---@meta
 
+---The input library provides an interface to the user's keyboard and mouse.
 ---@class input
 input = {}
 

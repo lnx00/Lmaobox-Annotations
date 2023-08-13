@@ -1,5 +1,6 @@
 ---@meta
 
+---The materials library provides a way to create and alter materials for rendering.
 ---@class materials
 materials = {}
 
