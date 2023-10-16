@@ -40,7 +40,6 @@ function input.IsMouseInputEnabled() end
 
 ---Sets whether the mouse is visible on screen and has priority on the topmost panel.
 ---@param enabled boolean
----@nodiscard
 function input.SetMouseInputEnabled(enabled) end
 
 ---Returns the tick when buttons have last been polled.
