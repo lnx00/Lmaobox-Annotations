@@ -19,9 +19,8 @@ function materials.Enumerate(callback) end
 ---To create custom materials follow the [Valve Material Type](https://developer.valvesoftware.com/wiki/Material) syntax.
 ---@param name string
 ---@param vmt string
----@param type string
 ---@return Material
 ---@nodiscard
-function materials.Create(name, vmt, type) end
+function materials.Create(name, vmt) end
 
 return materials
