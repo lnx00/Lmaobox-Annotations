@@ -2,15 +2,15 @@
 ---@meta
 
 -- Prints message to console. Each argument is printed on a new line.
----@vararg any
-function _G.print(...) end
+---@param ... any
+function _G.print(msg, ...) end
 
 -- Prints a colored message to console. Each argument is printed on a new line.
 ---@param r integer
 ---@param g integer
 ---@param b integer
 ---@param a integer
----@vararg any
+---@param ... any
 function _G.printc(r, g, b, a, ...) end
 
 -- Loads a Lua script from given file path.
@@ -32,21 +32,7 @@ function _G.GetScriptName() end
 -- Prints Lua Table to console.
 ---@param a table?
 ---@param indent integer?
-function _G.printLuaTable(a, indent)
-    if a == nil then
-        print("nil")
-        return
-    end
-    if indent == nil then indent = 0 end
-    for b, c in pairs(a) do
-        if type(c) == "table" then
-            print(string.rep("  ", indent) .. tostring(b) .. ":")
-            printLuaTable(c, indent + 1)
-        else
-            print(string.rep("  ", indent) .. tostring(b) .. ": " .. tostring(c))
-        end
-    end
-end
+function _G.printLuaTable(a, indent) end
 
 --[[ Global Constants ]]
 
