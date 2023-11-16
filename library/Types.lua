@@ -12,6 +12,9 @@
 
 ---@class Texture : integer
 ---@class Font : integer
+
 ---@class SteamID : string # SteamID: `STEAM_0:0:???`
 ---@class SteamID3 : string # SteamID3: `[U:1:???]`
 ---@class SteamID64 : integer # SteamID64: `7656???`
+
+---@alias Matrix3x4 number[]

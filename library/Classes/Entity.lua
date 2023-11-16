@@ -96,7 +96,17 @@ function Entity:HitboxSurroundingBox() end
 ---@nodiscard
 function Entity:EntitySpaceHitboxSurroundingBox() end
 
----Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
+---Sets up the bones of the entity, boneMask is optional, by default 0x7FF00, and can be changed if you want to only setup certain bones.
+---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time.
+---Returns a table of at most 128 entries of a 3x4 matrix (table) of float numbers, representing the bone transforms.
+---@param boneMask? integer # optional (default = `0x7FF00`)
+---@param currentTime? number # optional (default = `0`)
+---@return Matrix3x4[]
+function Entity:SetupBones(boneMask, currentTime) end
+
+---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox.
+---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
+---@deprecated Use Entity:SetupBones instead
 ---@param currentTime? number # optional (default = `0`)
 ---@return table<EHitbox, {[1]: Vector3, [2]: Vector3}>
 ---@nodiscard
@@ -105,6 +115,11 @@ function Entity:GetHitboxes(currentTime) end
 ---Sets the model of the entity, returns true if successful
 ---@param modelPath string
 function Entity:SetModel(modelPath) end
+
+---Gets the model of the entity, returned as model string
+---@return string
+---@nodiscard
+function Entity:GetModel() end
 
 ---Releases the entity, making it invalid. \
 ---Calling this for networkable entities will kick you from the server. \
