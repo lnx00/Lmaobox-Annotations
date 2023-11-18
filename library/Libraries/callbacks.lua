@@ -19,6 +19,8 @@ callbacks = {}
 ---| "OnFakeUncrate" # Called when a fake crate is to be uncrated.
 ---| "OnLobbyUpdated" # Called when a lobby is found or updated.
 ---| "SetRichPresence" # Called when the rich presence is updated.
+---| "GCSendMessage" # Called when a message is being sent to the GC.
+---| "GCRetrieveMessage" # Called when a message is being received from the GC.
 ---| "Unload" # Called when script is getting unloaded.
 
 ---Register new callback.

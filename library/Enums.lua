@@ -986,3 +986,12 @@ ETFTeam = {
     TF_TEAM_PVE_DEFENDERS = 2,      -- defending player team in mann vs machine
     TF_TEAM_PVE_INVADERS_GIANTS = 4 --  hack for replacing visuals via itemdef
 }
+
+---@enum EGCResults
+EGCResults = {
+    k_EGCResultOK = 0,
+    k_EGCResultNoMessage = 1,
+    k_EGCResultBufferTooSmall = 2,
+    k_EGCResultNotLoggedOn = 3,
+    k_EGCResultInvalidMessage = 4,
+}
