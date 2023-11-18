@@ -1,5 +1,7 @@
 ---@meta
 
+---[[ Bit Fields ]]
+
 ---@enum E_UserCmd
 E_UserCmd = {
     IN_ATTACK    = IN_ATTACK,
@@ -484,7 +486,7 @@ E_TFCOND = {
     TFCond_Plague                  = TFCond_Plague,
     TFCond_KingAura                = TFCond_KingAura,
     TFCond_SpawnOutline            = TFCond_SpawnOutline,
-    TFCond_KnockedtoAir          = TFCond_KnockedtoAir,
+    TFCond_KnockedtoAir          = TFCond_KnockedIntoAir,
     TFCond_CompetitiveWinner       = TFCond_CompetitiveWinner,
     TFCond_CompetitiveLoser        = TFCond_CompetitiveLoser,
     TFCond_NoTaunting_DEPRECATED   = TFCond_NoTaunting_DEPRECATED,
