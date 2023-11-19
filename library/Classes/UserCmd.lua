@@ -1,28 +1,23 @@
 ---@meta
 
 ---@class UserCmd
----@field command_number integer
----@field tick_count integer
----@field viewangles EulerAngles
----@field aimdirection Vector3
----@field forwardmove number
----@field sidemove number
----@field upmove number
----@field buttons integer
----@field impulse integer
----@field weaponselect integer
----@field weaponsubtype integer
----@field random_seed integer
----@field mousedx integer
----@field mousedy integer
----@field hasbeenpredicted boolean
----@field headangles EulerAngles
----@field headoffset Vector3
----@field sendpacket boolean
+---@field command_number integer # The number of the command.
+---@field tick_count integer # The current tick count.
+---@field viewangles EulerAngles # The view angles of the player.
+---@field forwardmove number # The forward movement of the player.
+---@field sidemove number # The sideways movement of the player.
+---@field upmove number # The upward movement of the player.
+---@field buttons integer # The buttons that are pressed. Masked with bits from IN_* enum
+---@field impulse integer # The impulse command that was issued.
+---@field weaponselect integer # The weapon id that is selected.
+---@field weaponsubtype integer # The subtype of the weapon.
+---@field random_seed integer # The random seed of the command.
+---@field mousedx integer # The mouse delta in the x direction.
+---@field mousedy integer # The mouse delta in the y direction.
+---@field hasbeenpredicted boolean # Whether the command has been predicted.
+---@field sendpacket boolean # Whether the command should be sent to the server or choked.
 --- Represents a user (movement) command about to be sent to the server.
---
 --- Fields are modifiable directly.
---
 --- [UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
 local UserCmd = {}
 

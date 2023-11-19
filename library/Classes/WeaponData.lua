@@ -13,7 +13,7 @@
 ---@field timeReloadStart number
 ---@field timeReload number
 ---@field drawCrosshair number
----@field projectile integer
+---@field projectile integer # Represents projectile id
 ---@field ammoPerShot integer
 ---@field projectileSpeed number
 ---@field smackDelay number

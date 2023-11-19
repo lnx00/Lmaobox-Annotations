@@ -1,5 +1,6 @@
 ---@meta
 
+---The ViewSetup object is used to get information about the the origin, angles, fov, zNear, zFar, and aspect ratio of the player's view.
 ---@class ViewSetup
 ---@field x integer # Left side of view window
 ---@field unscaledX integer # Left side of view window without HUD scaling
