@@ -1,0 +1,24 @@
+---@meta
+
+---@class ViewSetup
+---@field x integer
+---@field unscaledX integer
+---@field y integer
+---@field unscaledY integer
+---@field width integer
+---@field unscaledWidth integer
+---@field height integer
+---@field unscaledHeight integer
+---@field ortho boolean
+---@field orthoLeft number
+---@field orthoTop number
+---@field orthoRight number
+---@field orthoBottom number
+---@field fov number
+---@field fovViewmodel number
+---@field origin Vector3
+---@field angles EulerAngles
+---@field zNear number
+---@field zFar number
+---@field aspectRatio number
+local ViewSetup = {}

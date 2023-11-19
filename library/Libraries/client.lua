@@ -124,4 +124,10 @@ function client.RemoveConVarProtection(name) end
 ---@nodiscard
 function client.Localize(key) end
 
+---(Undocumented)
+---Returns the current view setup for the local player
+---@return ViewSetup
+---@nodiscard
+function client.GetPlayerView() end
+
 return client
