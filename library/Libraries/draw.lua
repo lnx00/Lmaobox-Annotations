@@ -105,7 +105,7 @@ function draw.GetScreenSize() end
 ---@param name string
 ---@param height integer
 ---@param weight integer
----@param flags? FFontFlag|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
+---@param flags? E_FontFlag|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
 ---@return Font
 ---@nodiscard
 function draw.CreateFont(name, height, weight, flags) end

@@ -8,7 +8,7 @@ clientstate = {}
 function clientstate.ForceFullUpdate() end
 
 ---Returns the current client signon state. This is useful for determining if the client is fully connected to the server.
----@return ESignonState
+---@return E_SignonState
 ---@nodiscard
 function clientstate.GetClientSignonState() end
 

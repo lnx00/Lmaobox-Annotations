@@ -8,7 +8,7 @@
 ---@field entity Entity
 ---@field plane Vector3
 ---@field contents integer
----@field hitbox EHitbox
+---@field hitbox E_Hitbox
 ---@field hitgroup integer
 ---@field allsolid boolean
 ---@field startsolid boolean

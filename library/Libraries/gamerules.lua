@@ -61,7 +61,7 @@ function gamerules.GetCurrentNextMapVotingState() end
 function gamerules.GetPlayerVoteState(playerIndex) end
 
 ---Returns last recieved state of a round as integer.
----@return ERoundState
+---@return E_RoundState
 ---@nodiscard
 function gamerules.GetRoundState() end
 

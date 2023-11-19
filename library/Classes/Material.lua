@@ -25,7 +25,7 @@ function Material:AlphaModulate(alpha) end
 function Material:ColorModulate(red, green, blue) end
 
 ---Change material var flag.
----@param flag FMaterialFlag
+---@param flag E_MaterialFlag
 ---@param set any
 function Material:SetMaterialVarFlag(flag, set) end
 

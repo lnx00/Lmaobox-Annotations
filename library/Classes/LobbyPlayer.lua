@@ -10,7 +10,7 @@ local LobbyPlayer = {}
 function LobbyPlayer:GetSteamID() end
 
 -- Returns the GC assigned team of the player.
----@return ETFTeam
+---@return E_TeamNumber
 ---@nodiscard
 function LobbyPlayer:GetTeam() end
 

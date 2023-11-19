@@ -7,7 +7,7 @@ local UserMessage = {}
 ---Get the id of the message.
 --
 ---[TF2 User Messages](https://wiki.alliedmods.net/User_messages)
----@return EUserMessage
+---@return E_UserMessage
 ---@nodiscard
 function UserMessage:GetID() end
 

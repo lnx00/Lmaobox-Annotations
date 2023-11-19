@@ -24,7 +24,7 @@ function filesystem.EnumerateDirectory(filePath, callback) end
 --
 ---You are not allowed to call function outside of the game's root directory.
 ---@param filePath string
----@return integer attributes
+---@return E_FileAttribute|integer attributes
 ---@nodiscard
 function filesystem.GetFileAttributes(filePath) end
 

@@ -28,7 +28,7 @@ function gamecoordinator.IsConnectedToMatchServer() end
 function gamecoordinator.AbandonMatch() end
 
 ---Returns the status of the match relative to the player connection.
----@return EMatchAbandonStatus
+---@return E_MatchAbandonStatus
 ---@nodiscard
 function gamecoordinator.GetMatchAbandonStatus() end
 

@@ -29,7 +29,7 @@ function Entity:GetClass() end
 function Entity:GetIndex() end
 
 ---Returns the team number of the entity
----@return ETFTeam
+---@return E_TeamNumber
 function Entity:GetTeamNumber() end
 
 ---Returns the absolute position of the entity
@@ -82,7 +82,7 @@ function Entity:IsAlive() end
 function Entity:EstimateAbsVelocity() end
 
 ---Returns the move type of the entity
----@return EMoveType
+---@return E_MoveType
 ---@nodiscard
 function Entity:GetMoveType() end
 
@@ -108,7 +108,7 @@ function Entity:SetupBones(boneMask, currentTime) end
 ---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
 ---@deprecated Use Entity:SetupBones instead
 ---@param currentTime? number # optional (default = `0`)
----@return table<EHitbox, {[1]: Vector3, [2]: Vector3}>
+---@return table<E_Hitbox, {[1]: Vector3, [2]: Vector3}>
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end
 
@@ -260,18 +260,18 @@ function Entity:SetPropDataTableEntity(value, index, ...) end
 --[[ Player entity methods ]]
 
 ---Returns whether the player is in the specified condition. List of conditions in TF2 can be found
----@param condition ETFCOND
+---@param condition E_TFCOND
 ---@return boolean
 ---@nodiscard
 function Entity:InCond(condition) end
 
 ---Adds the specified condition to the player
----@param condition ETFCOND
+---@param condition E_TFCOND
 ---@param duration? number # optional (default = `-1`: infinite)
 function Entity:AddCond(condition, duration) end
 
 ---Removes the specified condition from the player
----@param condition ETFCOND
+---@param condition E_TFCOND
 function Entity:RemoveCond(condition) end
 
 ---Whether the player is currently crit boosted by an external source
@@ -285,7 +285,7 @@ function Entity:IsCritBoosted() end
 function Entity:GetCritMult() end
 
 ---For game mode where players can carry runes, returns the type of rune the player is carrying
----@return ERuneType
+---@return E_RuneType
 ---@nodiscard
 function Entity:GetCarryingRuneType() end
 
@@ -295,7 +295,7 @@ function Entity:GetCarryingRuneType() end
 function Entity:GetMaxBuffedHealth() end
 
 ---Returns the entity for the specified loadout slot. This can be used to get the hat entity for the slot, or the weapon entity for the slot
----@param slot ELoadoutSlot
+---@param slot E_LoadoutSlot
 ---@return Entity
 ---@nodiscard
 function Entity:GetEntityForLoadoutSlot(slot) end
@@ -327,12 +327,12 @@ function Entity:IsMedigun() end
 function Entity:CanRandomCrit() end
 
 ---Returns the loadout slot ID of the weapon.
----@return ELoadoutSlot
+---@return E_LoadoutSlot
 ---@nodiscard
 function Entity:GetLoadoutSlot() end
 
 ---Returns the weapon ID of the weapon.
----@return EWeaponID
+---@return E_WeaponBaseID
 ---@nodiscard
 function Entity:GetWeaponID() end
 
@@ -351,7 +351,7 @@ function Entity:IsViewModelFlipped() end
 function Entity:GetProjectileFireSetup(player, vecOffset, bHitTeammates, flEndDist) end
 
 ---Returns the projectile type of the weapon, returns nil if the weapon is not a projectile weapon.
----@return EProjectileType
+---@return E_ProjectileType
 ---@nodiscard
 function Entity:GetWeaponProjectileType() end
 

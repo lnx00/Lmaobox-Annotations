@@ -40,7 +40,7 @@ function Item:GetItemID() end
 function Item:GetInventoryPosition() end
 
 ---Returns true if the item is equipped for the given class.
----@param classID ETFClass
+---@param classID E_Character
 ---@return boolean
 ---@nodiscard
 function Item:IsEquippedForClass(classID) end
