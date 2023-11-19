@@ -26,7 +26,7 @@ function client.IsInCoachesList() end
 
 --Translate world position into screen position (x, y).
 ---@param position Vector3
----@return { [1]:integer, [2]: integer }|nil
+---@return { [1]:integer, [2]: integer }?
 ---@nodiscard
 function client.WorldToScreen(position) end
 
@@ -89,12 +89,6 @@ function client.GetPlayerInfo(index) end
 function client.ChatPrintf(msg) end
 
 -- Returns local player index.
--- ```
--- -- filter local player from all players
--- local players = entities.FindByClass("CTFPlayer")
--- players[client.GetLocalPlayerIndex()] = nil
--- for k, v in pairs(players) do print(k .. ":" .. tostring(v)) end
--- ```
 ---@return integer
 ---@nodiscard
 function client.GetLocalPlayerIndex() end
@@ -120,7 +114,7 @@ function client.RemoveConVarProtection(name) end
 -- * If you use this feature it's critical that you sanitize the input string.
 -- * Consider using utf8 library if you plan to support non-English Team Fortress 2 players.
 ---@param key string
----@return string|nil
+---@return string?
 ---@nodiscard
 function client.Localize(key) end
 
