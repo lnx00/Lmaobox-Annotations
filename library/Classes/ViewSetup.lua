@@ -1,24 +1,24 @@
 ---@meta
 
 ---@class ViewSetup
----@field x integer
----@field unscaledX integer
----@field y integer
----@field unscaledY integer
----@field width integer
----@field unscaledWidth integer
----@field height integer
----@field unscaledHeight integer
----@field ortho boolean
----@field orthoLeft number
----@field orthoTop number
----@field orthoRight number
----@field orthoBottom number
----@field fov number
----@field fovViewmodel number
----@field origin Vector3
----@field angles EulerAngles
----@field zNear number
----@field zFar number
----@field aspectRatio number
+---@field x integer # Left side of view window
+---@field unscaledX integer # Left side of view window without HUD scaling
+---@field y integer # Top side of view window
+---@field unscaledY integer # Top side of view window without HUD scaling
+---@field width integer # Width of view window
+---@field unscaledWidth integer # Width of view window without HUD scaling
+---@field height integer # Height of view window
+---@field unscaledHeight integer # Height of view window without HUD scaling
+---@field ortho boolean # Whether the view is orthographic
+---@field orthoLeft number # Left side of orthographic view
+---@field orthoTop number # Top side of orthographic view
+---@field orthoRight number # Right side of orthographic view
+---@field orthoBottom number # Bottom side of orthographic view
+---@field fov number # Field of view
+---@field fovViewmodel number # Field of view of the viewmodel
+---@field origin Vector3 # Origin of the view
+---@field angles EulerAngles # Angles of the view
+---@field zNear number # Near clipping plane
+---@field zFar number # Far clipping plane
+---@field aspectRatio number # Aspect ratio of the view
 local ViewSetup = {}
