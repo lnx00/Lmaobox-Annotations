@@ -46,7 +46,7 @@ function Item:GetInventoryPosition() end
 function Item:IsEquippedForClass(classID) end
 
 ---Returns the item's backpack image texture ID. Some items may not have it, in which case, result is -1.
----@return integer
+---@return TextureID
 ---@nodiscard
 function Item:GetImageTextureID() end
 

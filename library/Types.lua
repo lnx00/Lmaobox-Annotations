@@ -11,6 +11,7 @@
 ---| "status"
 
 ---@class Font : integer
+---@class TextureID : integer
 
 ---@class SteamID : string # SteamID: `STEAM_0:0:???`
 ---@class SteamID3 : string # SteamID3: `[U:1:???]`

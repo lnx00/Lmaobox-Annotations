@@ -130,7 +130,7 @@ function draw.SetFont(font) end
 --
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
 ---@param texturePath string
----@return Texture
+---@return TextureID
 ---@nodiscard
 function draw.CreateTexture(texturePath) end
 
@@ -141,18 +141,18 @@ function draw.CreateTexture(texturePath) end
 ---[String creation guide](https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations#string-concatenation)
 ---@param rgbaData string
 ---@param width integer
----@return Texture
+---@return TextureID
 ---@nodiscard
 function draw.CreateTextureRGBA(rgbaData, width, height) end
 
 ---Returns size of the texture as integers
----@param id Texture
+---@param id TextureID
 ---@return integer width, integer height
 ---@nodiscard
 function draw.GetTextureSize(id) end
 
 ---Draw textured rectangle.
----@param id Texture
+---@param id TextureID
 ---@param x1 integer
 ---@param y1 integer
 ---@param x2 integer
@@ -162,13 +162,13 @@ function draw.TexturedRect(id, x1, y1, x2, y2) end
 ---Draw the texture by textureId as a polygon.
 ---
 ---The vertices table should be a list of tables, each containing 4 values: x,y of the vertex, and u,v of the tex coordinate.
----@param id Texture
+---@param id TextureID
 ---@param vertices { [1]: number, [2]: number, [3]: number, [4]: number }[]
 ---@param clipVertices boolean Clip to scren?
 function draw.TexturedPolygon(id, vertices, clipVertices) end
 
 ---Delete texture by id from memory. You should do this when unloading your script.
----@param id Texture
+---@param id TextureID
 function draw.DeleteTexture(id) end
 
 return draw
