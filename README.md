@@ -1,7 +1,6 @@
 # Lmaobox Lua Annotations
 
-The Lmaobox Lua Annotations allow you to get static code analysis, type checking and autocompletion for the Lmaobox Lua API in your favorite IDE.\
-It is based on the [Lua Language Server](https://github.com/luals/lua-language-server) and [Lmaobox Lua API](https://lmaobox.net/lua/).
+The Lmaobox Lua Annotations allow you to get static code analysis, type checking and autocompletion for the Lmaobox Lua API in your favorite IDE. It is based on the [Lua Language Server](https://github.com/luals/lua-language-server) and [Lmaobox Lua API](https://lmaobox.net/lua/).
 
 > *Lmaobox development just got a whole lot better* 🧠 - LewdDeveloper
 
@@ -18,7 +17,7 @@ It is based on the [Lua Language Server](https://github.com/luals/lua-language-s
 
 ---
 
-You should now get autocomplete for all the functions and methods in the library folder.
+You should now get autocomplete for all the functions, methods and libraries of the Lmaobox API.
 It should look like this:
 
 ![Preview](.github/images/AC_Preview.png)
