@@ -921,3 +921,13 @@ EGCResults = {
     k_EGCResultNotLoggedOn = 3,
     k_EGCResultInvalidMessage = 4,
 }
+
+---@enum E_ClearFlags
+E_ClearFlags = {
+    VIEW_CLEAR_COLOR = 0x1,
+    VIEW_CLEAR_DEPTH = 0x2,
+    VIEW_CLEAR_FULL_TARGET = 0x4,
+    VIEW_NO_DRAW = 0x8,
+    VIEW_CLEAR_OBEY_STENCIL = 0x10,
+    VIEW_CLEAR_STENCIL = 0x20,
+}

@@ -26,9 +26,10 @@ function client.IsInCoachesList() end
 
 --Translate world position into screen position (x, y).
 ---@param position Vector3
+---@param view ViewSetup?
 ---@return { [1]:integer, [2]: integer }?
 ---@nodiscard
-function client.WorldToScreen(position) end
+function client.WorldToScreen(position, view) end
 
 ---Run command in game console.
 ---@param cmd string
