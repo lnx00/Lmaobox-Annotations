@@ -913,8 +913,8 @@ E_BoneMask = {
     BONE_USED_BY_BONE_MERGE = 0x00040000,
 }
 
----@enum EGCResults
-EGCResults = {
+---@enum E_GCResults
+E_GCResults = {
     k_EGCResultOK = 0,
     k_EGCResultNoMessage = 1,
     k_EGCResultBufferTooSmall = 2,
