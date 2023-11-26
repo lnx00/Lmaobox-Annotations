@@ -40,25 +40,25 @@ function clientstate.GetLastCommandAck() end
 function clientstate.GetNetChannel() end
 
 ---Returns the time the client connected to the server.
----@deprecated
+---@deprecated Use NetChannel:GetConnectTime instead
 ---@return number?
 ---@nodiscard
 function clientstate.GetConnectTime() end
 
 ---Returns the time since the last tick was received.
----@deprecated
+---@deprecated Use NetChannel:GetTimeSinceLastReceived instead
 ---@return number?
 ---@nodiscard
 function clientstate.GetTimeSinceLastReceived() end
 
 ---Returns the incoming latency.
----@deprecated
+---@deprecated Use NetChannel:GetLatency instead
 ---@return number?
 ---@nodiscard
 function clientstate.GetLatencyIn() end
 
 ---Returns the outgoing latency.
----@deprecated
+---@deprecated Use NetChannel:GetLatency instead
 ---@return number?
 ---@nodiscard
 function clientstate.GetLatencyOut() end
