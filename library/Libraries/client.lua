@@ -44,7 +44,7 @@ function client.ChatSay(msg) end
 ---@param msg string
 function client.ChatTeamSay(msg) end
 
----@deprecated
+---@deprecated DOES NOTHING. All events are allowed by default.
 ---@param event string
 function client.AllowListener(event) end
 
