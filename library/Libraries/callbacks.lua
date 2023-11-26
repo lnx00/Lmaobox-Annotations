@@ -23,6 +23,7 @@ callbacks = {}
 ---| "SetRichPresence" # Called when the rich presence is updated.
 ---| "GCSendMessage" # Called when a message is being sent to the GC.
 ---| "GCRetrieveMessage" # Called when a message is being received from the GC.
+---| "SendNetMsg" # Called when a message of type NetMessage is being sent to the server.
 ---| "Unload" # Called when script is getting unloaded.
 
 ---Register new callback.

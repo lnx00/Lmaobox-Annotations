@@ -32,22 +32,33 @@ function clientstate.GetChokedCommands() end
 ---@nodiscard
 function clientstate.GetLastCommandAck() end
 
+---Returns the NetChannel object.
+---This can be nil if the client is not connected to a server.
+---NetChannel first spawns when a "client_connected" event is fired.
+---@return NetChannel?
+---@nodiscard
+function clientstate.GetNetChannel() end
+
 ---Returns the time the client connected to the server.
+---@deprecated
 ---@return number?
 ---@nodiscard
 function clientstate.GetConnectTime() end
 
 ---Returns the time since the last tick was received.
+---@deprecated
 ---@return number?
 ---@nodiscard
 function clientstate.GetTimeSinceLastReceived() end
 
 ---Returns the incoming latency.
+---@deprecated
 ---@return number?
 ---@nodiscard
 function clientstate.GetLatencyIn() end
 
 ---Returns the outgoing latency.
+---@deprecated
 ---@return number?
 ---@nodiscard
 function clientstate.GetLatencyOut() end
