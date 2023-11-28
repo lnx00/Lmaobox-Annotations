@@ -1,33 +1,17 @@
 {
-    // if not set, the folder name will be used
-    "name": "Lmaobox",
-    // list of matched words
+    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
+    "name": "Lmaobox Lua",
     "words": [
         "callbacks%.%w+",
         "client%.%w+",
-        "clientstate%.%w+",
-        "draw%.%w+",
         "engine%.%w+",
         "entities%.%w+",
-        "filesystem%.%w+",
-        "gamecoordinator%.%w+",
-        "gamerules%.%w+",
-        "globals%.%w+",
-        "gui%.%w+",
-        "input%.%w+",
-        "inventory%.%w+",
-        "itemschema%.%w+",
-        "materials%.%w+",
+        "draw%.%w+",
         "party%.%w+",
         "playerlist%.%w+",
-        "steam%.%w+",
-        "vector%.%w+",
-        "wrap%.%w+"
+        "steam%.%w+"
     ],
-    // list or matched file names. `.lua`, `.dll` and `.so` only
-    "files": [],
     "settings": {
-        "Lua.runtime.version": "Lua 5.4",
-        "Lua.diagnostics.globals": []
+        "Lua.runtime.version": "Lua 5.4"
     }
 }
