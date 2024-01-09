@@ -61,4 +61,12 @@ function gamecoordinator.EnumerateQueueMapsHealth(callback) end
 ---@nodiscard
 function gamecoordinator.GetGameServerLobby() end
 
+---Sends a message to the game coordinator.
+---You can use this to send custom messages to the game coordinator.
+---The typeID is the message type, and data is the message data.
+---The data must be a string of protobuf encoded bytes.
+---@param typeID integer
+---@param data string
+function gamecoordinator.GCSendMessage(typeID, data) end
+
 return gamecoordinator
