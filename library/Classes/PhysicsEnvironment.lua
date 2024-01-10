@@ -1,7 +1,7 @@
 ---@meta
 
----PhysicsEnvironment is a class that represents a physics environment.
----It has its own gravity, air resistance, and collision rules.
+---PhysicsEnvironment is a class that represents a physics environment. \
+---It has its own gravity, air resistance, and collision rules. \
 ---It contains physics objects that can be simulated in time.
 ---@class PhysicsEnvironment
 local PhysicsEnvironment = {}

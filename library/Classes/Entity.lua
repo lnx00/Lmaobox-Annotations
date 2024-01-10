@@ -1,7 +1,6 @@
 ---@meta
 
----Represents an entity in the game world.
---
+---Represents an entity in the game world. \
 ---Make sure to not store entities long term, they can become invalid over time - their methods will return nil in that case.
 ---@class Entity
 local Entity = {}

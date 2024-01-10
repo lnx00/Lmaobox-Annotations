@@ -1,6 +1,6 @@
 ---@meta
 
----The ItemDefinition object contains static information about an item.
+---The ItemDefinition object contains static information about an item. \
 ---Static information refers to information that is not changed during the course of the game.
 ---@class ItemDefinition
 local ItemDefinition = {}

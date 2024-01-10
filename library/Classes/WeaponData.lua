@@ -1,6 +1,7 @@
 ---@meta
 
----Contains variables related to specifications of a weapon, such as firing speed, number of projectiles, etc. Some of them may not be used, or may be wrong.
+---Contains variables related to specifications of a weapon, such as firing speed, number of projectiles, etc. \
+---Some of them may not be used, or may be wrong.
 ---@class WeaponData
 ---@field damage integer
 ---@field bulletsPerShot integer

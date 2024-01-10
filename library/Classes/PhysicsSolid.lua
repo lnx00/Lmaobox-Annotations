@@ -1,5 +1,7 @@
 ---@meta
 
+---PhysicsSolid is a class that represents a solid of a given model. \
+---It is used to create a physics object.
 ---@class PhysicsSolid
 local PhysicsSolid = {}
 

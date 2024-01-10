@@ -1,6 +1,6 @@
 ---@meta
 
----Return value of engine.TraceLine and engine.TraceHull functions.
+---Return value of engine.TraceLine and engine.TraceHull functions. \
 ---You can read the Valve wiki for more information on [trace result](https://developer.valvesoftware.com/wiki/UTIL_TraceLine#trace_t_.26tr).
 ---@class Trace
 ---@field fraction number # Fraction of the trace that was completed.

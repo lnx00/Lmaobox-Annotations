@@ -1,6 +1,6 @@
 ---@meta
 
----This is a class that contains parameters for a physics object.
+---This is a class that contains parameters for a physics object. \
 ---You can use this to set the mass, drag, and other parameters of a physics object.
 ---@class PhysicsObjectParameters
 ---@field mass number # The mass of the physics object.
