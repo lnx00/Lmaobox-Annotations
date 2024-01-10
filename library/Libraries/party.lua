@@ -15,7 +15,8 @@ function party.GetLeader() end
 ---@nodiscard
 function party.GetMembers() end
 
----Returns a table containing the player's pending party members' SteamIDs as strings. These members are invited to party, but have not joined yet.
+---Returns a table containing the player's pending party members' SteamIDs as strings.
+---These members are invited to party, but have not joined yet.
 ---@return SteamID3[]
 ---@nodiscard
 function party.GetPendingMembers() end
@@ -30,7 +31,7 @@ function party.GetGroupID() end
 ---@nodiscard
 function party.GetQueuedMatchGroups() end
 
--- Returns a table where values are all possible match groups as MatchGroup objects.
+---Returns a table where values are all possible match groups as MatchGroup objects.
 ---@return { Casual : MatchGroup, Competitive6v6 : MatchGroup, Bootcamp : MatchGroup, MannUp : MatchGroup, SpecialEvent : MatchGroup }
 ---@nodiscard
 function party.GetAllMatchGroups() end

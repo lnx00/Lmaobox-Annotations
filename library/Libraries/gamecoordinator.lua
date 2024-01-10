@@ -45,18 +45,18 @@ function gamecoordinator.GetNumMatchInvites() end
 ---Accepts all match invites the player has. Usually it's just one, and they are automatically accepted after some time anyway.
 function gamecoordinator.AcceptMatchInvites() end
 
--- Joins the match the player is currently assigned to from the previously acccepted match invite.\
--- This is usually called after accepting a match invite if the player wants to join the match.\
--- If not, call AbandonMatch() to leave the match.
+---Joins the match the player is currently assigned to from the previously acccepted match invite. \
+---This is usually called after accepting a match invite if the player wants to join the match. \
+---If not, call AbandonMatch() to leave the match.
 function gamecoordinator.JoinMatchmakingMatch() end
 
--- Enumerates the maps in the queue and calls the callback function for each map.\
--- The callback function receives the MatchMapDefinition and the health of the map represented as a number from 0 to 1.\
--- You must receive the GameCoordinator's map health update at least once to use this function (i.e. by queueing up).\
+---Enumerates the maps in the queue and calls the callback function for each map. \
+---The callback function receives the MatchMapDefinition and the health of the map represented as a number from 0 to 1. \
+---You must receive the GameCoordinator's map health update at least once to use this function (i.e. by queueing up). \
 ---@param callback fun(matchMapDefinition: MatchMapDefinition, health: number)
 function gamecoordinator.EnumerateQueueMapsHealth(callback) end
 
--- Returns the GameServerLobby object for the current match or nil if the player is not in a match.
+---Returns the GameServerLobby object for the current match or nil if the player is not in a match.
 ---@return GameServerLobby
 ---@nodiscard
 function gamecoordinator.GetGameServerLobby() end

@@ -1,5 +1,8 @@
 ---@meta
 
+---Represents a user (movement) command about to be sent to the server. \
+---Fields are modifiable directly. \
+---[UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
 ---@class UserCmd
 ---@field command_number integer # The number of the command.
 ---@field tick_count integer # The current tick count.
@@ -16,9 +19,6 @@
 ---@field mousedy integer # The mouse delta in the y direction.
 ---@field hasbeenpredicted boolean # Whether the command has been predicted.
 ---@field sendpacket boolean # Whether the command should be sent to the server or choked.
---- Represents a user (movement) command about to be sent to the server.
---- Fields are modifiable directly.
---- [UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
 local UserCmd = {}
 
 ---Returns the viewangles.
