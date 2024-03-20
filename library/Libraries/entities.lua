@@ -22,6 +22,10 @@ function entities.GetLocalPlayer() end
 ---@nodiscard
 function entities.GetByIndex(index) end
 
+---Return highest entity index
+---@return integer
+function entities.GetHighestEntityIndex() end
+
 ---Returns entity by user id.
 ---@param userID integer
 ---@return Entity? entity
