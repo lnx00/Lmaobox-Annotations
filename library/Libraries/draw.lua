@@ -1,6 +1,6 @@
 ---@meta
 
----This library allows you to draw shapes and text on the screen.
+---This library allows you to draw shapes and text on the screen. \
 ---It also allows you to create textures from images and draw them.
 ---@class draw
 draw = {}
@@ -33,8 +33,8 @@ function draw.FilledRect(x1, y1, x2, y2) end
 ---@param y2 integer
 function draw.OutlinedRect(x1, y1, x2, y2) end
 
----Draw a rectangle with a fade.
----The fade is horizontal by default, but can be vertical by setting horizontal to false.
+---Draw a rectangle with a fade. \
+---The fade is horizontal by default, but can be vertical by setting horizontal to false. \
 ---The alpha values are between 0 and 255.
 ---@param x1 integer
 ---@param y1 integer
@@ -45,8 +45,8 @@ function draw.OutlinedRect(x1, y1, x2, y2) end
 ---@param horizontal boolean?
 function draw.FilledRectFade(x1, y1, x2, y2, alpha1, alpha2, horizontal) end
 
----Draws a fade between the fadeStartPt and fadeEndPT points.
----The fade is horizontal by default, but can be vertical by setting horizontal to false.
+---Draws a fade between the fadeStartPt and fadeEndPT points. \
+---The fade is horizontal by default, but can be vertical by setting horizontal to false. \
 ---The alpha values are between 0 and 255.
 ---@param x1 integer
 ---@param y1 integer
@@ -122,22 +122,17 @@ function draw.SetFont(font) end
 
 --[[ Textures ]]--
 
----Create new texture from image on the given path.
---
----If no absolute path is provided, it will search the file in `localappdata` folder, then game's root directory `Team Fortress 2`. 
---
----Supported image extensions: PNG, JPG, BMP, TGA, VTF
---
+---Create new texture from image on the given path. \
+---If no absolute path is provided, it will search the file in `localappdata` folder, then game's root directory `Team Fortress 2`. \
+---Supported image extensions: PNG, JPG, BMP, TGA, VTF \
 ---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
 ---@param texturePath string
 ---@return TextureID
 ---@nodiscard
 function draw.CreateTexture(texturePath) end
 
----Create new texture from string.
---
----Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
---
+---Create new texture from string. \
+---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures. \
 ---[String creation guide](https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations#string-concatenation)
 ---@param rgbaData string
 ---@param width integer
@@ -159,15 +154,15 @@ function draw.GetTextureSize(id) end
 ---@param y2 integer
 function draw.TexturedRect(id, x1, y1, x2, y2) end
 
----Draw the texture by textureId as a polygon.
----
+---Draw the texture by textureId as a polygon. \
 ---The vertices table should be a list of tables, each containing 4 values: x,y of the vertex, and u,v of the tex coordinate.
 ---@param id TextureID
 ---@param vertices { [1]: number, [2]: number, [3]: number, [4]: number }[]
 ---@param clipVertices boolean Clip to scren?
 function draw.TexturedPolygon(id, vertices, clipVertices) end
 
----Delete texture by id from memory. You should do this when unloading your script.
+---Delete texture by id from memory.
+---You should do this when unloading your script.
 ---@param id TextureID
 function draw.DeleteTexture(id) end
 

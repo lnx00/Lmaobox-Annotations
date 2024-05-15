@@ -27,7 +27,7 @@ function client.IsInCoachesList() end
 ---Translate world position into screen position (x, y).
 ---@param position Vector3
 ---@param view ViewSetup?
----@return { [1]:integer, [2]: integer }?
+---@return { [1]: integer, [2]: integer }?
 ---@nodiscard
 function client.WorldToScreen(position, view) end
 
@@ -60,18 +60,10 @@ function client.GetPlayerNameByIndex(playerindex) end
 ---@nodiscard
 function client.GetPlayerNameByUserID(userid) end
 
----@class PlayerInfo
----@field Name string
----@field UserID integer
----@field SteamID SteamID3 # SteamID3: `[U:1:?]`
----@field IsBot boolean
----@field IsGOTV boolean
-local PlayerInfo = {}
-
 ---Returns info about the player. \
---- * Note : `UserID`, `SteamID` is only obtainable when client is fully connected.
+---Note : `UserID` and `SteamID` is only obtainable when client is fully connected.
 ---@param index integer
----@return PlayerInfo
+---@return { Name: string, UserID: integer, SteamID: SteamID, IsBot: boolean, IsHLTV: boolean }
 ---@nodiscard
 function client.GetPlayerInfo(index) end
 

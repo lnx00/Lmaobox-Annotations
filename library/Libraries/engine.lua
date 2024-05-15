@@ -19,8 +19,8 @@ function engine.IsGameUIVisible() end
 ---@nodiscard
 function engine.IsTakingScreenshot() end
 
----Traces line from src to dst, returns Trace class.
----The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit.
+---Traces line from src to dst, returns Trace class. \
+---The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit. \
 ---It should return true if the entity should be hit, and false otherwise.
 ---@param src Vector3
 ---@param dst Vector3
@@ -30,7 +30,9 @@ function engine.IsTakingScreenshot() end
 ---@nodiscard
 function engine.TraceLine(src, dst, mask, shouldHitEntity) end
 
----Traces hull from src to dst, returns Trace class. The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit. It should return true if the entity should be hit, and false otherwise.
+---Traces hull from src to dst, returns Trace class. \
+---The shouldHitEntity function is optional, and can be used to filter out entities that should not be hit. \
+---It should return true if the entity should be hit, and false otherwise.
 ---@param src Vector3
 ---@param dst Vector3
 ---@param mins Vector3
@@ -53,23 +55,23 @@ function engine.GetPointContents(point, mask) end
 ---@nodiscard
 function engine.GetMapName() end
 
----Returns server ip
--- * Returns `loopback` on local server otherwise.
+---Returns server ip.
+---Returns `loopback` on local servers.
 ---@return string
 ---@nodiscard
 function engine.GetServerIP() end
 
----Returns player view angles
+---Returns player view angles.
 ---@return EulerAngles
 ---@nodiscard
 function engine.GetViewAngles() end
 
----Sets player view angles
+---Sets player view angles.
 ---@param angles EulerAngles
 function engine.SetViewAngles(angles) end
 
----Plays a sound at the given path, relative to the game's root directory `Team Fortress 2/tf/sound`
--- * The list of available sounds can be found in `tf2_sound_misc_dir.vpk`
+---Plays a sound at the given path, relative to the game's root directory `Team Fortress 2/tf/sound`. \
+---The list of available sounds can be found in `tf2_sound_misc_dir.vpk`.
 ---@param audioPath string
 function engine.PlaySound(audioPath) end
 

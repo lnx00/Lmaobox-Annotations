@@ -4,10 +4,13 @@
 ---@class clientstate
 clientstate = {}
 
----Requests a full update from the server. This can lag the game a bit and should be used sparingly. It can even cause the game to crash if used incorrectly.
+---Requests a full update from the server.
+---This can lag the game a bit and should be used sparingly.
+---It can even cause the game to crash if used incorrectly.
 function clientstate.ForceFullUpdate() end
 
----Returns the current client signon state. This is useful for determining if the client is fully connected to the server.
+---Returns the current client signon state.
+---This is useful for determining if the client is fully connected to the server.
 ---@return E_SignonState
 ---@nodiscard
 function clientstate.GetClientSignonState() end

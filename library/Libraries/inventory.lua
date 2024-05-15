@@ -5,7 +5,8 @@
 ---@class inventory
 inventory = {}
 
----Callback is called for each item in the inventory. The item is passed as the first argument and is of type Item.
+---Callback is called for each item in the inventory. \
+---The item is passed as the first argument and is of type Item.
 ---@param callback fun(item: ItemDefinition)
 function inventory.Enumerate(callback) end
 
@@ -31,13 +32,16 @@ function inventory.GetItemByItemID(id) end
 ---@param slot integer
 function inventory.GetItemInLoadout(id, slot) end
 
----Equips the item that is in the given slot in the given class' loadout slot. The item is of type Item
+---Equips the item that is in the given slot in the given class' loadout slot. \
 ---@param item Item
 ---@param id integer
 ---@param slot integer
 function inventory.EquipItemInLoadout(item, id, slot) end
 
----Creates a fake item with the given parameters. The item definition is of type ItemDefinition. The pickupOrPosition parameter is the pickup method, if isNewItem parameter is true, and the inventory position of the item if isNewItem parameter is false. The itemID64 is the unique 64bit item ID of the item, you can use -1 to generate a random ID. For quality and origin you can use constants. The level is the item's level.
+---Creates a fake item with the given parameters. The item definition is of type ItemDefinition. \
+---The pickupOrPosition parameter is the pickup method, if isNewItem parameter is true, and the inventory position of the item if isNewItem parameter is false. \
+---The `itemID64` is the unique 64-bit item ID of the item, you can use -1 to generate a random ID. \
+---For `quality` and `origin` you can use constants. The `level` is the item's level.
 ---@param itemdef ItemDefinition
 ---@param pickupOrPosition integer
 ---@param itemID64 integer

@@ -14,7 +14,7 @@ function materials.Find(name) end
 ---@param callback fun(material: Material)
 function materials.Enumerate(callback) end
 
----Create custom material.
+---Create custom material. \
 ---To create custom materials follow the [Valve Material Type](https://developer.valvesoftware.com/wiki/Material) syntax.
 ---@param name string
 ---@param vmt string
@@ -22,9 +22,9 @@ function materials.Enumerate(callback) end
 ---@nodiscard
 function materials.Create(name, vmt) end
 
----Create a texture render target.
----Name should be an unique name of the material.
----Width and height are the dimensions of the texture.
+---Create a texture render target. \
+---Name should be an unique name of the material. \
+---Width and height are the dimensions of the texture. \
 ---Returns a Texture object.
 ---@param name string
 ---@param width integer

@@ -29,9 +29,9 @@ function globals.CurTime() end
 ---@nodiscard
 function globals.FrameCount() end
 
----Returns delta time between frames.
---
----FrameTime() might return tick interval in some callbacks. You can use AbsoluteFrameTime() instead.`
+---Returns delta time between frames. \
+---FrameTime() might return tick interval in some callbacks. \
+---You can use AbsoluteFrameTime() instead.`
 ---@return number
 ---@nodiscard
 function globals.FrameTime() end

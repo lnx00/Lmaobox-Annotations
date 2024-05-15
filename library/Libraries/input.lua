@@ -9,24 +9,21 @@ input = {}
 ---@nodiscard
 function input.GetMousePos() end
 
----Checks if a button is down.
---
+---Checks if a button is down. \
 ---[Key Codes](./enums.lua)
 ---@param key E_ButtonCode|integer
 ---@return boolean state, integer tick
 ---@nodiscard
 function input.IsButtonDown(key) end
 
----Checks if a button is pressed.
---
+---Checks if a button is pressed. \
 ---[Key Codes](./enums.lua)
 ---@param key E_ButtonCode|integer
 ---@return boolean state, integer tick
 ---@nodiscard
 function input.IsButtonPressed(key) end
 
----Checks if a button is released.
---
+---Checks if a button is released. \
 ---[Key Codes](./enums.lua)
 ---@param key E_ButtonCode|integer
 ---@return boolean state, integer tick

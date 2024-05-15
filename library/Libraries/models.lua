@@ -1,6 +1,6 @@
 ---@meta
 
----The models library provides a way to get information about models.
+---The models library provides a way to get information about models. \
 ---When inputting the model:Model parameter, it must be of type Model.
 ---@class models
 models = {}

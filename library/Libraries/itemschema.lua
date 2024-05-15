@@ -1,6 +1,6 @@
 ---@meta
 
----The itemschema library contains functions for retrieving information about items.
+---The itemschema library contains functions for retrieving information about items. \
 ---Items referred to in this library are of the ItemDefinition type.
 ---@class itemschema
 itemschema = {}
