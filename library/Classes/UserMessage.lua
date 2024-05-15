@@ -94,7 +94,7 @@ function UserMessage:WriteByte(byte) end
 ---When writing, make sure that your current bit position is correct and that you do not overflow the message.
 ---@deprecated Use BitBuffer:WriteFloat instead
 ---@param float number
----@param n integer? # optional number of bits to write (default = ``32``)
+---@param n integer? # optional number of bits to write (default = `32`)
 function UserMessage:WriteFloat(float, n) end
 
 ---Writes an integer to the message. \
@@ -102,7 +102,7 @@ function UserMessage:WriteFloat(float, n) end
 ---When writing, make sure that your current bit position is correct and that you do not overflow the message.
 ---@deprecated Use BitBuffer:WriteInt instead
 ---@param int integer
----@param n integer? # optional number of bits to write (default = ``32``)
+---@param n integer? # optional number of bits to write (default = `32`)
 function UserMessage:WriteInt(int, n) end
 
 ---Writes string to the message. \

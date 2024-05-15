@@ -98,14 +98,14 @@ function engine.RandomSeed(seed) end
 
 ---Returns a random number between min and max (inclusive), using the game's uniform random number generator.
 ---@param min number
----@param max? number # optional maximum number (default = ``1`` or ``min``)
+---@param max? number # optional maximum number (default = `1` or `min`)
 ---@return number
 ---@nodiscard
 function engine.RandomFloat(min, max) end
 
 ---Returns a random integer between min and max (inclusive), using the game's uniform random number generator.
 ---@param min integer
----@param max? integer # optional maximum number (default = ``0x7FFF`` or ``min``)
+---@param max? integer # optional maximum number (default = `0x7FFF` or `min`)
 ---@return integer
 ---@nodiscard
 function engine.RandomInt(min, max) end
@@ -113,7 +113,7 @@ function engine.RandomInt(min, max) end
 ---Returns a random number between min and max using the exponent, using the game's uniform random number generator.
 ---@param min number
 ---@param max number
----@param exponent? number # optional exponent number (default = ``1``)
+---@param exponent? number # optional exponent number (default = `1`)
 ---@return number
 ---@nodiscard
 function engine.RandomFloatExp(min, max, exponent) end

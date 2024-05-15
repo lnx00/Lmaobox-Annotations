@@ -181,7 +181,7 @@ function Entity:GetPropString(...) end
 ---@nodiscard
 function Entity:GetPropVector(...) end
 
----Returns the Entity class of the given netvar, usually those that has prefix: ``m_hXXXX``.
+---Returns the Entity class of the given netvar, usually those that has prefix: `m_hXXXX`.
 ---@param ... string
 ---@return Entity handle
 ---@nodiscard
