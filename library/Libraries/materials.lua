@@ -24,8 +24,7 @@ function materials.Create(name, vmt) end
 
 ---Create a texture render target. \
 ---Name should be an unique name of the material. \
----Width and height are the dimensions of the texture. \
----Returns a Texture object.
+---Width and height are the dimensions of the texture.
 ---@param name string
 ---@param width integer
 ---@param height integer
