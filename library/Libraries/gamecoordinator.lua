@@ -56,8 +56,8 @@ function gamecoordinator.JoinMatchmakingMatch() end
 ---@param callback fun(matchMapDefinition: MatchMapDefinition, health: number)
 function gamecoordinator.EnumerateQueueMapsHealth(callback) end
 
----Returns the GameServerLobby object for the current match or nil if the player is not in a match.
----@return GameServerLobby
+---Returns the GameServerLobby object for the current match or `nil` if the player is not in a match.
+---@return GameServerLobby?
 ---@nodiscard
 function gamecoordinator.GetGameServerLobby() end
 

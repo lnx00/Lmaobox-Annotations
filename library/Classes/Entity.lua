@@ -355,7 +355,7 @@ function Entity:IsViewModelFlipped() end
 function Entity:GetProjectileFireSetup(player, vecOffset, bHitTeammates, flEndDist) end
 
 ---Returns the projectile type of the weapon, returns `nil` if the weapon is not a projectile weapon.
----@return E_ProjectileType
+---@return E_ProjectileType?
 ---@nodiscard
 function Entity:GetWeaponProjectileType() end
 

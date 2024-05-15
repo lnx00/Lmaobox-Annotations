@@ -4,7 +4,8 @@
 ---@class Item
 local Item = {}
 
----Returns true if the item is valid. There are instances where an item in the inventory is not valid and you should account for them. Otherwise, methods will return nil.
+---Returns true if the item is valid. There are instances where an item in the inventory is not valid and you should account for them. \
+---Otherwise, methods will return `nil`.
 ---@return boolean
 ---@nodiscard
 function Item:IsValid() end

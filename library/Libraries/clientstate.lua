@@ -35,8 +35,8 @@ function clientstate.GetChokedCommands() end
 ---@nodiscard
 function clientstate.GetLastCommandAck() end
 
----Returns the NetChannel object.
----This can be nil if the client is not connected to a server.
+---Returns the NetChannel object. \
+---This can be `nil` if the client is not connected to a server. \
 ---NetChannel first spawns when a "client_connected" event is fired.
 ---@return NetChannel?
 ---@nodiscard
