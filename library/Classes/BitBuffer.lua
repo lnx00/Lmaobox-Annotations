@@ -36,14 +36,14 @@ function BitBuffer:ReadBit() end
 ---Reads 4 bytes from the buffer and returns it as a float. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. \
 ---Returns the float read as first return value, and current bit position as second return value.
----@param bitLength integer?
+---@param bitLength integer? # optional (default = `32`)
 ---@return number float, integer currentPos
 function BitBuffer:ReadFloat(bitLength) end
 
 ---Reads 4 bytes from the buffer and returns it as an integer. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. \
 ---Returns the integer read as first return value, and current bit position as second return value.
----@param bitLength integer?
+---@param bitLength integer? # optional (default = `32`)
 ---@return integer int, integer currentPos
 function BitBuffer:ReadInt(bitLength) end
 
@@ -79,11 +79,11 @@ function BitBuffer:WriteString(str) end
 ---Writes an integer to the buffer. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 ---@param int integer
----@param bitLength integer?
+---@param bitLength integer? # optional (default = `32`)
 function BitBuffer:WriteInt(int, bitLength) end
 
 ---Writes a float to the buffer. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 ---@param float number
----@param bitLength integer?
+---@param bitLength integer? # optional (default = `32`)
 function BitBuffer:WriteFloat(float, bitLength) end

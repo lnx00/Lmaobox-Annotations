@@ -42,7 +42,7 @@ function draw.OutlinedRect(x1, y1, x2, y2) end
 ---@param y2 integer
 ---@param alpha1 integer 0 to 255
 ---@param alpha2 integer 0 to 255
----@param horizontal boolean?
+---@param horizontal boolean? # optional (default = `true`)
 function draw.FilledRectFade(x1, y1, x2, y2, alpha1, alpha2, horizontal) end
 
 ---Draws a fade between the fadeStartPt and fadeEndPT points. \
@@ -56,7 +56,7 @@ function draw.FilledRectFade(x1, y1, x2, y2, alpha1, alpha2, horizontal) end
 ---@param fadeEndPt integer
 ---@param alpha1 integer 0 to 255
 ---@param alpha2 integer 0 to 255
----@param horizontal boolean?
+---@param horizontal boolean? # optional (default = `true`)
 function draw.FilledRectFastFade(x1, y1, x2, y2, fastStartPt, fadeEndPt, alpha1, alpha2, horizontal) end
 
 ---Draw a colored circle with center at centerx, centery and radius radius.
