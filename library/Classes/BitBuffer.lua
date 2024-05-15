@@ -4,7 +4,7 @@
 ---@class BitBuffer
 local BitBuffer = {}
 
----Creates a new BitBuffer object with an empty buffer.
+---Creates a new BitBuffer object with an empty buffer. \
 ---You can write to it using methods below or have some other functions write to it for you, such as NetMessage::WriteToBitBuffer.
 ---@return BitBuffer
 function _G.BitBuffer() end
@@ -19,35 +19,36 @@ function BitBuffer:GetDataBitsLength() end
 ---@return integer bytes
 function BitBuffer:GetDataBytesLength() end
 
----Resets the read position to the beginning of the buffer.
+---Resets the read position to the beginning of the buffer. \
 ---This is useful if you want to read the buffer multiple times, but it is not necessary.
 function BitBuffer:Reset() end
 
----Reads one byte from the buffer.
+---Reads one byte from the buffer. \
 ---Returns the byte read as first return value, and current bit position as second return value.
 ---@return integer byte, integer currentPos
 function BitBuffer:ReadByte() end
 
----Reads a single bit from the buffer.
+---Reads a single bit from the buffer. \
 ---Returns the bit read as first return value, and current bit position as second return value.
 ---@return integer bit, integer currentPos
+function BitBuffer:ReadBit() end
 
----Reads 4 bytes from the buffer and returns it as a float.
----Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
+---Reads 4 bytes from the buffer and returns it as a float. \
+---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. \
 ---Returns the float read as first return value, and current bit position as second return value.
 ---@param bitLength integer?
 ---@return number float, integer currentPos
 function BitBuffer:ReadFloat(bitLength) end
 
----Reads 4 bytes from the buffer and returns it as an integer.
----Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
+---Reads 4 bytes from the buffer and returns it as an integer. \
+---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64. \
 ---Returns the integer read as first return value, and current bit position as second return value.
 ---@param bitLength integer?
 ---@return integer int, integer currentPos
 function BitBuffer:ReadInt(bitLength) end
 
----Reads a string from the buffer.
----You must specify valid maxlen. The string will be truncated if it is longer than maxlen.
+---Reads a string from the buffer. \
+---You must specify valid maxlen. The string will be truncated if it is longer than maxlen. \
 ---Returns the string read as first return value, and current bit position as second return value.
 ---@param maxlen integer
 ---@return string str, integer currentPos
@@ -75,13 +76,13 @@ function BitBuffer:WriteByte(byte) end
 ---@param str string
 function BitBuffer:WriteString(str) end
 
----Writes an integer to the buffer.
+---Writes an integer to the buffer. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 ---@param int integer
 ---@param bitLength integer?
 function BitBuffer:WriteInt(int, bitLength) end
 
----Writes a float to the buffer.
+---Writes a float to the buffer. \
 ---Default bitLength is 32 (4 bytes). For short, use 16, for long, use 64.
 ---@param float number
 ---@param bitLength integer?

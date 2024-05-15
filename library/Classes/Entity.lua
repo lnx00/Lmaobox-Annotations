@@ -1,13 +1,14 @@
 ---@meta
 
 ---Represents an entity in the game world. \
----Make sure to not store entities long term, they can become invalid over time - their methods will return nil in that case.
+---Make sure to not store entities long term, they can become invalid over time - their methods will return `nil` in that case.
 ---@class Entity
 local Entity = {}
 
 --[[ Methods ]]
 
----Returns whether the entity is valid. This is done automatically and all other functions will return nil if the entity is invalid.
+---Returns whether the entity is valid. \
+---This is done automatically and all other functions will return `nil` if the entity is invalid.
 ---@return boolean
 ---@nodiscard
 function Entity:IsValid() end
@@ -86,7 +87,7 @@ function Entity:EstimateAbsVelocity() end
 function Entity:GetMoveType() end
 
 ---Returns the hitbox surrounding box of the entity as table of Vector3 mins and maxs
----@return {[1]: Vector3, [2]: Vector3}
+---@return { [1]: Vector3, [2]: Vector3 }
 ---@nodiscard
 function Entity:HitboxSurroundingBox() end
 
@@ -95,16 +96,16 @@ function Entity:HitboxSurroundingBox() end
 ---@nodiscard
 function Entity:EntitySpaceHitboxSurroundingBox() end
 
----Sets up the bones of the entity, boneMask is optional, by default 0x7FF00, and can be changed if you want to only setup certain bones.
----The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time.
+---Sets up the bones of the entity, boneMask is optional, by default 0x7FF00, and can be changed if you want to only setup certain bones. \
+---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time. \
 ---Returns a table of at most 128 entries of a 3x4 matrix (table) of float numbers, representing the bone transforms.
 ---@param boneMask? integer # optional (default = `0x7FF00`)
 ---@param currentTime? number # optional (default = `0`)
 ---@return Matrix3x4[]
 function Entity:SetupBones(boneMask, currentTime) end
 
----Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox.
----The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time
+---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. \
+---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time \
 ---@deprecated Use Entity:SetupBones instead
 ---@param currentTime? number # optional (default = `0`)
 ---@return table<E_Hitbox, { [1]: Vector3, [2]: Vector3 }>
@@ -125,7 +126,8 @@ function Entity:GetModel() end
 ---This is only useful for non-networkable entities created with `entities.CreateEntityByName`
 function Entity:Release() end
 
----Returns true if the entity is dormant (not being updated). Dormant entities are not drawn and shouldn't be interacted with.
+---Returns true if the entity is dormant (not being updated). \
+---Dormant entities are not drawn and shouldn't be interacted with.
 ---@return boolean
 ---@nodiscard
 function Entity:IsDormant() end
@@ -258,7 +260,7 @@ function Entity:SetPropDataTableEntity(value, index, ...) end
 
 --[[ Player entity methods ]]
 
----Returns whether the player is in the specified condition. List of conditions in TF2 can be found
+---Returns whether the player is in the specified condition.
 ---@param condition E_TFCOND
 ---@return boolean
 ---@nodiscard
@@ -293,7 +295,8 @@ function Entity:GetCarryingRuneType() end
 ---@nodiscard
 function Entity:GetMaxBuffedHealth() end
 
----Returns the entity for the specified loadout slot. This can be used to get the hat entity for the slot, or the weapon entity for the slot
+---Returns the entity for the specified loadout slot. \
+---This can be used to get the hat entity for the slot, or the weapon entity for the slot
 ---@param slot E_LoadoutSlot
 ---@return Entity
 ---@nodiscard
@@ -342,38 +345,40 @@ function Entity:IsViewModelFlipped() end
 
 --[[ Weapon shooting gun methods ]]
 
+---Returns vecSrc as Vector3 and angForward as Vector3. \
+---`vecSrc` is the starting position of the projectile, `angForward` is the direction of the projectile.
 ---@param player Entity
----@param vecOffset Vector3
----@param bHitTeammates boolean
----@param flEndDist number
+---@param vecOffset Vector3 # Offset of the projectile from the player's eye position.
+---@param bHitTeammates boolean # Whether the projectile can hit teammates.
+---@param flEndDist number # Distance the projectile can travel before it disappears.
 ---@return Vector3 vecSrc, Vector3 angForward
 function Entity:GetProjectileFireSetup(player, vecOffset, bHitTeammates, flEndDist) end
 
----Returns the projectile type of the weapon, returns nil if the weapon is not a projectile weapon.
+---Returns the projectile type of the weapon, returns `nil` if the weapon is not a projectile weapon.
 ---@return E_ProjectileType
 ---@nodiscard
 function Entity:GetWeaponProjectileType() end
 
----Returns the spread of the weapon, returns nil if the weapon is not a gun weapon.
+---Returns the spread of the weapon, returns `nil` if the weapon is not a gun weapon.
 ---@return number? spread
 ---@nodiscard
 function Entity:GetWeaponSpread() end
 
----Returns the projectile speed of the weapon, returns nil if the weapon is not a projectile weapon.
----Can return 0 if the weapon has the speed hardcoded somewhere else.
+---Returns the projectile speed of the weapon, returns `nil` if the weapon is not a projectile weapon. \
+---Can return 0 if the weapon has the speed hardcoded somewhere else. \
 ---In that case its up to you to figure out the speed.
 ---@return number? speed
 ---@nodiscard
 function Entity:GetWeaponProjectileSpeed() end
 
----Returns the projectile gravity of the weapon, returns nil if the weapon is not a projectile weapon.
----Can return 0 if the weapon has the gravity hardcoded somewhere else.
+---Returns the projectile gravity of the weapon, returns `nil` if the weapon is not a projectile weapon. \
+---Can return 0 if the weapon has the gravity hardcoded somewhere else. \
 ---In that case its up to you to figure out the gravity.
 ---@return number? gravity
 ---@nodiscard
 function Entity:GetWeaponProjectileGravity() end
 
----Returns the projectile spread of the weapon, returns nil if the weapon is not a projectile weapon.
+---Returns the projectile spread of the weapon, returns `nil` if the weapon is not a projectile weapon.
 ---@return number? spread
 ---@nodiscard
 function Entity:GetProjectileSpread() end
@@ -385,51 +390,52 @@ function Entity:GetProjectileSpread() end
 ---@nodiscard
 function Entity:CanCharge() end
 
----Returns the time the weapon started charging up, returns nil if the weapon is not a charge up weapon.
+---Returns the time the weapon started charging up, returns `nil` if the weapon is not a charge up weapon.
 ---@return number? time
 ---@nodiscard
 function Entity:GetChargeBeginTime() end
 
----Returns the max charge time of the weapon, returns nil if the weapon is not a charge up weapon.
+---Returns the max charge time of the weapon, returns `nil` if the weapon is not a charge up weapon.
 ---@return number? maxTime
 ---@nodiscard
 function Entity:GetChargeMaxTime() end
 
----Returns the current charge of the weapon, returns nil if the weapon is not a charge up weapon.
+---Returns the current charge of the weapon, returns `nil` if the weapon is not a charge up weapon.
 ---@return number? charge
 ---@nodiscard
 function Entity:GetCurrentCharge() end
 
 --[[ Melee Weapon Methods ]]
 
----Returns the swing range of the weapon, returns nil if the weapon is not a melee weapon.
----@return integer
+---Returns the swing range of the weapon, returns `nil` if the weapon is not a melee weapon.
+---@return integer?
 ---@nodiscard
 function Entity:GetSwingRange() end
 
----Returns the Trace object result of the weapon's swing. In simple terms, it simulates what would weapon hit if it was swung.
+---Returns the Trace object result of the weapon's swing. \
+---In simple terms, it simulates what would weapon hit if it was swung.
 ---@return Trace
 ---@nodiscard
 function Entity:DoSwingTrace() end
 
----Returns the heal rate of the medigun, returns nil if the weapon is not a medigun.
----@return number
+---Returns the heal rate of the medigun, returns `nil` if the weapon is not a medigun.
+---@return number?
 ---@nodiscard
 function Entity:GetMedigunHealRate() end
 
----Returns the healing stick range of the medigun, returns nil if the weapon is not a medigun.
----@return number
+---Returns the healing stick range of the medigun, returns `nil` if the weapon is not a medigun.
+---@return number?
 ---@nodiscard
 function Entity:GetMedigunHealingStickRange() end
 
----Returns the healing range of the medigun, returns nil if the weapon is not a medigun.
----@return number
+---Returns the healing range of the medigun, returns `nil` if the weapon is not a medigun.
+---@return number?
 ---@nodiscard
 function Entity:GetMedigunHealingRange() end
 
----Returns whether the medigun is allowed to heal the target, returns nil if the weapon is not a medigun.
+---Returns whether the medigun is allowed to heal the target, returns `nil` if the weapon is not a medigun.
 ---@param target Entity
----@return boolean
+---@return boolean?
 ---@nodiscard
 function Entity:IsMedigunAllowedToHealTarget(target) end
 
@@ -470,14 +476,14 @@ function Entity:GetLastRapidFireCritCheckTime() end
 ---@nodiscard
 function Entity:GetWeaponBaseDamage() end
 
----Returns the weapon's current crit chance as a number from 0 to 1. This crit chance changes during gameplay based on player's recently dealt damage.
+---Returns the weapon's current crit chance as a number from 0 to 1. \
+---This crit chance changes during gameplay based on player's recently dealt damage.
 ---@return number
 ---@nodiscard
 function Entity:GetCritChance() end
 
----Calculates the cost of a crit
---
----use GetCritCost(GetCritTokenBucket,GetCritSeedRequestCount, GetCritCheckCount) to get the current cost of a crit
+---Calculates the cost of a crit based on the given crit parameters. \
+---You can either use the GetCritTokenBucket(), GetCritCheckCount(), and GetCritSeedRequestCount() methods to get the current crit parameters, or you can pass your own if you are simulating crits.
 ---@param tokenBucket number
 ---@param critSeedRequestCount number
 ---@param critCheckCount integer
@@ -485,7 +491,9 @@ function Entity:GetCritChance() end
 ---@nodiscard
 function Entity:GetCritCost(tokenBucket, critSeedRequestCount, critCheckCount) end
 
----This function estimates the observed crit chance. The observed crit chance is calculated on the server from the damage you deal across a game round. It is only rarely sent to the client, but is important for crit calculations.
+---This function estimates the observed crit chance. \
+---The observed crit chance is calculated on the server from the damage you deal across a game round. \
+---It is only rarely sent to the client, but is important for crit calculations.
 ---@return number
 ---@nodiscard
 function Entity:CalcObservedCritChance() end
@@ -497,7 +505,7 @@ function Entity:CalcObservedCritChance() end
 function Entity:IsAttackCritical(commandNumber) end
 
 ---Returns the round damage stats
----@return { total : integer, critical : integer, melee : integer }
+---@return { total: integer, critical: integer, melee: integer }
 ---@nodiscard
 function Entity:GetWeaponDamageStats() end
 

@@ -9,7 +9,7 @@ local StudioModelHeader = {}
 ---@nodiscard
 function StudioModelHeader:GetName() end
 
----Returns a StudioHitboxSet object by the entities hitbox set index.
+---Returns a StudioHitboxSet object by the entities hitbox set index. \
 ---This can be retrieved from m_nHitBoxSet netvar.
 ---@return StudioHitboxSet
 ---@param index integer

@@ -19,7 +19,7 @@ function PhysicsObject:Sleep() end
 ---@nodiscard
 function PhysicsObject:GetPosition() end
 
----Sets the position and angle of the physics object.
+---Sets the position and angle of the physics object. \
 ---If isTeleport is true, the physics object will be teleported to the new position and angle.
 ---@param position Vector3
 ---@param angle Vector3

@@ -36,8 +36,7 @@ function UserCmd:SetViewAngles(pitch, yaw, roll) end
 ---@param value boolean
 function UserCmd:SetSendPacket(value) end
 
----Set the buttons.
---
+---Set the buttons. \
 ---When setting a button make sure to GetButtons() first and add any additional button using the bitwise operator OR.
 ---@param buttons integer
 function UserCmd:SetButtons(buttons) end

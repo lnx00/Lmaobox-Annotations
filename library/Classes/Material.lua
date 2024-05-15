@@ -15,8 +15,8 @@ function Material:GetName() end
 ---@nodiscard
 function Material:GetTextureGroupName() end
 
----Modulate transparency of material. [0-1], increments by 0.1.
----@param alpha number
+---Modulate transparency of material.
+---@param alpha number [0, 1] - increments by 0.1
 function Material:AlphaModulate(alpha) end
 
 ---Modulate color of material. Colors are between 0 and 1.

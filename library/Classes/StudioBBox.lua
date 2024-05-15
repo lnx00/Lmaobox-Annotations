@@ -9,7 +9,7 @@ local StudioBBox = {}
 ---@nodiscard
 function StudioBBox:GetName() end
 
----Returns the bone index of the bounding box.
+---Returns the bone index of the bounding box. \
 ---This is useful to index the bone matrix to properly transform the bounding box.
 ---@return integer
 ---@nodiscard

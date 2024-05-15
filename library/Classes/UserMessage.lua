@@ -4,8 +4,7 @@
 ---@class UserMessage
 local UserMessage = {}
 
----Get the id of the message. \
----[TF2 User Messages](https://wiki.alliedmods.net/User_messages)
+---Get the id of the [message](https://wiki.alliedmods.net/User_messages).
 ---@return E_UserMessage
 ---@nodiscard
 function UserMessage:GetID() end
@@ -38,7 +37,7 @@ function UserMessage:SetCurBit(bit) end
 ---@nodiscard
 function UserMessage:GetCurBit() end
 
----Sets the position to the beginning of the message
+---Sets the position to the beginning of the message \
 ---This is useful if you want to read the message multiple times
 ---@deprecated Use BitBuffer:Reset instead
 function UserMessage:Reset() end
@@ -58,14 +57,14 @@ function UserMessage:ReadByte() end
 ---Reads n bit from the message.
 ---Returns float, current bit position
 ---@deprecated Use BitBuffer:ReadFloat instead
----@param n integer? # optional number of bits to read (default = ``32``)
+---@param n integer? # optional number of bits to read (default = `32`)
 ---@return number float, integer pos
 function UserMessage:ReadFloat(n) end
 
 ---Reads n bit from the message.
 ---Returns integer, current bit position
 ---@deprecated Use BitBuffer:ReadInt instead
----@param n integer? # optional number of bits to read (default = ``32``)
+---@param n integer? # optional number of bits to read (default = `32`)
 ---@return integer int, integer pos
 function UserMessage:ReadInt(n) end
 

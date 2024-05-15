@@ -4,7 +4,7 @@
 ---@class DrawModelContext
 local DrawModelContext = {}
 
----Returns the entity linked to the drawn model, can be nil.
+---Returns the entity linked to the drawn model, can be `nil`.
 ---@return Entity?
 ---@nodiscard
 function DrawModelContext:GetEntity() end
@@ -32,11 +32,9 @@ function DrawModelContext:StudioSetColorModulation(r, g, b, a) end
 ---@param alpha number [0, 1]
 function DrawModelContext:StudioSetAlphaModulation(alpha) end
 
----Sets the depth range of the scene.
---
----Useful for drawing models in the background or other various effects.
---
----Should be reset to the default (0,1) when done.
+---Sets the depth range of the scene. \
+---Useful for drawing models in the background or other various effects. \
+---Should be reset to the default [0, 1] when done.
 ---@param min number [0, 1]
 ---@param max number [0, 1]
 function DrawModelContext:DepthRange(min, max) end

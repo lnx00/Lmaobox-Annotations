@@ -20,29 +20,28 @@ function NetChannel:GetConnectTime() end
 ---@return number
 function NetChannel:GetTimeSinceLastReceived() end
 
----Returns the latency of the specified flow. Use E_Flows contants.
----@param flow integer
+---Returns the latency of the specified flow.
+---@param flow E_Flows
 ---@return number
 function NetChannel:GetLatency(flow) end
 
 ---Returns the average latency of the specified flow.
----Use E_Flows contants.
----@param flow integer
+---@param flow E_Flows
 ---@return number
 function NetChannel:GetAvgLatency(flow) end
 
----Returns the average choke of the specified flow. Use E_Flows contants.
----@param flow integer
+---Returns the average choke of the specified flow.
+---@param flow E_Flows
 ---@return number
 function NetChannel:GetAvgChoke(flow) end
 
----Returns the average loss of the specified flow. Use E_Flows contants.
----@param flow integer
+---Returns the average loss of the specified flow.
+---@param flow E_Flows
 ---@return number
 function NetChannel:GetAvgLoss(flow) end
 
----Returns the average data of the specified flow. Use E_Flows contants.
----@param flow integer
+---Returns the average data of the specified flow.
+---@param flow E_Flows
 ---@return number
 function NetChannel:GetAvgData(flow) end
 

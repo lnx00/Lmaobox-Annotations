@@ -4,7 +4,8 @@
 ---@class PartyMemberActivity
 PartyMemberActivity = {}
 
----Returns the lobby ID of the party member. This can be used to find out whether the party member is currently in a matchmade game.
+---Returns the lobby ID of the party member. \
+---This can be used to find out whether the party member is currently in a matchmade game.
 ---@return number id
 ---@nodiscard
 function PartyMemberActivity:GetLobbyID() end

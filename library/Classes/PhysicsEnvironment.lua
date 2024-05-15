@@ -55,8 +55,7 @@ function PhysicsEnvironment:GetActiveObjects() end
 ---Resets the simulation clock of the physics environment.
 function PhysicsEnvironment:ResetSimulationClock() end
 
----Creates a physics object from a collision model, surface property name, and physics object parameters.
----Returns a PhysicsObject object.
+---Creates a physics object from a collision model, surface property name, and physics object parameters. \
 ---Objects is created asleep, and must be woken up before simulation by calling PhysicsObject:Wake().
 ---@param collisionModel PhysicsCollisionModel
 ---@param surfacePropertyName string

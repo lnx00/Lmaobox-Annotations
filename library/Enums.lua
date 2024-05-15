@@ -931,3 +931,10 @@ E_ClearFlags = {
     VIEW_CLEAR_OBEY_STENCIL = 0x10,
     VIEW_CLEAR_STENCIL = 0x20,
 }
+
+---@enum E_Flows
+E_Flows = {
+    FLOW_OUTGOING = 0,
+    FLOW_INCOMING = 1,
+    MAX_FLOWS = 2,
+}

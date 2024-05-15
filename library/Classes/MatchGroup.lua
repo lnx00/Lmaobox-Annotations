@@ -14,7 +14,8 @@ function MatchGroup:GetID() end
 ---@nodiscard
 function MatchGroup:GetName() end
 
----Returns whether the match group is a competitive mode. Can return false if you are using a competitive bypass feature.
+---Returns whether the match group is a competitive mode. \
+---Can return false if you are using a competitive bypass feature.
 ---@return boolean
 ---@nodiscard
 function MatchGroup:IsCompetitiveMode() end
