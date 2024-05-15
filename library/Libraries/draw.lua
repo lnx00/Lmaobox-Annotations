@@ -105,14 +105,13 @@ function draw.GetScreenSize() end
 ---@param name string
 ---@param height integer
 ---@param weight integer
----@param flags? E_FontFlag|integer # optional font flag (default = ``FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS``)
+---@param flags? E_FontFlag|integer # optional font flag (default = `FONTFLAG_CUSTOM | FONTFLAG_ANTIALIAS`)
 ---@return Font
 ---@nodiscard
 function draw.CreateFont(name, height, weight, flags) end
 
----Add .ttf file data to available fonts.
---
----Path must be relative to Team Fortress 2 folder
+---Add .ttf file data to available fonts. \
+---Path must be relative to Team Fortress 2 folder.
 ---@param ttfPath string
 function draw.AddFontResource(ttfPath) end
 
@@ -124,8 +123,8 @@ function draw.SetFont(font) end
 
 ---Create new texture from image on the given path. \
 ---If no absolute path is provided, it will search the file in `localappdata` folder, then game's root directory `Team Fortress 2`. \
----Supported image extensions: PNG, JPG, BMP, TGA, VTF \
----Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures
+---Supported image extensions are: PNG, JPG, BMP, TGA, VTF. \
+---Input image width, height should equal to a number in power of 2 to avoid checkered pink-and-black textures.
 ---@param texturePath string
 ---@return TextureID
 ---@nodiscard

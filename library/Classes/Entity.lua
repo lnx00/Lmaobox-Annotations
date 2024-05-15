@@ -13,85 +13,85 @@ local Entity = {}
 ---@nodiscard
 function Entity:IsValid() end
 
----Returns the name of the entity if its a player
+---Returns the name of the entity if its a player.
 ---@return string
 ---@nodiscard
 function Entity:GetName() end
 
----Returns the class of the entity
+---Returns the class of the entity.
 ---@return string
 ---@nodiscard
 function Entity:GetClass() end
 
----Returns entity index
+---Returns entity index.
 ---@return integer
 ---@nodiscard
 function Entity:GetIndex() end
 
----Returns the team number of the entity
+---Returns the team number of the entity.
 ---@return E_TeamNumber
 function Entity:GetTeamNumber() end
 
----Returns the absolute position of the entity
+---Returns the absolute position of the entity.
 ---@return Vector3
 ---@nodiscard
 function Entity:GetAbsOrigin() end
 
----Sets the absolute position of the entity
+---Sets the absolute position of the entity.
 ---@param origin Vector3
 function Entity:SetAbsOrigin(origin) end
 
----Returns mins of the entity, must be combined with origin
+---Returns mins of the entity, must be combined with origin.
 ---@return Vector3
 ---@nodiscard
 function Entity:GetMins() end
 
----Returns maxs of the entity, must be combined with origin
+---Returns maxs of the entity, must be combined with origin.
 ---@return Vector3
 ---@nodiscard
 function Entity:GetMaxs() end
 
----Returns the health of the entity
+---Returns the health of the entity.
 ---@return integer
 ---@nodiscard
 function Entity:GetHealth() end
 
----Returns the max health of the entity
+---Returns the max health of the entity.
 ---@return integer
 ---@nodiscard
 function Entity:GetMaxHealth() end
 
----Returns true if the entity is a player
+---Returns true if the entity is a player.
 ---@return boolean
 ---@nodiscard
 function Entity:IsPlayer() end
 
----Returns true if the entity is a weapon
+---Returns true if the entity is a weapon.
 ---@return boolean
 ---@nodiscard
 function Entity:IsWeapon() end
 
----Returns true if the entity is alive
+---Returns true if the entity is alive.
 ---@return boolean
 ---@nodiscard
 function Entity:IsAlive() end
 
----Returns the estimated absolute velocity of the entity as Vector3
+---Returns the estimated absolute velocity of the entity as Vector3.
 ---@return Vector3
 ---@nodiscard
 function Entity:EstimateAbsVelocity() end
 
----Returns the move type of the entity
+---Returns the move type of the entity.
 ---@return E_MoveType
 ---@nodiscard
 function Entity:GetMoveType() end
 
----Returns the hitbox surrounding box of the entity as table of Vector3 mins and maxs
+---Returns the hitbox surrounding box of the entity as table of Vector3 mins and maxs.
 ---@return { [1]: Vector3, [2]: Vector3 }
 ---@nodiscard
 function Entity:HitboxSurroundingBox() end
 
----Returns the hitbox surrounding box of the entity in entity space as table of Vector3 mins and maxs
+---Returns the hitbox surrounding box of the entity in entity space as table of Vector3 mins and maxs.
 ---@return { [1]: Vector3, [2]: Vector3 }
 ---@nodiscard
 function Entity:EntitySpaceHitboxSurroundingBox() end
@@ -105,18 +105,18 @@ function Entity:EntitySpaceHitboxSurroundingBox() end
 function Entity:SetupBones(boneMask, currentTime) end
 
 ---Returns world-transformed hitboxes of the entity as table of tables, each containing 2 entries of Vector3: mins and maxs positions of each hitbox. \
----The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time \
+---The currentTime argument is optional, by default 0, and can be changed if you want the transform to be based on a different time. \
 ---@deprecated Use Entity:SetupBones instead
 ---@param currentTime? number # optional (default = `0`)
 ---@return table<E_Hitbox, { [1]: Vector3, [2]: Vector3 }>
 ---@nodiscard
 function Entity:GetHitboxes(currentTime) end
 
----Sets the model of the entity, returns true if successful
+---Sets the model of the entity, returns true if successful.
 ---@param modelPath string
 function Entity:SetModel(modelPath) end
 
----Gets the model of the entity, returned as model string
+---Gets the model of the entity, returned as model string.
 ---@return string
 ---@nodiscard
 function Entity:GetModel() end
@@ -132,56 +132,56 @@ function Entity:Release() end
 ---@nodiscard
 function Entity:IsDormant() end
 
----If the entity is an item that can be in player's inventory, such as a wearable or a weapon, returns the inventory item as Item
+---If the entity is an item that can be in player's inventory, such as a wearable or a weapon, returns the inventory item as Item.
 ---@return Item
 ---@nodiscard
 function Entity:ToInventoryItem() end
 
 --[[ Attributes ]]
 
----Returns the number value of the attribute present on the entity
+---Returns the number value of the attribute present on the entity.
 ---@param name string
 ---@param defaultValue? number # optional (default = `1.0`)
 function Entity:AttributeHookFloat(name, defaultValue) end
 
----Returns the integer value of the attribute present on the entity
+---Returns the integer value of the attribute present on the entity.
 ---@param name string
 ---@param defaultValue? integer # optional (default = `1`)
 function Entity:AttributeHookInt(name, defaultValue) end
 
 --[[ Entity netvars/props ]]
 
----Returns the float value of the given netvar
+---Returns the float value of the given netvar.
 ---@param ... string
 ---@return number
 ---@nodiscard
 function Entity:GetPropFloat(...) end
 
----Returns the int value of the given netvar
+---Returns the int value of the given netvar.
 ---@param ... string
 ---@return integer
 ---@nodiscard
 function Entity:GetPropInt(...) end
 
----Returns the bool value of the given netvar
+---Returns the bool value of the given netvar.
 ---@param ... string
 ---@return boolean
 ---@nodiscard
 function Entity:GetPropBool(...) end
 
----Returns the string value of the given netvar
+---Returns the string value of the given netvar.
 ---@param ... string
 ---@return string
 ---@nodiscard
 function Entity:GetPropString(...) end
 
----Returns the vector value of the given netvar
+---Returns the vector value of the given netvar.
 ---@param ... string
 ---@return Vector3
 ---@nodiscard
 function Entity:GetPropVector(...) end
 
----Returns the Entity class of the given netvar, usually those that has prefix: ``m_hXXXX``
+---Returns the Entity class of the given netvar, usually those that has prefix: ``m_hXXXX``.
 ---@param ... string
 ---@return Entity handle
 ---@nodiscard
@@ -214,22 +214,22 @@ function Entity:SetPropVector(value, ...) end
 
 --[[ Prop Data Tables ]]
 
----Returns a table of floats, index them with integers based on context of the netvar
+---Returns a table of floats, index them with integers based on context of the netvar.
 ---@param ... string
 ---@return table<integer, number>
 function Entity:GetPropDataTableFloat(...) end
 
----Returns a table of bools, index them with integers based on context of the netvar
+---Returns a table of bools, index them with integers based on context of the netvar.
 ---@param ... string
 ---@return table<integer, boolean>
 function Entity:GetPropDataTableBool(...) end
 
----Returns a table of ints, index them with integers based on context of the netvar
+---Returns a table of ints, index them with integers based on context of the netvar.
 ---@param ... string
 ---@return table<integer, integer>
 function Entity:GetPropDataTableInt(...) end
 
----Returns a table of entities, index them with integers based on context of the netvar
+---Returns a table of entities, index them with integers based on context of the netvar.
 ---@param ... string
 ---@return table<integer, Entity>
 function Entity:GetPropDataTableEntity(...) end
@@ -266,43 +266,43 @@ function Entity:SetPropDataTableEntity(value, index, ...) end
 ---@nodiscard
 function Entity:InCond(condition) end
 
----Adds the specified condition to the player
+---Adds the specified condition to the player.
 ---@param condition E_TFCOND
 ---@param duration? number # optional (default = `-1`: infinite)
 function Entity:AddCond(condition, duration) end
 
----Removes the specified condition from the player
+---Removes the specified condition from the player.
 ---@param condition E_TFCOND
 function Entity:RemoveCond(condition) end
 
----Whether the player is currently crit boosted by an external source
+---Whether the player is currently crit boosted by an external source.
 ---@return boolean
 ---@nodiscard
 function Entity:IsCritBoosted() end
 
----Returns the current crit multiplier of the player. See TF2 Crit Wiki for more info
+---Returns the current crit multiplier of the player. See TF2 Crit Wiki for more info.
 ---@return number
 ---@nodiscard
 function Entity:GetCritMult() end
 
----For game mode where players can carry runes, returns the type of rune the player is carrying
+---For game mode where players can carry runes, returns the type of rune the player is carrying.
 ---@return E_RuneType
 ---@nodiscard
 function Entity:GetCarryingRuneType() end
 
----Returns the max health of the player, including any buffs from items or medics
+---Returns the max health of the player, including any buffs from items or medics.
 ---@return integer
 ---@nodiscard
 function Entity:GetMaxBuffedHealth() end
 
 ---Returns the entity for the specified loadout slot. \
----This can be used to get the hat entity for the slot, or the weapon entity for the slot
+---This can be used to get the hat entity for the slot, or the weapon entity for the slot.
 ---@param slot E_LoadoutSlot
 ---@return Entity
 ---@nodiscard
 function Entity:GetEntityForLoadoutSlot(slot) end
 
----Whether the player is currently in a freezecam after death
+---Whether the player is currently in a freezecam after death.
 ---@return boolean
 function Entity:IsInFreezecam() end
 
@@ -323,7 +323,7 @@ function Entity:IsMeleeWeapon() end
 ---@nodiscard
 function Entity:IsMedigun() end
 
----Returns whether the server allow random crit for primary/secondary
+---Returns whether the server allow random crit for primary/secondary.
 ---@return boolean
 ---@nodiscard
 function Entity:CanRandomCrit() end

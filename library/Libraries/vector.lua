@@ -8,75 +8,75 @@ vector = {}
 
 ---@alias ArrayVector { [1]: integer, [2]: integer, [3]: integer }
 
----Add two vectors
+---Add two vectors.
 ---@param a Vector3|ArrayVector
 ---@param b Vector3|ArrayVector
 ---@return Vector3
 ---@nodiscard
 function vector.Add(a, b) end
 
----Subtract two vectors
+---Subtract two vectors.
 ---@param a Vector3|ArrayVector
 ---@param b Vector3|ArrayVector
 ---@return Vector3
 ---@nodiscard
 function vector.Subtract(a, b) end
 
----Multiply vector by scalar
+---Multiply vector by scalar.
 ---@param a Vector3|ArrayVector
 ---@param scalar integer
 ---@return Vector3
 ---@nodiscard
 function vector.Multiply(a, scalar) end
 
----Divide vector by scalar
+---Divide vector by scalar.
 ---@param a Vector3|ArrayVector
 ---@param scalar integer
 ---@return Vector3
 ---@nodiscard
 function vector.Divide(a, scalar) end
 
----Get vector length
+---Get vector length.
 ---@param a Vector3|ArrayVector
 ---@return integer
 ---@nodiscard
 function vector.Length(a) end
 
----Get vector squared length
+---Get vector squared length.
 ---@param a Vector3|ArrayVector
 ---@return integer
 ---@nodiscard
 function vector.LengthSqr(a) end
 
----Get distance between two vectors
+---Get distance between two vectors.
 ---@param a Vector3|ArrayVector
 ---@param b Vector3|ArrayVector
 ---@return integer
 ---@nodiscard
 function vector.Distance(a, b) end
 
----Normalize vector
+---Normalize vector.
 ---@param a Vector3|ArrayVector
 ---@return Vector3
 ---@nodiscard
 function vector.Normalize(a) end
 
----Get vector angles
+---Get vector angles.
 ---@param a Vector3
 function vector.Angles(a) end
 
----Get forward vector angle
+---Get forward vector angle.
 ---@param a Vector3
 function vector.AngleForward(a) end
 
----Get right vector angle
+---Get right vector angle.
 ---@param a Vector3
 function vector.AngleRight(a) end
 
----Get up vector angle
+---Get up vector angle.
 ---@param a Vector3
 function vector.AngleUp(a) end
 
----Normalize vector angles
+---Normalize vector angles.
 ---@param a Vector3
 function vector.AngleNormalize(a) end

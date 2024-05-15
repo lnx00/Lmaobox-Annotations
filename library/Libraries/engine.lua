@@ -75,12 +75,12 @@ function engine.SetViewAngles(angles) end
 ---@param audioPath string
 function engine.PlaySound(audioPath) end
 
----Returns game files directory `Team Fortress 2/tf`
+---Returns game files directory `Team Fortress 2/tf`.
 ---@return string
 ---@nodiscard
 function engine.GetGameDir() end
 
----Sends key values to server
+---Sends key values to server.
 ---@param keyvalue string
 ---@return boolean
 function engine.SendKeyValues(keyvalue) end

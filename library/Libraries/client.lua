@@ -61,7 +61,7 @@ function client.GetPlayerNameByIndex(playerindex) end
 function client.GetPlayerNameByUserID(userid) end
 
 ---Returns info about the player. \
----Note : `UserID` and `SteamID` is only obtainable when client is fully connected.
+---Note: `UserID` and `SteamID` is only obtainable when client is fully connected.
 ---@param index integer
 ---@return { Name: string, UserID: integer, SteamID: SteamID, IsBot: boolean, IsHLTV: boolean }
 ---@nodiscard
@@ -100,10 +100,9 @@ function client.SetConVar(name, value) end
 ---@param name string
 function client.RemoveConVarProtection(name) end
 
----Returns a localized ASCII string.                                                         
---- * The localizable strings usually start with a `#` character, but there are exceptions.
---- * If you use this feature it's critical that you sanitize the input string.
---- * Consider using utf8 library if you plan to support non-English Team Fortress 2 players.
+---Returns a localized string. \
+---The localizable strings usually start with a # character, but there are exceptions. \
+---Will return `nil` on failure.
 ---@param key string
 ---@return string?
 ---@nodiscard

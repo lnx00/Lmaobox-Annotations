@@ -15,7 +15,7 @@ function clientstate.ForceFullUpdate() end
 ---@nodiscard
 function clientstate.GetClientSignonState() end
 
----Returns last valid received snapshot (server) tick
+---Returns last valid received snapshot (server) tick.
 ---@return integer
 ---@nodiscard
 function clientstate.GetDeltaTick() end

@@ -11,11 +11,11 @@ function _G.BitBuffer() end
 
 --[[ Reading ]]
 
----Returns the length of the buffer in bits
+---Returns the length of the buffer in bits.
 ---@return integer bits
 function BitBuffer:GetDataBitsLength() end
 
----Returns the length of the buffer in bytes
+---Returns the length of the buffer in bytes.
 ---@return integer bytes
 function BitBuffer:GetDataBytesLength() end
 

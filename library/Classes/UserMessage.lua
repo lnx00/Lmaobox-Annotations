@@ -14,13 +14,13 @@ function UserMessage:GetID() end
 ---@nodiscard
 function UserMessage:GetBitBuffer() end
 
----Returns the length of the message in bits
+---Returns the length of the message in bits.
 ---@deprecated Use BitBuffer:GetDataBitsLength instead
 ---@return integer bits
 ---@nodiscard
 function UserMessage:GetDataBits() end
 
----Returns the length of the message in bytes
+---Returns the length of the message in bytes.
 ---@deprecated Use BitBuffer:GetDataBytesLength instead
 ---@return integer bytes
 ---@nodiscard
@@ -37,32 +37,32 @@ function UserMessage:SetCurBit(bit) end
 ---@nodiscard
 function UserMessage:GetCurBit() end
 
----Sets the position to the beginning of the message \
----This is useful if you want to read the message multiple times
+---Sets the position to the beginning of the message. \
+---This is useful if you want to read the message multiple times.
 ---@deprecated Use BitBuffer:Reset instead
 function UserMessage:Reset() end
 
 ---Reads a bit from the message.
----Returns bit, current bit position
+---Returns bit, current bit position.
 ---@deprecated Use BitBuffer:ReadBit instead
 ---@return integer bit, integer pos
 function UserMessage:ReadBit() end
 
 ---Reads a byte from the message.
----Returns integer, current bit position
+---Returns integer, current bit position.
 ---@deprecated Use BitBuffer:ReadByte instead
 ---@return integer byte, integer pos
 function UserMessage:ReadByte() end
 
 ---Reads n bit from the message.
----Returns float, current bit position
+---Returns float, current bit position.
 ---@deprecated Use BitBuffer:ReadFloat instead
 ---@param n integer? # optional number of bits to read (default = `32`)
 ---@return number float, integer pos
 function UserMessage:ReadFloat(n) end
 
 ---Reads n bit from the message.
----Returns integer, current bit position
+---Returns integer, current bit position.
 ---@deprecated Use BitBuffer:ReadInt instead
 ---@param n integer? # optional number of bits to read (default = `32`)
 ---@return integer int, integer pos

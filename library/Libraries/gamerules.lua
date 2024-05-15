@@ -65,7 +65,7 @@ function gamerules.GetPlayerVoteState(playerIndex) end
 ---@nodiscard
 function gamerules.GetRoundState() end
 
----Returns if the player is ready
+---Returns if the player is ready.
 ---@return boolean
 ---@nodiscard
 function gamerules.IsPlayerReady(playerIndex) end
