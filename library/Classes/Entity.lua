@@ -124,7 +124,7 @@ function Entity:GetModel() end
 
 ---Releases the entity, making it invalid. \
 ---Calling this for networkable entities will kick you from the server. \
----This is only useful for non-networkable entities created with `entities.CreateEntityByName`
+---This is only useful for non-networkable entities created with `entities.CreateEntityByName`.
 function Entity:Release() end
 
 ---Returns true if the entity is dormant (not being updated). \
@@ -505,12 +505,12 @@ function Entity:CalcObservedCritChance() end
 ---@nodiscard
 function Entity:IsAttackCritical(commandNumber) end
 
----Returns the round damage stats
+---Returns the round damage stats.
 ---@return { total: integer, critical: integer, melee: integer }
 ---@nodiscard
 function Entity:GetWeaponDamageStats() end
 
----Returns the weapon's attributes
+---Returns the weapon's attributes.
 ---@return WeaponData
 ---@nodiscard
 function Entity:GetWeaponData() end

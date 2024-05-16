@@ -23,7 +23,7 @@ function entities.GetLocalPlayer() end
 ---@nodiscard
 function entities.GetByIndex(index) end
 
----Return highest entity index
+---Return highest entity index.
 ---@return integer
 function entities.GetHighestEntityIndex() end
 

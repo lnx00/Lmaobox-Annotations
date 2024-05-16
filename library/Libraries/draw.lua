@@ -140,7 +140,7 @@ function draw.CreateTexture(texturePath) end
 ---@nodiscard
 function draw.CreateTextureRGBA(rgbaData, width, height) end
 
----Returns size of the texture as integers
+---Returns size of the texture as integers.
 ---@param id TextureID
 ---@return integer width, integer height
 ---@nodiscard
