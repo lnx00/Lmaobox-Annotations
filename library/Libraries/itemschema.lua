@@ -1,7 +1,8 @@
 ---@meta
 
 ---The itemschema library contains functions for retrieving information about items. \
----Items referred to in this library are of the ItemDefinition type.
+---Items referred to in this library are of the ItemDefinition type. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/itemschema/)
 ---@class itemschema
 itemschema = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
----Represents a collision model for a physics object.
+---Represents a collision model for a physics object. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/PhysicsCollisionModel/)
 ---@class PhysicsCollisionModel
 local PhysicsCollisionModel = {}
 

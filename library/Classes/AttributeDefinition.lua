@@ -1,6 +1,7 @@
 ---@meta
 
----The AttributeDefinition object contains information about an attribute in TF2
+---The AttributeDefinition object contains information about an attribute in TF2. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/AttributeDefinition/)
 ---@class AttributeDefinition
 local AttributeDefinition = {}
 

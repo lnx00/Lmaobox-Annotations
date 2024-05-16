@@ -1,6 +1,7 @@
 ---@meta
 
----The playerlist library provides a way to retrieve values from, and customize the playerlist.
+---The playerlist library provides a way to retrieve values from, and customize the playerlist. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/playerlist/)
 ---@class playerlist
 playerlist = {}
 

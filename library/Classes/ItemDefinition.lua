@@ -1,7 +1,8 @@
 ---@meta
 
 ---The ItemDefinition object contains static information about an item. \
----Static information refers to information that is not changed during the course of the game.
+---Static information refers to information that is not changed during the course of the game. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/ItemDefinition/)
 ---@class ItemDefinition
 local ItemDefinition = {}
 

@@ -2,7 +2,8 @@
 
 ---Represents a user (movement) command about to be sent to the server. \
 ---Fields are modifiable directly. \
----[UserCmd](https://developer.valvesoftware.com/wiki/Usercmd)
+---[UserCmd](https://developer.valvesoftware.com/wiki/Usercmd) \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/UserCmd/)
 ---@class UserCmd
 ---@field command_number integer # The number of the command.
 ---@field tick_count integer # The current tick count.

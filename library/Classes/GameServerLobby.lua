@@ -1,6 +1,7 @@
 ---@meta
 
----The GameServerLobby library provides information about the current match made game.
+---The GameServerLobby library provides information about the current match made game. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/GameServerLobby/)
 ---@class GameServerLobby
 local GameServerLobby = {}
 

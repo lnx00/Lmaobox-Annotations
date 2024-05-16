@@ -1,5 +1,7 @@
 ---@meta
 
+---The gui library provides functions to get and set menu settings. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/gui/)
 ---@class gui
 gui = {}
 

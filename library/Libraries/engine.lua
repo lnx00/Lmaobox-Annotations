@@ -1,6 +1,7 @@
 ---@meta
 
----The engine library provides access to the game's core functionality.
+---The engine library provides access to the game's core functionality. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/engine/)
 ---@class engine
 engine = {}
 

@@ -1,7 +1,8 @@
 ---@meta
 
 ---PhysicsSolid is a class that represents a solid of a given model. \
----It is used to create a physics object.
+---It is used to create a physics object. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/PhysicsSolid/)
 ---@class PhysicsSolid
 local PhysicsSolid = {}
 

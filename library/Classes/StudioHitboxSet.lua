@@ -1,6 +1,7 @@
 ---@meta
 
----The StudioHitboxSet object contains information about a studio models hitboxes.
+---The StudioHitboxSet object contains information about a studio models hitboxes. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/StudioHitboxSet/)
 ---@class StudioHitboxSet
 local StudioHitboxSet = {}
 

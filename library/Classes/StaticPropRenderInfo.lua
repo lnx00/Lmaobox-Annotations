@@ -1,6 +1,7 @@
 ---@meta
 
----Represents the context of a static prop being drawn.
+---Represents the context of a static prop being drawn. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/StaticPropRenderInfo/)
 ---@class StaticPropRenderInfo
 StaticPropRenderInfo = {}
 

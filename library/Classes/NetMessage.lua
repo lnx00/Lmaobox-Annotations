@@ -1,7 +1,8 @@
 ---@meta
 
 ---The NetMessage class represents a network message. \
----It is used to read and write data to the network stream.
+---It is used to read and write data to the network stream. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/NetMessage/)
 ---@class NetMessage
 local NetMessage = {}
 

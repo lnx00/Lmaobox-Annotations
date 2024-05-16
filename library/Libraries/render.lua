@@ -1,6 +1,7 @@
 ---@meta
 
----The render library provides a way to interact with the rendering system.
+---The render library provides a way to interact with the rendering system. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/render/)
 ---@class render
 render = {}
 

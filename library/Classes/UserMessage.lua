@@ -1,6 +1,7 @@
 ---@meta
 
----Received as the only argument in DispatchUserMessage callback.
+---Received as the only argument in DispatchUserMessage callback. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/UserMessage/)
 ---@class UserMessage
 local UserMessage = {}
 

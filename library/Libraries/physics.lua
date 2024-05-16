@@ -3,7 +3,8 @@
 ---This is a library for physics calculations in TF2. \
 ---You can use this to calculate the trajectory of projectiles,
 ---or perform any sort of physics calculations on physics objects in time,
----in your own environment, or in TF2's environment.
+---in your own environment, or in TF2's environment. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/physics/)
 ---@class physics
 physics = {}
 

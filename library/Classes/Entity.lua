@@ -1,7 +1,8 @@
 ---@meta
 
 ---Represents an entity in the game world. \
----Make sure to not store entities long term, they can become invalid over time - their methods will return `nil` in that case.
+---Make sure to not store entities long term, they can become invalid over time - their methods will return `nil` in that case. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/Entity/)
 ---@class Entity
 local Entity = {}
 

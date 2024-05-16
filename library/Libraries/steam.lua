@@ -1,6 +1,7 @@
 ---@meta
 
----The steam library provides access to basic Steam API functionality and data.
+---The steam library provides access to basic Steam API functionality and data. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/steam/)
 ---@class steam
 steam = {}
 

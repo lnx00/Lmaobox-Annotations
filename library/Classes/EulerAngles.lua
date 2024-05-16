@@ -1,6 +1,7 @@
 ---@meta
 
----A class that represents a set of Euler angles.
+---A class that represents a set of Euler angles. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/EulerAngles/)
 ---@class EulerAngles
 ---@field x number
 ---@field y number

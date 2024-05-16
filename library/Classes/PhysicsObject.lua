@@ -2,7 +2,8 @@
 
 ---PhysicsObject is a class that represents a physics object. \
 ---It has a position, angle, velocity, angular velocity, and is affected by gravity and air resistance. \
----It can be simulated in time. Other parameters include class PhysicsObjectParameters.
+---It can be simulated in time. Other parameters include class PhysicsObjectParameters. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/PhysicsObject/)
 ---@class PhysicsObject
 local PhysicsObject = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
----The entities library provides a way to find entities by their name, or by their class.
+---The entities library provides a way to find entities by their name, or by their class. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/entities/)
 ---@class entities
 entities = {}
 

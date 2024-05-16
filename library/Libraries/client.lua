@@ -1,6 +1,7 @@
 ---@meta
 
----The client library is used to get information about the client.
+---The client library is used to get information about the client. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/client/)
 ---@class client
 client = {}
 

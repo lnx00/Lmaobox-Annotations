@@ -1,7 +1,8 @@
 ---@meta
 
 ---This library allows you to draw shapes and text on the screen. \
----It also allows you to create textures from images and draw them.
+---It also allows you to create textures from images and draw them. \
+---[View Docs](https://lmaobox.net/lua/Lua_Libraries/draw/)
 ---@class draw
 draw = {}
 

@@ -2,7 +2,8 @@
 
 ---PhysicsEnvironment is a class that represents a physics environment. \
 ---It has its own gravity, air resistance, and collision rules. \
----It contains physics objects that can be simulated in time.
+---It contains physics objects that can be simulated in time. \
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/PhysicsEnvironment/)
 ---@class PhysicsEnvironment
 local PhysicsEnvironment = {}
 
