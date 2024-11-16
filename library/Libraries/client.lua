@@ -64,7 +64,7 @@ function client.GetPlayerNameByUserID(userid) end
 ---Returns info about the player. \
 ---Note: `UserID` and `SteamID` is only obtainable when client is fully connected.
 ---@param index integer
----@return { Name: string, UserID: integer, SteamID: SteamID, IsBot: boolean, IsHLTV: boolean }
+---@return { Name: string, UserID: integer, SteamID: SteamID3, IsBot: boolean, IsHLTV: boolean }
 ---@nodiscard
 function client.GetPlayerInfo(index) end
 
