@@ -50,7 +50,7 @@ function Entity:GetAbsAngles() end
 
 ---(Undocumented)
 ---Sets the absolute angle of the entity.
----@param angles EulerAngles
+---@param angles Vector3
 function Entity:SetAbsAngles(angles) end
 
 ---Returns mins of the entity, must be combined with origin.
