@@ -42,13 +42,11 @@ function Entity:GetAbsOrigin() end
 ---@param origin Vector3
 function Entity:SetAbsOrigin(origin) end
 
----(Undocumented)
 ---Returns the absolute angle of the entity.
 ---@return EulerAngles
 ---@nodiscard
 function Entity:GetAbsAngles() end
 
----(Undocumented)
 ---Sets the absolute angle of the entity.
 ---@param angles Vector3
 function Entity:SetAbsAngles(angles) end

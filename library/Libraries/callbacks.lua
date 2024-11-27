@@ -18,6 +18,7 @@ callbacks = {}
 ---| "PostPropUpdate" # Called after entity props get updated from the server.
 ---| "RenderView" # Called before the players view is rendered.
 ---| "PostRenderView" # Called after the players view is rendered.
+---| "RenderViewModel" # Called before the view model is rendered.
 ---| "ServerCmdKeyValues" # Called when the client sends a keyvalues message to the server.
 ---| "OnFakeUncrate" # Called when a fake crate is to be uncrated.
 ---| "OnLobbyUpdated" # Called when a lobby is found or updated.
