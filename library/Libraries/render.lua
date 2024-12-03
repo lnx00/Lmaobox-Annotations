@@ -197,7 +197,7 @@ function render.GetBlend() end
 ---@param r number
 ---@param g number
 ---@param b number
-function render.SetColorModulatation(r, g, b) end
+function render.SetColorModulation(r, g, b) end
 
 ---Returns r,g,b - 3 floats that represent the current color modulation.
 ---@return number r
