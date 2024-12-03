@@ -15,7 +15,8 @@ callbacks = {}
 ---| "FireGameEvent" # Called for selected game events.
 ---| "DispatchUserMessage" # Called on every user message received from server.
 ---| "SendStringCmd" # Called when console command is sent to server.
----| "PostPropUpdate" # Called after entity props get updated from the server.
+---| "FrameStageNotify" # Called every time the frame stage changes.
+---| "PostPropUpdate" # Called after entity props get updated from the server. (Legacy)
 ---| "RenderView" # Called before the players view is rendered.
 ---| "PostRenderView" # Called after the players view is rendered.
 ---| "RenderViewModel" # Called before the view model is rendered.
@@ -26,6 +27,7 @@ callbacks = {}
 ---| "GCSendMessage" # Called when a message is being sent to the GC.
 ---| "GCRetrieveMessage" # Called when a message is being received from the GC.
 ---| "SendNetMsg" # Called when a message of type NetMessage is being sent to the server.
+---| "DoPostScreenSpaceEffects" # Called after the screen space effects are rendered.
 ---| "Unload" # Called when script is getting unloaded.
 
 ---Register new callback.

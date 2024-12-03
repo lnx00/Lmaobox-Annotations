@@ -71,6 +71,18 @@ function Entity:GetHealth() end
 ---@nodiscard
 function Entity:GetMaxHealth() end
 
+---Returns the Entity, which is a move child of this entity. \
+---This is a start of a peer list of attachments usually.
+---@return Entity
+---@nodiscard
+function Entity:GetMoveChild() end
+
+---Return the Entity, which is a move peer of this entity. \
+---This is a next entity in a peer list of attachments usually.
+---@return Entity
+---@nodiscard
+function Entity:GetMovePeer() end
+
 ---Returns true if the entity is a player.
 ---@return boolean
 ---@nodiscard
@@ -130,6 +142,15 @@ function Entity:SetModel(modelPath) end
 ---@return string
 ---@nodiscard
 function Entity:GetModel() end
+
+---Retruns true if this entity should be drawn right now
+---@return boolean
+---@nodiscard
+function Entity:ShouldDraw() end
+
+---Draws the model of the entity
+---@param flags integer
+function Entity:DrawModel(flags) end
 
 ---Releases the entity, making it invalid. \
 ---Calling this for networkable entities will kick you from the server. \
@@ -315,6 +336,24 @@ function Entity:GetEntityForLoadoutSlot(slot) end
 ---Whether the player is currently in a freezecam after death.
 ---@return boolean
 function Entity:IsInFreezecam() end
+
+---Returns the third person view angles of the player, as a Vector3
+---@return Vector3
+---@nodiscard
+function Entity:GetVAngles() end
+
+---Sets the third person view angles of the player, only really effective on the localplayer
+---@param angles Vector3
+function Entity:SetVAngles(angles) end
+
+---Returns the player's invisibility level
+---@return number
+---@nodiscard
+function Entity:GetInvisibility() end
+
+---Sets the player's invisibility level
+---@param level number # [0, 1]
+function Entity:SetInvisibility(level) end
 
 --[[ Weapon entity methods ]]
 
