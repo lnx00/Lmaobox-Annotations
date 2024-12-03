@@ -15,6 +15,11 @@ function engine.Con_IsVisible() end
 ---@nodiscard
 function engine.IsGameUIVisible() end
 
+---Return whether the game chat is open.
+---@return boolean
+---@nodiscard
+function engine.IsChatOpen() end
+
 ---Returns whether the game is taking a screenshot.
 ---@return boolean
 ---@nodiscard

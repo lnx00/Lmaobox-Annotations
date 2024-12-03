@@ -54,5 +54,24 @@ function DrawModelContext:DepthRange(min, max) end
 ---@param suppress boolean
 function DrawModelContext:SuppressEngineLighting(suppress) end
 
----Render model in place with current overrides.
+---Draw the model immediately in the current state. \
+---Can be called multiple times. \
+---A model will be always drawn even without calling Execute, 
+---so calling it 1 time will result in 2 Execute calls, calling this 0 times will result in 1 Execute call. \
+---The use case for this is stacking material force overrides for example.
 function DrawModelContext:Execute() end
+
+---Returns true if anti aim indicator model is being drawn.
+---@return boolean
+---@nodiscard
+function DrawModelContext:IsDrawingAntiAim() end
+
+---Returns true if backtrack indicator model is being drawn.
+---@return boolean
+---@nodiscard
+function DrawModelContext:IsDrawingBackTrack() end
+
+---Returns true if glow model is being drawn.
+---@return boolean
+---@nodiscard
+function DrawModelContext:IsDrawingGlow() end

@@ -17,4 +17,9 @@ function gui.GetValue(name) end
 ---@return boolean
 function gui.SetValue(name, value) end
 
+---Returns true if lmaobox menu is open.
+---@return boolean
+---@nodiscard
+function gui.IsMenuOpen() end
+
 return gui
