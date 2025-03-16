@@ -8,31 +8,30 @@ The Lmaobox Lua Annotations allow you to get static code analysis, type checking
 
 ### Prerequisites
 
-1. Install the [LUA Extenstion](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) for Visual Studio COde
+1. Install the [LUA Extenstion](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) for Visual Studio Code
 2. Clone or download and extract this repository
-3. Choose one of the following installation methods:
+3. Continue with one of the following installation methods:
 
-### Local installation (Recommended)
+### Enable annotations locally (Recommended)
 
-4. Create a `.luarc.json` file in the root of your Lua project ([Template](https://gist.github.com/lnx00/cdc17a6b6c4de799d4dbf2745ad19ba9))
-5. Add the repository folder path to the `workspace.library` array field
+4. Create a `.luarc.json` file in the root of your Lua project ([View Template](https://gist.github.com/lnx00/cdc17a6b6c4de799d4dbf2745ad19ba9))
+5. Add the repository folder path to the `workspace.library` field
 
-### Global installation
+### Enable annotations globally
 
-4. Open VSCode and click on File -> Preferences -> Settings
-5. On the left side, click Extensions -> Lua
-6. Find **Workspace: Library** and click on **Add Item**
-7. Select the **library** folder of this repo
+4. Run Visual Studio Code and open the settings (File -> Preferences -> Settings)
+5. On the left side, navigate to the Lua extension settings (Extensions -> Lua)
+6. Find "Workspace: Library" and click on "Add Item"
+7. Select folder path of this repository
 
-You should now get autocomplete for all the functions, methods and libraries of the Lmaobox API.
-It should look like this:
+You should now see autocomplete suggestions for all the functions, methods, types, and libraries of the Lmaobox API. It should look like this:
 
 ![Preview](.github/images/AC_Preview.png)
 
 ## Updating
 
 To update the annotations, simply pull the latest changes from this repo and restart your IDE.\
-If you've manually downloaded the repo, you can also just download the latest version and replace the old one.
+If you've manually downloaded the repo, you can also just download the latest version and replace the old folder.
 
 ## How to use annotations
 
