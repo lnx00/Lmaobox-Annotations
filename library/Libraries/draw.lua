@@ -120,7 +120,7 @@ function draw.AddFontResource(ttfPath) end
 ---@param font Font
 function draw.SetFont(font) end
 
---[[ Textures ]]--
+--[[ Textures ]] --
 
 ---Create new texture from image on the given path. \
 ---If no absolute path is provided, it will search the file in `localappdata` folder, then game's root directory `Team Fortress 2`. \
@@ -136,6 +136,7 @@ function draw.CreateTexture(texturePath) end
 ---[String creation guide](https://stigmax.gitbook.io/lua-guide/auxiliary/optimizations#string-concatenation)
 ---@param rgbaData string
 ---@param width integer
+---@param height integer
 ---@return TextureID
 ---@nodiscard
 function draw.CreateTextureRGBA(rgbaData, width, height) end

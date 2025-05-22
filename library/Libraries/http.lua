@@ -8,6 +8,7 @@ http = {}
 ---Returns string of the body response.
 ---@param url string
 ---@return string
+---@nodiscard
 function http.Get(url) end
 
 ---Performs a asynchronous HTTP GET request to the specified URL that doesn't halt the script.

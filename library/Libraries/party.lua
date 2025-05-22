@@ -11,12 +11,12 @@ party = {}
 ---@nodiscard
 function party.GetLeader() end
 
----Returns a table containing the player's party members' their SteamID3 as strings.
+---Returns a table containing the player's party members' SteamID3 strings.
 ---@return SteamID3[]
 ---@nodiscard
 function party.GetMembers() end
 
----Returns a table containing the player's pending party members' SteamIDs as strings. \
+---Returns a table containing the player's pending party members' SteamID3 strings. \
 ---These members are invited to party, but have not joined yet.
 ---@return SteamID3[]
 ---@nodiscard

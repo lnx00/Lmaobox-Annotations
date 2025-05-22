@@ -78,6 +78,8 @@ function client.GetPlayerInfo(index) end
 --- * `\x07` - Custom color, read from next 6 characters as HEX
 --- * `\x08` - Custom color with alpha, read from next 8 characters as HEX
 ---@param msg string
+---@return boolean success
+---@nodiscard
 function client.ChatPrintf(msg) end
 
 ---Returns local player index.
@@ -96,7 +98,7 @@ function client.GetConVar(name) end
 ---@param value string|number
 function client.SetConVar(name, value) end
 
----Remove convar protection.                                                    
+---Remove convar protection.
 --- * This is needed for convars that are not allowed to be changed by the server.
 ---@param name string
 function client.RemoveConVarProtection(name) end
