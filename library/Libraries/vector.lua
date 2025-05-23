@@ -56,10 +56,8 @@ function vector.LengthSqr(a) end
 ---@nodiscard
 function vector.Distance(a, b) end
 
----Normalize vector.
+---Normalize vector in place
 ---@param a Vector3|ArrayVector
----@return Vector3
----@nodiscard
 function vector.Normalize(a) end
 
 ---Get vector angles.
