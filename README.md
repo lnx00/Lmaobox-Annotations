@@ -31,10 +31,11 @@ The Lmaobox Lua Annotations allow you to get static code analysis, type checking
 
 ```json
 {
-    "Lua.workspace.userThirdParty": [
-        "C:/Users/YourUsername/AppData/Local/Lmaobox-Annotations-master/library"
-    ],
+  "Lua.workspace.userThirdParty": [
+    "C:/Users/YourUsername/AppData/Local/Lmaobox-Annotations-master/library"
+  ]
 }
+```
 
 ### Enable annotations globally
 
@@ -64,4 +65,7 @@ It has comprehensive documentation on how to use the annotations.
 | **lua_tc**                 | Toggle lua evaluation mode               |
 | **lua_load** _{file path}_ | Load a lua script in localappdata folder |
 | **lua_exec** _{code}_      | Evaluate lua code                        |
+
+```
+
 ```
