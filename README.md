@@ -22,9 +22,7 @@ The Lmaobox Lua Annotations allow you to get static code analysis, type checking
   "settings": {
     "Lua": {
       "workspace": {
-        "library": [
           "C:/Users/YOURUSERNAME/AppData/Local/Lmaobox-Annotations-master/library"
-        ]
       }
     }
   }
