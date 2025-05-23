@@ -17,17 +17,24 @@ The Lmaobox Lua Annotations allow you to get static code analysis, type checking
 4. Create a `.luarc.json` file in the root of your Lua project ([View Template](https://gist.github.com/lnx00/cdc17a6b6c4de799d4dbf2745ad19ba9))
 5. Add the `library` folder inside this repository (not the root) to the `workspace.library` field, using forward slashes. For example:
 
+## .luarc.json
+
 ```json
 {
-  "settings": {
-    "Lua": {
-      "workspace": {
-          "C:/Users/YOURUSERNAME/AppData/Local/Lmaobox-Annotations-master/library"
-      }
-    }
-  }
+  "Lua.workspace.library": [
+    "C/Users/YourUsername/AppData/Local/Lmaobox-Annotations-master/library"
+  ]
 }
 ```
+
+## Settings.json
+
+```json
+{
+    "Lua.workspace.userThirdParty": [
+        "C:/Users/YourUsername/AppData/Local/Lmaobox-Annotations-master/library"
+    ],
+}
 
 ### Enable annotations globally
 
@@ -57,3 +64,4 @@ It has comprehensive documentation on how to use the annotations.
 | **lua_tc**                 | Toggle lua evaluation mode               |
 | **lua_load** _{file path}_ | Load a lua script in localappdata folder |
 | **lua_exec** _{code}_      | Evaluate lua code                        |
+```
