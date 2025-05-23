@@ -27,7 +27,8 @@ local UserCmd = {}
 ---@nodiscard
 function UserCmd:GetViewAngles() end
 
----Set the viewangles.
+---Set the viewangles only for the outgoing user command (silent aim). \
+---This does not move the visible client camera; use `engine.SetViewAngles` for visible camera changes.
 ---@param pitch number
 ---@param yaw number
 ---@param roll number

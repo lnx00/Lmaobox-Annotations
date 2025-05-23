@@ -72,7 +72,8 @@ function engine.GetServerIP() end
 ---@nodiscard
 function engine.GetViewAngles() end
 
----Sets player view angles.
+---Sets player view angles immediately on the client (visible camera change). \
+---For silent aim use `UserCmd:SetViewAngles`, which only modifies the outgoing command without moving the camera.
 ---@param angles EulerAngles
 function engine.SetViewAngles(angles) end
 
