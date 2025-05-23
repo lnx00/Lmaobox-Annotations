@@ -56,8 +56,7 @@ function vector.LengthSqr(a) end
 ---@nodiscard
 function vector.Distance(a, b) end
 
----Normalize vector.
----it does not return anything, it just modifies the vector in place.
+---Normalize vector in place; modifies the vector directly without returning it.
 ---@param a Vector3|ArrayVector
 function vector.Normalize(a) end
 

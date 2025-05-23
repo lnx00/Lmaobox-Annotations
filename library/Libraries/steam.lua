@@ -29,7 +29,7 @@ function steam.GetFriends() end
 
 ---Returns the 64bit SteamID of the player as a long integer.
 ---@param steamID3 SteamID3
----@return SteamID64
+---@return SteamID64 SteamID64
 ---@nodiscard
 function steam.ToSteamID64(steamID3) end
 

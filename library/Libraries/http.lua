@@ -15,4 +15,5 @@ function http.Get(url) end
 ---Uses a callback to get the response from the url (BETA)
 ---@param url string
 ---@param callback fun(response: string)
+---@nodiscard
 function http.GetAsync(url, callback) end
