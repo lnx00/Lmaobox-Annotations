@@ -27,16 +27,6 @@ The Lmaobox Lua Annotations allow you to get static code analysis, type checking
 }
 ```
 
-## Settings.json
-
-```json
-{
-  "Lua.workspace.userThirdParty": [
-    "C:/Users/YourUsername/AppData/Local/Lmaobox-Annotations-master/library"
-  ]
-}
-```
-
 ### Enable annotations globally
 
 4. Run Visual Studio Code and open the settings (File -> Preferences -> Settings)
