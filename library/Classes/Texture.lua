@@ -2,6 +2,7 @@
 
 ---The Texture object is used to interact with textures loaded from files or created dynamically.
 ---
+---[View Wiki](https://developer.valvesoftware.com/wiki/Texture)
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/Texture/)
 ---@class Texture
 local Texture = {}

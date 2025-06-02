@@ -2,6 +2,7 @@
 
 ---The AttributeDefinition object contains information about an attribute in TF2.
 ---
+---[View Wiki](https://wiki.teamfortress.com/wiki/List_of_item_attributes)
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/AttributeDefinition/)
 ---@class AttributeDefinition
 local AttributeDefinition = {}

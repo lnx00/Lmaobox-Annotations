@@ -1,8 +1,8 @@
 ---@meta
 
----Represents a material in source engine. \
----For more information about materials see the [Material](https://developer.valvesoftware.com/wiki/Material) page.
+---Represents a material in source engine.
 ---
+---[View Wiki](https://developer.valvesoftware.com/wiki/Material)
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/Material/)
 ---@class Material
 local Material = {}
