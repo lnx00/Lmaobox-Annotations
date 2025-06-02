@@ -24,30 +24,30 @@ function vector.Add(a, b) end
 function vector.Subtract(a, b) end
 
 ---Multiply vector by scalar.
----@param a Vector3|ArrayVector
+---@param vec Vector3|ArrayVector
 ---@param scalar number
 ---@return Vector3
 ---@nodiscard
-function vector.Multiply(a, scalar) end
+function vector.Multiply(vec, scalar) end
 
 ---Divide vector by scalar.
----@param a Vector3|ArrayVector
+---@param vec Vector3|ArrayVector
 ---@param scalar number
 ---@return Vector3
 ---@nodiscard
-function vector.Divide(a, scalar) end
+function vector.Divide(vec, scalar) end
 
 ---Get vector length.
----@param a Vector3|ArrayVector
+---@param vec Vector3|ArrayVector
 ---@return integer
 ---@nodiscard
-function vector.Length(a) end
+function vector.Length(vec) end
 
 ---Get vector squared length.
----@param a Vector3|ArrayVector
+---@param vec Vector3|ArrayVector
 ---@return integer
 ---@nodiscard
-function vector.LengthSqr(a) end
+function vector.LengthSqr(vec) end
 
 ---Get distance between two vectors.
 ---@param a Vector3|ArrayVector
@@ -57,35 +57,35 @@ function vector.LengthSqr(a) end
 function vector.Distance(a, b) end
 
 ---Normalize vector in place; modifies the vector directly without returning it.
----@param a Vector3|ArrayVector
-function vector.Normalize(a) end
+---@param vec Vector3|ArrayVector
+function vector.Normalize(vec) end
 
 ---Get vector angles.
----@param a Vector3
+---@param vec Vector3
 ---@return EulerAngles
 ---@nodiscard
-function vector.Angles(a) end
+function vector.Angles(vec) end
 
 ---Get forward vector angle.
----@param a Vector3
+---@param vec Vector3
 ---@return EulerAngles
 ---@nodiscard
-function vector.AngleForward(a) end
+function vector.AngleForward(vec) end
 
 ---Get right vector angle.
----@param a Vector3
+---@param vec Vector3
 ---@return EulerAngles
 ---@nodiscard
-function vector.AngleRight(a) end
+function vector.AngleRight(vec) end
 
 ---Get up vector angle.
----@param a Vector3
+---@param vec Vector3
 ---@return EulerAngles
 ---@nodiscard
-function vector.AngleUp(a) end
+function vector.AngleUp(vec) end
 
 ---Normalize vector angles.
----@param a Vector3
+---@param vec Vector3
 ---@return EulerAngles
 ---@nodiscard
-function vector.AngleNormalize(a) end
+function vector.AngleNormalize(vec) end
