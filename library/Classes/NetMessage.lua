@@ -11,7 +11,7 @@ local NetMessage = {}
 ---@return integer
 function NetMessage:GetGroup() end
 
----Returns the NetChannel object that the message belongs to.
+---Returns the [NetChannel](lua://NetChannel) object that the message belongs to.
 ---@return NetChannel
 function NetMessage:GetNetChannel() end
 

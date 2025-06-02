@@ -11,7 +11,7 @@ local UserMessage = {}
 ---@nodiscard
 function UserMessage:GetID() end
 
----Returns the BitBuffer object that contains the message data.
+---Returns the [BitBuffer](lua://BitBuffer) object that contains the message data.
 ---@return BitBuffer
 ---@nodiscard
 function UserMessage:GetBitBuffer() end

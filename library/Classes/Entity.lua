@@ -462,7 +462,7 @@ function Entity:GetCurrentCharge() end
 ---@nodiscard
 function Entity:GetSwingRange() end
 
----Returns the Trace object result of the weapon's swing. \
+---Returns the [Trace](lua://Trace) object result of the weapon's swing. \
 ---In simple terms, it simulates what would weapon hit if it was swung.
 ---@return Trace
 ---@nodiscard

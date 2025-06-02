@@ -49,7 +49,7 @@ function PhysicsEnvironment:GetSimulationTimestep() end
 ---@param timestep number
 function PhysicsEnvironment:SetSimulationTimestep(timestep) end
 
----Returns a table of all active physics objects in the physics environment, as PhysicsObject objects.
+---Returns a table of all active physics objects in the physics environment, as [PhysicsObject](lua://PhysicsObject) objects.
 ---@return PhysicsObject[]
 ---@nodiscard
 function PhysicsEnvironment:GetActiveObjects() end
@@ -57,8 +57,8 @@ function PhysicsEnvironment:GetActiveObjects() end
 ---Resets the simulation clock of the physics environment.
 function PhysicsEnvironment:ResetSimulationClock() end
 
----Creates a physics object from a collision model, surface property name, and physics object parameters. \
----Objects is created asleep, and must be woken up before simulation by calling PhysicsObject:Wake().
+---Creates a [PhysicsObject](lua://PhysicsObject) from a collision model, surface property name, and physics object parameters. \
+---Objects is created asleep, and must be woken up before simulation by calling `PhysicsObject:Wake()`.
 ---@param collisionModel PhysicsCollisionModel
 ---@param surfacePropertyName string
 ---@param objectParams PhysicsObjectParameters
@@ -66,6 +66,6 @@ function PhysicsEnvironment:ResetSimulationClock() end
 ---@nodiscard
 function PhysicsEnvironment:CreatePolyObject(collisionModel, surfacePropertyName, objectParams) end
 
----Destroys a physics object.
+---Destroys a [PhysicsObject](lua://PhysicsObject).
 ---@param object PhysicsObject
 function PhysicsEnvironment:DestroyObject(object) end

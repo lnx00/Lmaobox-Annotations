@@ -10,6 +10,6 @@ local GameServerLobby = {}
 ---@return integer
 function GameServerLobby:GetGroupID() end
 
----Returns a table of LobbyPlayer objects representing the players in the lobby.
+---Returns a table of [LobbyPlayer](lua://LobbyPlayer) objects representing the players in the lobby.
 ---@return LobbyPlayer[]
 function GameServerLobby:GetMembers() end

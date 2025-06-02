@@ -87,11 +87,11 @@ function NetChannel:SetTimeout(seconds) end
 ---@param challenge number
 function NetChannel:SetChallengeNr(challenge) end
 
----Sends a network message, msg is of type NetMessage.
+---Sends a network message, msg is of type [NetMessage](lua://NetMessage).
 ---@param msg NetMessage
 function NetChannel:SendNetMsg(msg) end
 
----Sends data, data is of type BitBuffer.
+---Sends data, data is of type [BitBuffer](lua://BitBuffer).
 ---@param data BitBuffer
 ---@param reliable boolean
 function NetChannel:SendData(data, reliable) end

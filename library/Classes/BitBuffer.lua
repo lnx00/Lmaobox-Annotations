@@ -6,7 +6,7 @@
 ---@class BitBuffer
 local BitBuffer = {}
 
----Creates a new BitBuffer object with an empty buffer. \
+---Creates a new [BitBuffer](lua://BitBuffer) object with an empty buffer. \
 ---You can write to it using methods below or have some other functions write to it for you, such as NetMessage::WriteToBitBuffer.
 ---@return BitBuffer
 function _G.BitBuffer() end

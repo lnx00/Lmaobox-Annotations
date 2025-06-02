@@ -45,7 +45,7 @@ function entities.GetPlayerResources() end
 ---@return Entity? entity
 function entities.CreateEntityByName(className) end
 
----Creates a non-networkable temporary entity of type TempEntity.
+---Creates a non-networkable temporary entity of type [TempEntity](lua://TempEntity). \
 ---You are responsible for calling tempentity.
 ---Release when you are done with the entity.
 ---To trigger the entity, call PostDataUpdate.

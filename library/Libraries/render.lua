@@ -6,7 +6,7 @@
 ---@class render
 render = {}
 
----Push a 3D view of type ViewSetup to the render stack. \
+---Push a 3D view of type [ViewSetup](lua://ViewSetup) to the render stack. \
 ---If texture is `nil`, the current render target is used.
 ---@param view ViewSetup
 ---@param clearFlags number # Bitfield of Clear flags
@@ -23,7 +23,7 @@ function render.PopView() end
 ---@param view ViewSetup
 function render.ViewDrawScene(draw3Dskybox, drawSkybox, view) end
 
----Draw a screen space rectangle with a given Material. Material is a Material object. \
+---Draw a screen space rectangle with a given Material. Material is a [Material](lua://Material) object. \
 ---destX and destY are the coordinates of the top left corner of the rectangle. \
 ---width and height are the dimensions of the rectangle. \
 ---srcTextureX0, srcTextureY0, srcTextureX1, srcTextureY1 are the coordinates of the top left and bottom right corners of the rectangle on the texture. \
@@ -72,7 +72,7 @@ function render.GetDepthRange() end
 ---@param texture Texture
 function render.SetRenderTarget(texture) end
 
----Returns the current render target as a Texture object.
+---Returns the current render target as a [Texture](lua://Texture) object.
 ---@return Texture
 ---@nodiscard
 function render.GetRenderTarget() end
@@ -126,25 +126,25 @@ function render.SetStencilEnable(enable) end
 
 ---Seets the stencil fail operation. \
 ---failOp is an integer that determines the operation to perform when the stencil test fails. \
----The possible values are of enum E_StencilOperation.
+---The possible values are of enum [E_StencilOperation](lua://E_StencilOperation).
 ---@param failOp E_StencilOperation
 function render.SetStencilFailOperation(failOp) end
 
 ---Sets the stencil Z fail operation. \
 ---zFailOp is an integer that determines the operation to perform when the stencil test passes but the depth test fails. \
----The possible values are of enum E_StencilOperation.
+---The possible values are of enum [E_StencilOperation](lua://E_StencilOperation).
 ---@param zFailOp E_StencilOperation
 function render.SetStencilZFailOperation(zFailOp) end
 
 ---Sets the stencil pass operation. \
 ---passOp is an integer that determines the operation to perform when the stencil test passes. \
----The possible values are of enum E_StencilOperation.
+---The possible values are of enum [E_StencilOperation](lua://E_StencilOperation).
 ---@param passOp E_StencilOperation
 function render.SetStencilPassOperation(passOp) end
 
 ---Set the stencil compare function. \
 ---compareFunc is an integer that determines the comparison function to use. \
----The possible values are of enum E_StencilComparisonFunction.
+---The possible values are of enum [E_StencilComparisonFunction](lua://E_StencilComparisonFunction).
 ---@param compareFunc E_StencilComparisonFunction
 function render.SetStencilCompareFunction(compareFunc) end
 
@@ -176,9 +176,8 @@ function render.SetStencilWriteMask(mask) end
 function render.ClearStencilBufferRectangle(xmin, ymin, xmax, ymax, value) end
 
 ---Sets the forced material override. \
----material is a Material object that determines the material to use for all subsequent draw calls. \
----Pass nil to disable the forced material override.
----@param material Material
+---Pass `nil` to disable the forced material override.
+---@param material Material? # determines the material to use for all subsequent draw calls.
 function render.ForcedMaterialOverride(material) end
 
 ---Set the blend factor. \

@@ -22,7 +22,7 @@ function Item:GetName() end
 ---@nodiscard
 function Item:GetDefIndex() end
 
----Returns the item's definition as the ItemDefinition object.
+---Returns the item's definition as the [ItemDefinition](lua://ItemDefinition) object.
 ---@return ItemDefinition
 ---@nodiscard
 function Item:GetItemDefinition() end
@@ -53,7 +53,7 @@ function Item:IsEquippedForClass(classID) end
 ---@nodiscard
 function Item:GetImageTextureID() end
 
----Returns the item's attributes as a table where keys are AttributeDefinition objects and values are the values of the attributes.
+---Returns the item's attributes as a table where keys are [AttributeDefinition](lua://AttributeDefinition) objects and values are the values of the attributes.
 ---@return table<AttributeDefinition, any>?
 ---@nodiscard
 function Item:GetAttributes() end

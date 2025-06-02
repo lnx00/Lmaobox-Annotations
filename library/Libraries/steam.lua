@@ -23,12 +23,12 @@ function steam.GetPlayerName(steamID3) end
 ---@nodiscard
 function steam.IsFriend(steamID3) end
 
----Returns a table of SteamID3 of all friends of the user.
+---Returns a table of [SteamID3](lua://SteamID3) of all friends of the user.
 ---@return SteamID3[]
 ---@nodiscard
 function steam.GetFriends() end
 
----Returns the 64bit SteamID of the player as a long integer.
+---Returns the [SteamID64](lua://SteamID64) of the player as a long integer.
 ---@param steamID3 SteamID3
 ---@return SteamID64 SteamID64
 ---@nodiscard

@@ -17,7 +17,7 @@ function PhysicsSolid:GetName() end
 ---@nodiscard
 function PhysicsSolid:GetSurfacePropName() end
 
----Returns the PhysicsObjectParameters object of the solid.
+---Returns the [PhysicsObjectParameters](lua://PhysicsObjectParameters) object of the solid.
 ---@return PhysicsObjectParameters
 ---@nodiscard
 function PhysicsSolid:GetObjectParameters() end

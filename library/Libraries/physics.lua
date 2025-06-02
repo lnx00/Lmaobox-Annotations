@@ -39,7 +39,7 @@ function physics.BBoxToCollisionModel(mins, maxs) end
 ---@nodiscard
 function physics.ParseModelByName(modelName) end
 
----Creates a PhysicsObjectParameters object with default values.
+---Creates a [PhysicsObjectParameters](lua://PhysicsObjectParameters) object with default values.
 ---@return PhysicsObjectParameters
 ---@nodiscard
 function physics.DefaultObjectParameters() end

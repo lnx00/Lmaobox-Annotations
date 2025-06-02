@@ -72,7 +72,7 @@ function ItemDefinition:GetIconName() end
 ---@nodiscard
 function ItemDefinition:GetBaseItemName() end
 
----Returns the static item attributes as a table where keys are AttributeDefinition objects and values are the values of the attributes.
+---Returns the static item attributes as a table where keys are [AttributeDefinition](lua://AttributeDefinition) objects and values are the values of the attributes.
 ---@return table<AttributeDefinition, any>
 ---@nodiscard
 function ItemDefinition:GetAttributes() end

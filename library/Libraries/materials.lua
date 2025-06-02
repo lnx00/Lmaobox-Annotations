@@ -37,7 +37,7 @@ function materials.CreateTextureRenderTarget(name, width, height) end
 ---Fetches a texture by name. \
 ---If the texture is not found, it will be created. \
 ---If complain is true, it will print an error message if the texture is not found. \
----Returns a Texture object.
+---Returns a [Texture](lua://Texture) object.
 ---@param name string
 ---@param groupName string
 ---@param complain boolean

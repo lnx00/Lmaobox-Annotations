@@ -1,7 +1,7 @@
 ---@meta
 
----The itemschema library contains functions for retrieving information about items.
----Items referred to in this library are of the ItemDefinition type.
+---The itemschema library contains functions for retrieving information about items. \
+---Items referred to in this library are of the [ItemDefinition](lua://ItemDefinition) type.
 ---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/itemschema/)
 ---@class itemschema

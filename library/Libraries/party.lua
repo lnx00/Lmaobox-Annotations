@@ -12,12 +12,12 @@ party = {}
 ---@nodiscard
 function party.GetLeader() end
 
----Returns a table containing the player's party members' SteamID3 strings.
+---Returns a table containing the player's party members' [SteamID3](lua://SteamID3) strings.
 ---@return SteamID3[]
 ---@nodiscard
 function party.GetMembers() end
 
----Returns a table containing the player's pending party members' SteamID3 strings. \
+---Returns a table containing the player's pending party members' [SteamID3](lua://SteamID3) strings. \
 ---These members are invited to party, but have not joined yet.
 ---@return SteamID3[]
 ---@nodiscard
@@ -28,12 +28,12 @@ function party.GetPendingMembers() end
 ---@nodiscard
 function party.GetGroupID() end
 
----Returns a table where values are the player's queued match groups as MatchGroup objects.
+---Returns a table where values are the player's queued match groups as [MatchGroup](lua://MatchGroup) objects.
 ---@return table<string, MatchGroup>
 ---@nodiscard
 function party.GetQueuedMatchGroups() end
 
----Returns a table where values are all possible match groups as MatchGroup objects.
+---Returns a table where values are all possible match groups as [MatchGroup](lua://MatchGroup) objects.
 ---@return { Casual: MatchGroup, Competitive6v6: MatchGroup, Bootcamp: MatchGroup, MannUp: MatchGroup, SpecialEvent: MatchGroup }
 ---@nodiscard
 function party.GetAllMatchGroups() end
@@ -76,8 +76,8 @@ function party.QueueUpStandby() end
 ---That refers to an ongoing match in your party.
 function party.CancelQueueStandby() end
 
----Returns a PartyMemberActivity object for the party member at the given index. \
----See GetMembers() for the index.
+---Returns a [PartyMemberActivity](lua://PartyMemberActivity) object for the party member at the given index. \
+---See `party.GetMembers()` for the index.
 ---@param index integer
 ---@return PartyMemberActivity
 ---@nodiscard

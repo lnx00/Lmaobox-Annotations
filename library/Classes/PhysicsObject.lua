@@ -16,7 +16,7 @@ function PhysicsObject:Wake() end
 ---It will become inactive in the physics environment and will not be simulated.
 function PhysicsObject:Sleep() end
 
----Returns the position of the physics object as a Vector3 and the angle as a Vector3 second return value.
+---Returns the position of the physics object as a [Vector3](lua://Vector3) and the angle as a [Vector3](lua://Vector3) second return value.
 ---@return Vector3 position, Vector3 angle
 ---@nodiscard
 function PhysicsObject:GetPosition() end
@@ -28,7 +28,7 @@ function PhysicsObject:GetPosition() end
 ---@param isTeleport boolean
 function PhysicsObject:SetPosition(position, angle, isTeleport) end
 
----Returns the velocity of the physics object as a Vector3 and the angular velocity as a Vector3 second return value.
+---Returns the velocity of the physics object as a [Vector3](lua://Vector3) and the angular velocity as a [Vector3](lua://Vector3) second return value.
 ---@return Vector3 velocity, Vector3 angularVelocity
 ---@nodiscard
 function PhysicsObject:GetVelocity() end

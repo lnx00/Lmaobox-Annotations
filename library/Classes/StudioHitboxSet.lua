@@ -11,7 +11,7 @@ local StudioHitboxSet = {}
 ---@nodiscard
 function StudioHitboxSet:GetName() end
 
----Returns a table of StudioBBox objects for the hitbox set.
+---Returns a table of [StudioBBox](lua://StudioBBox) objects for the hitbox set.
 ---@return StudioBBox[]
 ---@nodiscard
 function StudioHitboxSet:GetHitboxes() end
