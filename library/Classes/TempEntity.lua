@@ -4,6 +4,8 @@
 ---Temporary entities are not like regular Entities, they only exist for a split moment to transfer some information, create an effect, or perform some action.
 ---Their effects can often outlive the temporary entity itself.
 ---They can hold useful data from the server and can be modified.
+---
+---[View Docs](https://lmaobox.net/lua/Lua_Classes/TempEntity/)
 ---@class TempEntity
 local TempEntity = {}
 

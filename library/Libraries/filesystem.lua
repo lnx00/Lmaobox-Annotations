@@ -6,7 +6,7 @@
 filesystem = {}
 
 ---Creates a directory at the specified relative or absolute path. \
----Returns true if the directory was created, false if unsuccessful. \
+---Returns true if the directory was created, false if unsuccessful or already exists. \
 ---You are not allowed to call function outside of the game's root directory.
 ---@param filePath string
 ---@return boolean success, string fullPath

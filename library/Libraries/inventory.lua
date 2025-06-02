@@ -8,7 +8,7 @@ inventory = {}
 
 ---Callback is called for each item in the inventory. \
 ---The item is passed as the first argument and is of type Item.
----@param callback fun(item: ItemDefinition)
+---@param callback fun(item: Item)
 function inventory.Enumerate(callback) end
 
 ---Returns the item at the given position in the inventory.
@@ -31,6 +31,7 @@ function inventory.GetItemByItemID(id) end
 ---Returns the item that is in the given slot in the given class' loadout slot.
 ---@param id integer
 ---@param slot integer
+---@nodiscard
 function inventory.GetItemInLoadout(id, slot) end
 
 ---Equips the item that is in the given slot in the given class' loadout slot. \

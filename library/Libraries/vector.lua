@@ -25,14 +25,14 @@ function vector.Subtract(a, b) end
 
 ---Multiply vector by scalar.
 ---@param a Vector3|ArrayVector
----@param scalar integer
+---@param scalar number
 ---@return Vector3
 ---@nodiscard
 function vector.Multiply(a, scalar) end
 
 ---Divide vector by scalar.
 ---@param a Vector3|ArrayVector
----@param scalar integer
+---@param scalar number
 ---@return Vector3
 ---@nodiscard
 function vector.Divide(a, scalar) end
@@ -56,28 +56,36 @@ function vector.LengthSqr(a) end
 ---@nodiscard
 function vector.Distance(a, b) end
 
----Normalize vector.
+---Normalize vector in place; modifies the vector directly without returning it.
 ---@param a Vector3|ArrayVector
----@return Vector3
----@nodiscard
 function vector.Normalize(a) end
 
 ---Get vector angles.
 ---@param a Vector3
+---@return EulerAngles
+---@nodiscard
 function vector.Angles(a) end
 
 ---Get forward vector angle.
 ---@param a Vector3
+---@return EulerAngles
+---@nodiscard
 function vector.AngleForward(a) end
 
 ---Get right vector angle.
 ---@param a Vector3
+---@return EulerAngles
+---@nodiscard
 function vector.AngleRight(a) end
 
 ---Get up vector angle.
 ---@param a Vector3
+---@return EulerAngles
+---@nodiscard
 function vector.AngleUp(a) end
 
 ---Normalize vector angles.
 ---@param a Vector3
+---@return EulerAngles
+---@nodiscard
 function vector.AngleNormalize(a) end
