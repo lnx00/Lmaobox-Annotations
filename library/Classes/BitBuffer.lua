@@ -1,6 +1,7 @@
 ---@meta
 
----The BitBuffer object is used to read and write data that is usually sent over the network, compressed into a bitstream. \
+---The BitBuffer object is used to read and write data that is usually sent over the network, compressed into a bitstream.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/BitBuffer/)
 ---@class BitBuffer
 local BitBuffer = {}

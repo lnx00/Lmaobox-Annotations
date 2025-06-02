@@ -1,6 +1,7 @@
 ---@meta
 
----The PartyMemberActivity class is used to provide information about a party member. \
+---The PartyMemberActivity class is used to provide information about a party member.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/PartyMemberActivity/)
 ---@class PartyMemberActivity
 PartyMemberActivity = {}

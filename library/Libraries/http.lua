@@ -1,6 +1,7 @@
 ---@meta
 
 ---A lightweight HTTP library providing a simple get method for downloading data from the internet.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/http/)
 ---@class http
 http = {}

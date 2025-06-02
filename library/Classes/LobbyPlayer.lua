@@ -1,6 +1,7 @@
 ---@meta
 
----The LobbyPlayer class is used to provide information about a player in a Game Server lobby. \
+---The LobbyPlayer class is used to provide information about a player in a Game Server lobby.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/LobbyPlayer/)
 ---@class LobbyPlayer
 local LobbyPlayer = {}

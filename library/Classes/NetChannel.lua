@@ -1,6 +1,7 @@
 ---@meta
 
----The NetChannel object is used to get information about the network channel. \
+---The NetChannel object is used to get information about the network channel.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/NetChannel/)
 ---@class NetChannel
 local NetChannel = {}

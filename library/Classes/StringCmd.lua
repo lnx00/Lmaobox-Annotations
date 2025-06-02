@@ -1,6 +1,7 @@
 ---@meta
 
----Represents a string command. \
+---Represents a string command.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/StringCmd/)
 ---@class StringCmd
 local StringCmd = {}

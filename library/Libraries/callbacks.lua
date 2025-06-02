@@ -2,7 +2,8 @@
 
 ---Callbacks are functions that are called when a certain event occurs.
 ---You can use them to add custom functionality to your scripts.
----To see the list of available callbacks, see the callbacks page. \
+---To see the list of available callbacks, see the callbacks page.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/callbacks/)
 ---@class callbacks
 callbacks = {}

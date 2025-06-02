@@ -1,6 +1,7 @@
 ---@meta
 
----The clientstate library is used to get information about the internal client state. \
+---The clientstate library is used to get information about the internal client state.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/clientstate/)
 ---@class clientstate
 clientstate = {}

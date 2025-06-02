@@ -1,6 +1,7 @@
 ---@meta
 
----Represents a map that is playable in a matchmaking match. \
+---Represents a map that is playable in a matchmaking match.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/MatchMapDefinition/)
 ---@class MatchMapDefinition
 local MatchMapDefinition = {}

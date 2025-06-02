@@ -2,7 +2,8 @@
 
 ---The vector library provides a simple way to manipulate 3D vectors. \
 ---You can use both Lua tables and Vector3|ArrayVector instances as arguments. \
----The functions below showcase only the table-based option. \
+---The functions below showcase only the table-based option.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/vector/)
 ---@class vector
 vector = {}

@@ -1,6 +1,7 @@
 ---@meta
 
----The materials library provides a way to create and alter materials for rendering. \
+---The materials library provides a way to create and alter materials for rendering.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/materials/)
 ---@class materials
 materials = {}

@@ -1,7 +1,8 @@
 ---@meta
 
 ---Return value of engine.TraceLine and engine.TraceHull functions. \
----You can read the Valve wiki for more information on [trace result](https://developer.valvesoftware.com/wiki/UTIL_TraceLine#trace_t_.26tr). \
+---You can read the Valve wiki for more information on [trace result](https://developer.valvesoftware.com/wiki/UTIL_TraceLine#trace_t_.26tr).
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/Trace/)
 ---@class Trace
 ---@field fraction number # Fraction of the trace that was completed.

@@ -1,6 +1,7 @@
 ---@meta
 
----The gamecoordinator library provides information about the state of the matchmaking system and current match made game. \
+---The gamecoordinator library provides information about the state of the matchmaking system and current match made game.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/gamecoordinator/)
 ---@class gamecoordinator
 gamecoordinator = {}

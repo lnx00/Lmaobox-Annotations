@@ -1,6 +1,7 @@
 ---@meta
 
----This library contains global source engine variables. \
+---This library contains global source engine variables.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/globals/)
 ---@class globals
 globals = {}

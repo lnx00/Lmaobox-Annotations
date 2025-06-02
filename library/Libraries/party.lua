@@ -1,7 +1,8 @@
 ---@meta
 
 ---The party library provides functions for managing the player's matchmaking party. \
----All functions return `nil` if the player is not in a party or the party client is not initialized. \
+---All functions return `nil` if the player is not in a party or the party client is not initialized.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/party/)
 ---@class party
 party = {}

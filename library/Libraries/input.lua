@@ -1,6 +1,7 @@
 ---@meta
 
----The input library provides an interface to the user's keyboard and mouse. \
+---The input library provides an interface to the user's keyboard and mouse.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/input/)
 ---@class input
 input = {}

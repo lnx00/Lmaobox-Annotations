@@ -1,7 +1,8 @@
 ---@meta
 
 ---This library allows you to draw shapes and text on the screen. \
----It also allows you to create textures from images and draw them. \
+---It also allows you to create textures from images and draw them.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/draw/)
 ---@class draw
 draw = {}
@@ -86,6 +87,7 @@ function draw.OutlinedCircle(x, y, radius, segments) end
 function draw.GetTextSize(text) end
 
 ---Draw text at x, y.
+---You need to set a font and color before calling this function.
 ---@param x integer
 ---@param y integer
 ---@param text string

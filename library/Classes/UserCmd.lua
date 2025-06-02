@@ -1,8 +1,9 @@
 ---@meta
 
----Represents a user (movement) command about to be sent to the server. \
----Fields are modifiable directly. \
----[UserCmd](https://developer.valvesoftware.com/wiki/Usercmd) \
+---Represents a user (movement) command about to be sent to the server.
+---Fields are modifiable directly.
+---
+---[View Wiki](https://developer.valvesoftware.com/wiki/Usercmd) \
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/UserCmd/)
 ---@class UserCmd
 ---@field command_number integer # The number of the command.

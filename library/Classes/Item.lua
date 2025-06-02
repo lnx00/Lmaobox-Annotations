@@ -1,6 +1,7 @@
 ---@meta
 
----Represents an item in player's inventory. \
+---Represents an item in player's inventory.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/Item/)
 ---@class Item
 local Item = {}

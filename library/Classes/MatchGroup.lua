@@ -1,6 +1,7 @@
 ---@meta
 
----The MatchGroup object describes a single type of queue in TF2 matchmaking. \
+---The MatchGroup object describes a single type of queue in TF2 matchmaking.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/MatchGroup/)
 ---@class MatchGroup
 MatchGroup = {}

@@ -951,6 +951,12 @@ E_ClientFrameStage = {
     FRAME_RENDER_END = 6,
 };
 
+---@enum E_DataUpdateType
+E_DataUpdateType = {
+    DATA_UPDATE_CREATED = 0,
+    DATA_UPDATE_DATATABLE_CHANGED = 1,
+}
+
 ---@enum E_StencilOperation
 E_StencilOperation = {
     STENCILOPERATION_KEEP = 1,

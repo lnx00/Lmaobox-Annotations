@@ -1,6 +1,7 @@
 ---@meta
 
----The StudioModelHeader object contains information about a studio models hitbox sets and bones. \
+---The StudioModelHeader object contains information about a studio models hitbox sets and bones.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/StudioModelHeader/)
 ---@class StudioModelHeader
 local StudioModelHeader = {}

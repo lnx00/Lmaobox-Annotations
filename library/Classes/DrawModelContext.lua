@@ -1,6 +1,7 @@
 ---@meta
 
----Represents the context in which a model is being drawn in the DrawModel callback. \
+---Represents the context in which a model is being drawn in the DrawModel callback.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/DrawModelContext/)
 ---@class DrawModelContext
 local DrawModelContext = {}

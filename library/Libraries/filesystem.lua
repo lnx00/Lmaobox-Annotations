@@ -1,6 +1,7 @@
 ---@meta
 
----This library provides a simple interface to the filesystem. \
+---This library provides a simple interface to the filesystem.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/filesystem/)
 ---@class filesystem
 filesystem = {}

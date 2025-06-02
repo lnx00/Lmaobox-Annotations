@@ -1,7 +1,8 @@
 ---@meta
 
 ---The models library provides a way to get information about models. \
----When inputting the model:Model parameter, it must be of type Model. \
+---When inputting the model:Model parameter, it must be of type Model.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/models/)
 ---@class models
 models = {}

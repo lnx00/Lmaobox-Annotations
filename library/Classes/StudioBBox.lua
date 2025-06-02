@@ -1,6 +1,7 @@
 ---@meta
 
----The StudioBBox object contains information about a studio models bounding box. \
+---The StudioBBox object contains information about a studio models bounding box.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/StudioBBox/)
 ---@class StudioBBox
 local StudioBBox = {}

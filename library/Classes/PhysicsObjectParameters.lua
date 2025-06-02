@@ -1,7 +1,8 @@
 ---@meta
 
 ---This is a class that contains parameters for a physics object. \
----You can use this to set the mass, drag, and other parameters of a physics object. \
+---You can use this to set the mass, drag, and other parameters of a physics object.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Classes/PhysicsObjectParameters/)
 ---@class PhysicsObjectParameters
 ---@field mass number # The mass of the physics object.

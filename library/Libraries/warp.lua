@@ -3,7 +3,8 @@
 ---This library can be used for interacting with the warp exploit feature of TF2. How it works: \
 ---You can charge up ticks to later on send to server in a batch, which will execute them all at once, it behaves like a small speedhack, a warp. \
 ---Warping results in a small dash in the direction you are running in. \
----Warping while shooting results in weapons speeding up their reload times -> some weapons can shoot twice - a double tap. \
+---Warping while shooting results in weapons speeding up their reload times -> some weapons can shoot twice - a double tap.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/warp/)
 ---@class warp
 warp = {}

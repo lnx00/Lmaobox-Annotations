@@ -1,6 +1,7 @@
 ---@meta
 
----The gamerules library contains functions for detecting the game rules of a TF2 match. \
+---The gamerules library contains functions for detecting the game rules of a TF2 match.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/gamerules/)
 ---@class gamerules
 gamerules = {}

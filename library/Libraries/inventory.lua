@@ -1,7 +1,8 @@
 ---@meta
 
----The inventory library is used to access the player's inventory and the items in it. \
----Every item is of type Item.  \
+---The inventory library is used to access the player's inventory and the items in it.
+---Every item is of type Item.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/inventory/)
 ---@class inventory
 inventory = {}

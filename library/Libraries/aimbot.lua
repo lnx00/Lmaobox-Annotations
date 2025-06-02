@@ -1,6 +1,7 @@
 ---@meta
 
 ---This library can be used for interacting with aimbot feature.
+---
 ---[View Docs](https://lmaobox.net/lua/Lua_Libraries/aimbot/)
 ---@class aimbot
 aimbot = {}
