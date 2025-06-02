@@ -44,4 +44,13 @@ function entities.GetPlayerResources() end
 ---@return Entity? entity
 function entities.CreateEntityByName(className) end
 
+---Creates a non-networkable temporary entity of type TempEntity.
+---You are responsible for calling tempentity.
+---Release when you are done with the entity.
+---To trigger the entity, call PostDataUpdate.
+---@param className string
+---@return TempEntity
+---@nodiscard
+function entities.CreateTempEntityByName(className) end
+
 return entities

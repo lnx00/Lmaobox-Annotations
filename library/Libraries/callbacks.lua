@@ -28,6 +28,7 @@ callbacks = {}
 ---| "GCRetrieveMessage" # Called when a message is being received from the GC.
 ---| "SendNetMsg" # Called when a message of type NetMessage is being sent to the server.
 ---| "DoPostScreenSpaceEffects" # Called after the screen space effects are rendered.
+---| "ProcessTempEntities" # Called immediately when server sends one or more temporary entities to the client.
 ---| "Unload" # Called when script is getting unloaded.
 
 ---Register new callback.
