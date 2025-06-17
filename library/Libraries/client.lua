@@ -11,7 +11,7 @@ client = {}
 ---@nodiscard
 function client.GetExtraInventorySlots() end
 
----Returns whether the user has premium upgrades.
+---Returns whether the user is a free trial account.
 ---@return boolean
 ---@nodiscard
 function client.IsFreeTrialAccount() end
