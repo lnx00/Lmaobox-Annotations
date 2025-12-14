@@ -30,4 +30,4 @@ function StudioBBox:GetBBMin() end
 ---Returns the maximum point of the bounding box as a Vector3.
 ---@return Vector3
 ---@nodiscard
-function StudioBBox:GetBBmax() end
+function StudioBBox:GetBBMax() end
